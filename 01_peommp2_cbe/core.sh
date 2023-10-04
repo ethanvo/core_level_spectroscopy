@@ -11,6 +11,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=eav2136@columbia.edu
 
+export MODULEPATH=/burg/berkelbach/users/eav2136/modulefiles:$MODULEPATH
 cd ${SLURM_SUBMIT_DIR}
 module load pyscf/projected-cvs
 
