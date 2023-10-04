@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from fileutils import load, dump
+from fileutils import load, dump, remove
 import numpy as np
 import sys
 
@@ -20,4 +20,6 @@ core_data = dict([
     ])
 
 dump(core_data, "data/{}".format(material["cbe"]))
-
+remove("data/{}".format(material["chk"]))
+remove("data/{}".format(material["cderi"]))
+remove("data/{}".format(material["imds"]))
