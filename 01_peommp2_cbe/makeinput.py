@@ -120,7 +120,7 @@ def get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen
         ("vip", "{}_vip.h5".format(key)),
         ])
     filename = "data/{}.json".format(key)
-    fout.write("./submit.sh {} 716800 5-00:00:00\n".format(filename))
+    fout.write("./submit.sh {} 716800 5-00:00:00\n".format(key))
     dump(material, filename)
     return key, material, filename
 
