@@ -1,0 +1,32 @@
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.09 sec, wall time      0.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      6.55 sec, wall time      0.24 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     11.84 sec, wall time      0.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     16.80 sec, wall time      0.55 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     19.06 sec, wall time      0.60 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     23.05 sec, wall time      0.73 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     40.45 sec, wall time      1.72 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     58.27 sec, wall time      2.39 sec
+Monkhorst pack size [2 2 2] ew_eta 3.0566830812214194 ew_cut 2.30320412508748
+Ewald components = 0, -1.72482326343322, 1.55476854344923
+    CPU time for get_j pass 1     12.21 sec, wall time      0.40 sec
+    CPU time for get_j pass 2      5.99 sec, wall time      0.20 sec
+    CPU time for vj and vk    201.88 sec, wall time      7.55 sec
+    CPU time for vnuc pass1: analytic int    409.70 sec, wall time     13.21 sec
+    CPU time for contracting Vnuc [0:216]     12.50 sec, wall time      0.41 sec
+    CPU time for contracting Vnuc     12.51 sec, wall time      0.41 sec
+    CPU time for get_nuc    422.25 sec, wall time     13.62 sec
+Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
+    CPU time for vnuc pass1: analytic int    406.31 sec, wall time     13.08 sec
+    CPU time for contracting Vnuc [0:216]     12.45 sec, wall time      0.39 sec
+    CPU time for contracting Vnuc     12.46 sec, wall time      0.39 sec
+    CPU time for get_nuc    418.81 sec, wall time     13.48 sec
+E1 = (-51.30689779487431-4.2296997265529304e-19j)  E_coul = (4.370425289075024-1.089739815340808e-19j)
+using HDF5 ERI storage
+    CPU time for transforming oopq   4023.71 sec, wall time    162.89 sec
+    CPU time for transforming ovpq   5187.41 sec, wall time    209.28 sec
+    CPU time for transforming vvvv    132.85 sec, wall time      4.24 sec
+    CPU time for CCSD integral transformation  10391.33 sec, wall time    411.24 sec
+    CPU time for EOM-CCSD shared one-electron intermediates    544.12 sec, wall time     26.39 sec
+IMDS key to save: Loo , type: <class 'numpy.ndarray'>
+IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
+IMDS key to save: Fov , type: <class 'numpy.ndarray'>

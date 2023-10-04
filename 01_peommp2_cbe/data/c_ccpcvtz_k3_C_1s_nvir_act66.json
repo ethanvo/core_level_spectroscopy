@@ -1,0 +1,44 @@
+{
+    "formula": "c",
+    "basis": "ccpcvtz",
+    "kdensity": 3,
+    "vb_scaled_center": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "vb_nroots": 3,
+    "exp_to_discard": null,
+    "core": [
+        0,
+        1
+    ],
+    "nmo": 86,
+    "nocc": 6,
+    "nvir": 80,
+    "frozen": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+    ],
+    "chk": "c_ccpcvtz_k3_C_1s_nvir_act66.chk",
+    "cderi": "c_ccpcvtz_k3_C_1s_nvir_act66_cderi.h5",
+    "ekrhf": "c_ccpcvtz_k3_C_1s_nvir_act66_ekrhf.json",
+    "ekrmp2": "c_ccpcvtz_k3_C_1s_nvir_act66_ekrmp2.json",
+    "imds": "c_ccpcvtz_k3_C_1s_nvir_act66_imds.h5",
+    "eomip_valence": "c_ccpcvtz_k3_C_1s_nvir_act66_eomip_valence.json",
+    "eomip_core": "c_ccpcvtz_k3_C_1s_nvir_act66_eomip_core.json",
+    "cbe": "c_ccpcvtz_k3_C_1s_nvir_act66_cbe.json",
+    "vip": "c_ccpcvtz_k3_C_1s_nvir_act66_vip.h5"
+}

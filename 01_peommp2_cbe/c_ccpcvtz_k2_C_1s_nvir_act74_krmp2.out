@@ -1,0 +1,46 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 6, nmo = 80
+frozen orbitals [80, 81, 82, 83, 84, 85]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 80 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.05 sec, wall time      0.22 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      7.77 sec, wall time      0.27 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     13.13 sec, wall time      0.43 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     19.32 sec, wall time      0.64 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     27.82 sec, wall time      0.95 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     25.59 sec, wall time      0.82 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     28.27 sec, wall time      0.92 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     34.37 sec, wall time      1.10 sec
+Monkhorst pack size [2 2 2] ew_eta 3.0566830812214194 ew_cut 2.30320412508748
+Ewald components = 0, -1.72482326343322, 1.55476854344923
+    CPU time for get_j pass 1     13.96 sec, wall time      0.45 sec
+    CPU time for get_j pass 2      6.16 sec, wall time      0.26 sec
+    CPU time for vj and vk    187.37 sec, wall time      6.24 sec
+    CPU time for vnuc pass1: analytic int    407.44 sec, wall time     13.19 sec
+    CPU time for contracting Vnuc [0:216]     12.27 sec, wall time      0.40 sec
+    CPU time for contracting Vnuc     12.27 sec, wall time      0.40 sec
+    CPU time for get_nuc    419.75 sec, wall time     13.59 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 6, nmo = 80
+frozen orbitals [80, 81, 82, 83, 84, 85]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 693 MB)
+    CPU time for transforming DF-MP2 integrals    132.47 sec, wall time      4.19 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>
