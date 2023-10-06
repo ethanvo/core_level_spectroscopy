@@ -9,11 +9,10 @@ class _ERIS:
     def __init__(self, cc):
         pass
 
-def load_h5(inputfile, key):
-    f = h5py.File(inputfile, "r")
+def load_h5(h5file, key):
     data = {}
-    for k, v in f[key].items():
-        data[k] = v[:]
+    for k, v in h5file[key].items():
+        data[k] = v
     return data
 
 def load_mf(inputfile):
@@ -29,30 +28,25 @@ def load_mf(inputfile):
 
 def load_mp(inputfile):
     material = load("data/{}".format(inputfile))
+    h5file = h5py.File("data/{}".format(material["imds"]), "a")
     mymf = load_mf(inputfile)
     mycc = cc.KRCCSD(mymf, frozen=material["frozen"])
     mycc.keep_exxdiv = True
-    t_amps_dict = load_h5("data/{}".format(material["imds"]), "t_amps")
+    t_amps_dict = load_h5(h5file, "t_amps")
     mycc.__dict__.update(t_amps_dict)
     mycc.converged = True
-    return mycc
+    return mycc, h5file
 
-def load_eris(inputfile):
-    material = load("data/{}".format(inputfile))
-    mycc = load_mp(inputfile)
+def load_eris(mycc, h5file):
     eris = _ERIS(mycc)
-    eris_dict = load_h5("data/{}".format(material["imds"]), "eris")
+    eris_dict = load_h5(h5file, "eris")
     eris.__dict__.update(eris_dict)
     return eris
 
-def load_imds(inputfile):
-    material = load("data/{}".format(inputfile))
-    mycc = load_mp(inputfile)
-    eris = _ERIS(mycc)
-    eris_dict = load_h5("data/{}".format(material["imds"]), "eris")
-    eris.__dict__.update(eris_dict)
+def load_imds(mycc, h5file):
+    eris = load_eris(mycc, h5file)
     imds = _IMDS(mycc, eris)
-    imds_dict = load_h5("data/{}".format(material["imds"]), "imds")
+    imds_dict = load_h5(h5file, "imds")
     imds.__dict__.update(imds_dict)
     imds.Wooov = imds.eris.ooov
     return imds
