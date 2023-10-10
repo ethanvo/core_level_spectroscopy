@@ -35,10 +35,10 @@ dump(mymf_data, "data/{}".format(material["ekrhf"]))
 #INFO: ******************** input file end ********************
 
 
-System: uname_result(system='Linux', node='g121', release='4.18.0-193.el8.x86_64', version='#1 SMP Fri Mar 27 14:35:58 UTC 2020', machine='x86_64')  Threads 32
+System: uname_result(system='Linux', node='g120', release='4.18.0-193.el8.x86_64', version='#1 SMP Fri Mar 27 14:35:58 UTC 2020', machine='x86_64')  Threads 32
 Python 3.10.12 (main, Jul 29 2023, 11:27:27) [GCC 13.2.0]
 numpy 1.25.1  scipy 1.10.1
-Date: Fri Oct  6 01:56:19 2023
+Date: Sun Oct  8 03:25:27 2023
 PySCF version 2.0.1
 PySCF path  /burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf
 GIT HEAD (branch projected-cvs) 0bfbc692adf3ea63b8a509210433219cd1c472a2
@@ -125,7 +125,7 @@ bas 24, expnt(s) = [11.876]
 bas 25, expnt(s) = [8.778]
 bas 26, expnt(s) = [33.19]
 bas 27, expnt(s) = [14.839]
-CPU time:         1.45
+CPU time:         1.65
 lattice vectors  a1 [0.000000000, 3.370137329, 3.370137329]
                  a2 [3.370137329, 0.000000000, 3.370137329]
                  a3 [3.370137329, 3.370137329, 0.000000000]
@@ -153,8 +153,8 @@ SCF conv_tol_grad = None
 SCF max_cycles = 50
 direct_scf = True
 direct_scf_tol = 1e-13
-chkfile to save SCF result = data/c_ccpcvtz_k3_C_1s.chk
-max_memory 700000 MB (current use 84 MB)
+chkfile to save SCF result = data/c_ccpcvtz_k3_C_1s_nvir_act66.chk
+max_memory 700000 MB (current use 79 MB)
 
 
 ******** PBC SCF flags ********
@@ -196,10 +196,10 @@ Set gradient conv threshold to 0.000316228
 Big error detected in the electron number of initial guess density matrix (Ne/cell = 11.9993)!
   This can cause huge error in Fock matrix and lead to instability in SCF for low-dimensional systems.
   DM is normalized wrt the number of electrons 12.0
-    CPU time for vnuc pass1: analytic int    521.34 sec, wall time     17.06 sec
-    CPU time for contracting Vnuc [0:216]     17.59 sec, wall time      1.36 sec
-    CPU time for contracting Vnuc     17.59 sec, wall time      1.36 sec
-    CPU time for get_nuc    539.06 sec, wall time     18.43 sec
+    CPU time for vnuc pass1: analytic int    534.69 sec, wall time     17.50 sec
+    CPU time for contracting Vnuc [0:216]     19.41 sec, wall time      0.73 sec
+    CPU time for contracting Vnuc     19.41 sec, wall time      0.73 sec
+    CPU time for get_nuc    554.26 sec, wall time     18.24 sec
 
 
 ******** <class 'pyscf.pbc.df.df.GDF'> ********
@@ -207,7 +207,7 @@ mesh = [7, 7, 7] (343 PWs)
 auxbasis = None
 eta = 0.2
 exp_to_discard = None
-_cderi_to_save = data/c_ccpcvtz_k3_C_1s_cderi.h5
+_cderi_to_save = data/c_ccpcvtz_k3_C_1s_nvir_act66_cderi.h5
 len(kpts) = 27
     kpts = [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
  [ 3.10728451e-01  3.10728451e-01 -3.10728451e-01]
@@ -244,7 +244,7 @@ make aux basis, num shells = 98, num cGTOs = 410
 auxcell.rcut 12.950571518732957
 make compensating basis, num shells = 10, num cGTOs = 50
 chgcell.rcut 11.482117703874595
-    CPU time for 3c2e  26711.88 sec, wall time    919.00 sec
+    CPU time for 3c2e  27327.63 sec, wall time    943.34 sec
 Num uniq kpts 63
 uniq_kpts [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
  [-3.10728451e-01 -3.10728451e-01  3.10728451e-01]
@@ -309,14 +309,14 @@ uniq_kpts [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
  [ 6.21456902e-01  6.21456902e-01 -1.86437070e+00]
  [-3.10728451e-01 -3.10728451e-01 -9.32185352e-01]
  [-6.21456902e-01 -6.21456902e-01 -6.21456902e-01]]
-max_memory 699476.535296 (MB)  blocksize 38015029
+max_memory 699482.14272 (MB)  blocksize 38015333
 Cholesky decomposition for j2c at kpt 0
 Symmetry pattern (k - [0. 0. 0.])*a= 2n pi
     make_kpt for uniq_kptji_ids [0]
 kpt = [0. 0. 0.]
 adapted_ji_idx = [  0   2   5   9  14  20  27  35  44  54  65  77  90 104 119 135 152 170
  189 209 230 252 275 299 324 350 377]
-memory = 327.421952
+memory = 497.381376
 int3c2e [1/1], AO [0:28], ncol = 3741
 Symmetry pattern (k + [0. 0. 0.])*a= 2n pi
     make_kpt for [0]
@@ -325,350 +325,350 @@ Symmetry pattern (k - [-0.31072845 -0.31072845  0.31072845])*a= 2n pi
     make_kpt for uniq_kptji_ids [1]
 kpt = [-0.31072845 -0.31072845  0.31072845]
 adapted_ji_idx = [  1   4  13  19  34  43  64  76 103 118 151 169 208 229 274 298 349 376]
-memory = 1075.982336
+memory = 1175.793664
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [-0.31072845 -0.31072845  0.31072845])*a= 2n pi
     make_kpt for [2]
 kpt = [-0.6214569 -0.6214569  0.6214569]
 adapted_ji_idx = [  3  18  42  75 117 168 228 297 375]
-memory = 1331.417088
+memory = 1433.739264
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 3
 Symmetry pattern (k - [-0.31072845  0.31072845 -0.31072845])*a= 2n pi
     make_kpt for uniq_kptji_ids [3]
 kpt = [-0.31072845  0.31072845 -0.31072845]
 adapted_ji_idx = [  6  11  17  24  32  41  87 101 116 132 149 167 249 272 296 321 347 374]
-memory = 1570.955264
+memory = 1669.902336
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [-0.31072845  0.31072845 -0.31072845])*a= 2n pi
     make_kpt for [8]
 kpt = [-0.6214569  0.6214569 -0.6214569]
 adapted_ji_idx = [ 21  29  38 129 146 164 318 344 371]
-memory = 1856.438272
+memory = 1967.4112
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 4
 Symmetry pattern (k - [ 0.         0.6214569 -0.6214569])*a= 2n pi
     make_kpt for uniq_kptji_ids [4 7]
 kpt = [ 0.         0.6214569 -0.6214569]
 adapted_ji_idx = [  7  12  25  33  88 102 133 150 250 273 322 348]
-memory = 1859.15392
+memory = 1752.174592
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.93218535 -0.31072845  0.31072845]
 adapted_ji_idx = [ 15  39 114 165 294 372]
-memory = 1866.330112
+memory = 1760.661504
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.         0.6214569 -0.6214569])*a= 2n pi
     make_kpt for [10 11]
 kpt = [ 0.         1.2429138 -1.2429138]
 adapted_ji_idx = [ 23 131 320]
-memory = 1617.780736
+memory = 1786.843136
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.93218535  0.31072845 -0.31072845]
 adapted_ji_idx = [ 28  37 145 163 343 370]
-memory = 1630.539776
+memory = 1800.126464
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 5
 Symmetry pattern (k - [ 0.31072845  0.93218535 -0.93218535])*a= 2n pi
     make_kpt for uniq_kptji_ids [5 6]
 kpt = [ 0.31072845  0.93218535 -0.93218535]
 adapted_ji_idx = [  8  26  89 134 251 323]
-memory = 1633.112064
+memory = 1799.876608
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-6.21456902e-01 -1.97585401e-17  1.97585401e-17]
 adapted_ji_idx = [ 10  16  31  40 100 115 148 166 271 295 346 373]
-memory = 1633.370112
+memory = 1800.695808
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.31072845  0.93218535 -0.93218535])*a= 2n pi
     make_kpt for [ 9 12]
 kpt = [-0.31072845  0.93218535 -0.93218535]
 adapted_ji_idx = [ 22  30 130 147 319 345]
-memory = 1796.206592
+memory = 1909.927936
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-1.24291380e+00 -3.95170803e-17  3.95170803e-17]
 adapted_ji_idx = [ 36 162 369]
-memory = 1634.615296
+memory = 1910.685696
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 13
 Symmetry pattern (k - [ 0.31072845 -0.31072845 -0.31072845])*a= 2n pi
     make_kpt for uniq_kptji_ids [13]
 kpt = [ 0.31072845 -0.31072845 -0.31072845]
 adapted_ji_idx = [ 45  56  68  81  95 110 126 143 161 180 200 221 243 266 290 315 341 368]
-memory = 1635.090432
+memory = 1805.381632
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.31072845 -0.31072845 -0.31072845])*a= 2n pi
     make_kpt for [38]
 kpt = [ 0.6214569 -0.6214569 -0.6214569]
 adapted_ji_idx = [171 191 212 234 257 281 306 332 359]
-memory = 2015.653888
+memory = 2130.481152
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 14
 Symmetry pattern (k - [ 0.6214569  0.        -0.6214569])*a= 2n pi
     make_kpt for uniq_kptji_ids [14 25]
 kpt = [ 0.6214569  0.        -0.6214569]
 adapted_ji_idx = [ 46  57  82  96 127 144 181 201 244 267 316 342]
-memory = 1855.16032
+memory = 2134.1184
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.31072845 -0.93218535  0.31072845]
 adapted_ji_idx = [ 66 108 159 219 288 366]
-memory = 1856.667648
+memory = 2132.205568
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.6214569  0.        -0.6214569])*a= 2n pi
     make_kpt for [40 47]
 kpt = [ 1.2429138  0.        -1.2429138]
 adapted_ji_idx = [173 236 308]
-memory = 1858.596864
+memory = 2135.416832
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845 -0.93218535 -0.31072845]
 adapted_ji_idx = [190 211 256 280 331 358]
-memory = 1859.088384
+memory = 2138.390528
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 15
 Symmetry pattern (k - [ 0.93218535  0.31072845 -0.93218535])*a= 2n pi
     make_kpt for uniq_kptji_ids [15 22]
 kpt = [ 0.93218535  0.31072845 -0.93218535]
 adapted_ji_idx = [ 47  83 128 182 245 317]
-memory = 1859.227648
+memory = 2137.669632
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-1.97585401e-17 -6.21456902e-01  1.97585401e-17]
 adapted_ji_idx = [ 55  67  94 109 142 160 199 220 265 289 340 367]
-memory = 1859.252224
+memory = 2137.985024
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.93218535  0.31072845 -0.93218535])*a= 2n pi
     make_kpt for [39 50]
 kpt = [ 0.93218535 -0.31072845 -0.93218535]
 adapted_ji_idx = [172 192 235 258 307 333]
-memory = 1913.434112
+memory = 2135.875584
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-3.95170803e-17 -1.24291380e+00  3.95170803e-17]
 adapted_ji_idx = [210 279 357]
-memory = 1858.58048
+memory = 2136.973312
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 16
 Symmetry pattern (k - [ 0.6214569 -0.6214569  0.       ])*a= 2n pi
     make_kpt for uniq_kptji_ids [16 33]
 kpt = [ 0.6214569 -0.6214569  0.       ]
 adapted_ji_idx = [ 48  59  71  84  98 113 183 203 224 246 269 293]
-memory = 1861.931008
+memory = 2138.95168
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.31072845  0.31072845 -0.93218535]
 adapted_ji_idx = [120 137 155 309 335 362]
-memory = 1860.739072
+memory = 2136.12544
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.6214569 -0.6214569  0.       ])*a= 2n pi
     make_kpt for [44 53]
 kpt = [ 1.2429138 -1.2429138  0.       ]
 adapted_ji_idx = [177 197 218]
-memory = 1860.62848
+memory = 2136.580096
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845 -0.31072845 -0.93218535]
 adapted_ji_idx = [231 254 278 303 329 356]
-memory = 1861.025792
+memory = 2138.820608
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 17
 Symmetry pattern (k - [ 0.93218535 -0.31072845 -0.31072845])*a= 2n pi
     make_kpt for uniq_kptji_ids [17 26 34 37]
 kpt = [ 0.93218535 -0.31072845 -0.31072845]
 adapted_ji_idx = [ 49  60  85  99 184 204 247 270]
-memory = 1861.55008
+memory = 2138.615808
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-5.55111512e-17 -1.24291380e+00  6.21456902e-01]
 adapted_ji_idx = [ 69 111 222 291]
-memory = 1860.755456
+memory = 2136.784896
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-5.55111512e-17  6.21456902e-01 -1.24291380e+00]
 adapted_ji_idx = [121 138 310 336]
-memory = 1861.033984
+memory = 2138.284032
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.93218535 -0.31072845 -0.31072845]
 adapted_ji_idx = [153 360]
-memory = 1860.210688
+memory = 2137.772032
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.93218535 -0.31072845 -0.31072845])*a= 2n pi
     make_kpt for [46 49 55 56]
 kpt = [ 1.8643707 -0.6214569 -0.6214569]
 adapted_ji_idx = [179]
-memory = 1860.513792
+memory = 2138.312704
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.93218535 -1.55364225  0.31072845]
 adapted_ji_idx = [196 217]
-memory = 1859.956736
+memory = 2138.894336
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.93218535  0.31072845 -1.55364225]
 adapted_ji_idx = [233 305]
-memory = 1860.984832
+memory = 2139.160576
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-1.97585401e-17 -6.21456902e-01 -6.21456902e-01]
 adapted_ji_idx = [253 277 328 355]
-memory = 1859.780608
+memory = 2138.324992
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 18
 Symmetry pattern (k - [ 1.24291380e+00  5.55111512e-17 -6.21456902e-01])*a= 2n pi
     make_kpt for uniq_kptji_ids [18 23 35 36]
 kpt = [ 1.24291380e+00  5.55111512e-17 -6.21456902e-01]
 adapted_ji_idx = [ 50  86 185 248]
-memory = 1860.550656
+memory = 2137.649152
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845 -0.93218535  0.31072845]
 adapted_ji_idx = [ 58  70  97 112 202 223 268 292]
-memory = 1859.93216
+memory = 2138.791936
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845  0.93218535 -1.55364225]
 adapted_ji_idx = [122 311]
-memory = 1859.842048
+memory = 2137.27232
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-6.21456902e-01  3.57526111e-17 -6.21456902e-01]
 adapted_ji_idx = [136 154 334 361]
-memory = 1860.304896
+memory = 2138.820608
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 1.24291380e+00  5.55111512e-17 -6.21456902e-01])*a= 2n pi
     make_kpt for [45 52 54 57]
 kpt = [ 1.55364225 -0.93218535 -0.31072845]
 adapted_ji_idx = [178 198]
-memory = 1861.312512
+memory = 2138.624
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.6214569 -1.8643707  0.6214569]
 adapted_ji_idx = [216]
-memory = 1860.685824
+memory = 2138.50112
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.6214569  0.        -1.2429138]
 adapted_ji_idx = [232 255 304 330]
-memory = 1860.01408
+memory = 2139.15648
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.31072845 -0.93218535 -0.31072845]
 adapted_ji_idx = [276 354]
-memory = 1860.87424
+memory = 2137.993216
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 19
 Symmetry pattern (k - [ 0.93218535 -0.93218535  0.31072845])*a= 2n pi
     make_kpt for uniq_kptji_ids [19 28]
 kpt = [ 0.93218535 -0.93218535  0.31072845]
 adapted_ji_idx = [ 51  62  74 186 206 227]
-memory = 1860.931584
+memory = 2139.21792
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-1.97585401e-17  1.97585401e-17 -6.21456902e-01]
 adapted_ji_idx = [ 78  92 107 123 140 158 240 263 287 312 338 365]
-memory = 1860.866048
+memory = 2138.038272
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 0.93218535 -0.93218535  0.31072845])*a= 2n pi
     make_kpt for [41 58]
 kpt = [ 0.93218535 -0.93218535 -0.31072845]
 adapted_ji_idx = [174 194 215 237 260 284]
-memory = 1860.722688
+memory = 2137.563136
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-3.95170803e-17  3.95170803e-17 -1.24291380e+00]
 adapted_ji_idx = [300 326 353]
-memory = 1860.984832
+memory = 2139.439104
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 20
 Symmetry pattern (k - [ 1.2429138 -0.6214569  0.       ])*a= 2n pi
     make_kpt for uniq_kptji_ids [20 27 29 32]
 kpt = [ 1.2429138 -0.6214569  0.       ]
 adapted_ji_idx = [ 52  63 187 207]
-memory = 1863.868416
+memory = 2140.442624
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845 -1.55364225  0.93218535]
 adapted_ji_idx = [ 72 225]
-memory = 1863.983104
+memory = 2139.127808
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845  0.31072845 -0.93218535]
 adapted_ji_idx = [ 79  93 124 141 241 264 313 339]
-memory = 1862.836224
+memory = 2139.541504
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-6.21456902e-01 -6.21456902e-01  3.95170803e-17]
 adapted_ji_idx = [105 156 285 363]
-memory = 1863.442432
+memory = 2138.718208
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 1.2429138 -0.6214569  0.       ])*a= 2n pi
     make_kpt for [43 48 60 61]
 kpt = [ 1.55364225 -0.31072845 -0.93218535]
 adapted_ji_idx = [176 239]
-memory = 1863.041024
+memory = 2139.660288
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.6214569 -1.2429138  0.       ]
 adapted_ji_idx = [193 214 259 283]
-memory = 1862.086656
+memory = 2140.041216
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.6214569  0.6214569 -1.8643707]
 adapted_ji_idx = [302]
-memory = 1862.28736
+memory = 2139.488256
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.31072845 -0.31072845 -0.93218535]
 adapted_ji_idx = [325 352]
-memory = 1861.726208
+memory = 2139.5456
 int3c2e [1/1], AO [0:28], ncol = 7396
 Cholesky decomposition for j2c at kpt 21
 Symmetry pattern (k - [ 1.55364225 -0.31072845 -0.31072845])*a= 2n pi
     make_kpt for uniq_kptji_ids [21 24 30 31]
 kpt = [ 1.55364225 -0.31072845 -0.31072845]
 adapted_ji_idx = [ 53 188]
-memory = 1862.561792
+memory = 2140.516352
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.6214569 -1.2429138  0.6214569]
 adapted_ji_idx = [ 61  73 205 226]
-memory = 1863.241728
+memory = 2139.942912
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.6214569  0.6214569 -1.2429138]
 adapted_ji_idx = [ 80 125 242 314]
-memory = 1865.302016
+memory = 2139.865088
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.31072845 -0.31072845 -0.31072845]
 adapted_ji_idx = [ 91 106 139 157 262 286 337 364]
-memory = 1865.224192
+memory = 2139.906048
 int3c2e [1/1], AO [0:28], ncol = 7396
 Symmetry pattern (k + [ 1.55364225 -0.31072845 -0.31072845])*a= 2n pi
     make_kpt for [42 51 59 62]
 kpt = [ 1.2429138 -0.6214569 -0.6214569]
 adapted_ji_idx = [175 195 238 261]
-memory = 1865.097216
+memory = 2138.988544
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845 -1.55364225  0.31072845]
 adapted_ji_idx = [213 282]
-memory = 1865.027584
+memory = 2140.053504
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [ 0.31072845  0.31072845 -1.55364225]
 adapted_ji_idx = [301 327]
-memory = 1864.527872
+memory = 2139.926528
 int3c2e [1/1], AO [0:28], ncol = 7396
 kpt = [-0.6214569 -0.6214569 -0.6214569]
 adapted_ji_idx = [351]
-memory = 1864.032256
+memory = 2139.803648
 int3c2e [1/1], AO [0:28], ncol = 7396
-    CPU time for j3c  29261.93 sec, wall time   1103.39 sec
-    CPU time for Init get_k_kpts  29262.08 sec, wall time   1103.45 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.31 sec, wall time      0.16 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      2.98 sec, wall time      0.19 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      4.44 sec, wall time      0.30 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      6.13 sec, wall time      0.41 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      6.92 sec, wall time      0.61 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      8.65 sec, wall time      0.66 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     10.11 sec, wall time      0.63 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     11.97 sec, wall time      0.79 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     13.98 sec, wall time      0.98 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     14.65 sec, wall time      1.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     15.78 sec, wall time      1.05 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     17.76 sec, wall time      1.31 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     20.57 sec, wall time      1.43 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     20.58 sec, wall time      1.32 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     21.83 sec, wall time      1.48 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     23.07 sec, wall time      1.66 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     23.89 sec, wall time      1.60 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     26.07 sec, wall time      1.78 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     28.73 sec, wall time      2.12 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     28.89 sec, wall time      1.90 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     31.12 sec, wall time      2.09 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     31.26 sec, wall time      2.49 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     32.85 sec, wall time      2.23 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     34.53 sec, wall time      2.28 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     35.65 sec, wall time      2.49 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     37.41 sec, wall time      2.82 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     39.23 sec, wall time      2.65 sec
+    CPU time for j3c  30445.17 sec, wall time   1164.62 sec
+    CPU time for Init get_k_kpts  30445.70 sec, wall time   1164.64 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.81 sec, wall time      0.34 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      9.26 sec, wall time      0.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     12.79 sec, wall time      0.42 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     17.90 sec, wall time      0.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     24.40 sec, wall time      0.80 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     29.39 sec, wall time      1.06 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     36.42 sec, wall time      1.37 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.32 sec, wall time      1.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     44.06 sec, wall time      1.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     47.19 sec, wall time      1.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     54.10 sec, wall time      1.99 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     53.51 sec, wall time      1.80 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     64.00 sec, wall time      2.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     66.98 sec, wall time      2.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     75.50 sec, wall time      2.72 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     73.59 sec, wall time      2.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     73.94 sec, wall time      2.55 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     88.85 sec, wall time      3.24 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     88.73 sec, wall time      3.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     94.41 sec, wall time      3.42 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     96.23 sec, wall time      3.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)    101.90 sec, wall time      3.85 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    108.48 sec, wall time      3.95 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    114.05 sec, wall time      6.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    118.61 sec, wall time      4.45 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    120.83 sec, wall time      4.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    126.80 sec, wall time      4.61 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     14.01 sec, wall time      1.29 sec
-    CPU time for get_j pass 2      0.82 sec, wall time      0.77 sec
-    CPU time for vj and vk  29828.22 sec, wall time   1144.19 sec
+    CPU time for get_j pass 1     43.58 sec, wall time      1.66 sec
+    CPU time for get_j pass 2      3.65 sec, wall time      1.20 sec
+    CPU time for vj and vk  32279.86 sec, wall time   1234.78 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.63110122012408-7.346232675673634e-16j)  E_coul = (3.4212548502946656-4.139435707786434e-15j)
+E1 = (-51.63110122012408-7.346232675673634e-16j)  E_coul = (3.4212548502946656-4.135709264763965e-15j)
 init E= -76.9808890190864
 cond(S) = [3.69179249e+07 3.98120190e+07 3.98120189e+07 3.98120190e+07
  1.10698815e+09 3.19811767e+07 3.98120189e+07 3.19811767e+07
@@ -677,7 +677,7 @@ cond(S) = [3.69179249e+07 3.98120190e+07 3.98120189e+07 3.98120190e+07
  3.19811767e+07 3.19811767e+07 3.98120188e+07 3.19811766e+07
  1.10698822e+09 3.19811768e+07 3.19811767e+07 3.19811767e+07
  1.10698824e+09 3.19811767e+07 3.98120190e+07]
-    CPU time for initialize scf  30370.74 sec, wall time   1164.00 sec
+    CPU time for initialize scf  32846.97 sec, wall time   1254.86 sec
 HOMO = 0.634691776496  LUMO = 0.792894373521
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-10.62002554 -10.60446486  -1.65359343   0.63449315   0.63449315
@@ -796,7 +796,7 @@ HOMO = 0.634691776496  LUMO = 0.792894373521
   6.00034102  6.14729412  6.48949305  6.49520453  6.54895834  6.84094014
   6.84431454  6.87991872  7.31130206  7.34606024  7.766544    8.66022522
  17.37711597 17.55835027 18.0498032  18.13847638 18.43338279 18.65113948
- 20.24235718 21.71637993 42.29206662 42.33943234 42.34184153 42.37958636
+ 20.24235718 21.71637992 42.29206662 42.33943234 42.34184153 42.37958636
  42.38351533 42.42968945 42.44774327 42.48978489 42.503246   42.52428243
  82.66737366 82.82635628 83.23179205 83.26206134 83.48337723 83.61796947
  91.29805235 93.73886755]
@@ -928,7 +928,7 @@ HOMO = 0.634691776496  LUMO = 0.792894373521
   4.04663015  4.28378288  4.33207596  4.34961045  4.44614099  4.47032837
   4.7823384   5.00895026  5.06633967  5.08987185  5.15857294  5.43888224
   5.45988152  5.62318589  5.77574054  5.79336312  5.94587087  5.95329282
-  6.00034697  6.1472863   6.48949205  6.49519041  6.54894584  6.84093145
+  6.00034696  6.1472863   6.48949205  6.49519041  6.54894584  6.84093145
   6.84433834  6.8799415   7.31130516  7.34604956  7.76653     8.66023621
  17.37713504 17.55833545 18.04979759 18.13849754 18.43336261 18.6511361
  20.24236079 21.71638284 42.2920761  42.33942975 42.34184322 42.37959109
@@ -1085,42 +1085,42 @@ HOMO = 0.634691776496  LUMO = 0.792894373521
  42.37482402 42.41753029 42.41753029 42.50690982 42.50690983 42.51744789
  83.1952944  83.40427125 83.40427126 83.77912872 84.14173433 84.14173433
  88.92900713 95.99343094]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.23 sec, wall time      0.07 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      3.32 sec, wall time      0.18 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      4.75 sec, wall time      0.31 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      6.88 sec, wall time      0.43 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      7.02 sec, wall time      0.47 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      8.23 sec, wall time      0.62 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     10.54 sec, wall time      0.73 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     12.05 sec, wall time      0.80 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     12.79 sec, wall time      0.80 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     14.42 sec, wall time      1.02 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     15.30 sec, wall time      0.90 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     17.43 sec, wall time      1.12 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     19.10 sec, wall time      1.31 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     19.70 sec, wall time      1.22 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     21.96 sec, wall time      1.55 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     23.99 sec, wall time      1.63 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     26.56 sec, wall time      1.88 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     27.18 sec, wall time      2.12 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     29.74 sec, wall time      2.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     29.40 sec, wall time      1.93 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     29.66 sec, wall time      1.90 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     30.77 sec, wall time      2.14 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     32.08 sec, wall time      2.12 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     32.83 sec, wall time      1.93 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     35.85 sec, wall time      2.48 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     37.41 sec, wall time      2.65 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     39.58 sec, wall time      2.72 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.31 sec, wall time      0.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      5.79 sec, wall time      0.20 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     13.22 sec, wall time      0.59 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     17.94 sec, wall time      0.68 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     22.91 sec, wall time      0.82 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     24.78 sec, wall time      0.99 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     30.51 sec, wall time      1.14 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     34.46 sec, wall time      1.25 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     39.64 sec, wall time      1.32 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     50.24 sec, wall time      1.87 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     49.62 sec, wall time      1.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     52.60 sec, wall time      1.89 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     63.22 sec, wall time      2.39 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     62.22 sec, wall time      2.27 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     65.96 sec, wall time      2.31 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     71.71 sec, wall time      2.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     76.18 sec, wall time      2.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     85.25 sec, wall time      2.91 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     93.76 sec, wall time      3.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     83.73 sec, wall time      3.02 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     98.92 sec, wall time      3.38 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     97.34 sec, wall time      3.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    101.71 sec, wall time      3.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    106.78 sec, wall time      3.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    114.70 sec, wall time      4.09 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    121.40 sec, wall time      4.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    125.60 sec, wall time      4.41 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     13.75 sec, wall time      1.20 sec
-    CPU time for get_j pass 2      0.67 sec, wall time      0.62 sec
-    CPU time for vj and vk    565.03 sec, wall time     39.10 sec
+    CPU time for get_j pass 1     40.62 sec, wall time      1.54 sec
+    CPU time for get_j pass 2      3.66 sec, wall time      0.94 sec
+    CPU time for vj and vk   1762.95 sec, wall time     63.90 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.182713470156294+1.0783297594841808e-13j)  E_coul = (4.203904196973304+1.8298093699413004e-13j)
-cycle= 1 E= -75.7498519224399  delta_E= 1.23  |g|= 1.23  |ddm|= 1.49e+03
-    CPU time for cycle= 1    565.39 sec, wall time     39.62 sec
+E1 = (-51.18271347015633+1.0777241495268159e-13j)  E_coul = (4.203904196973307+1.835990940165975e-13j)
+cycle= 1 E= -75.74985192244  delta_E= 1.23  |g|= 1.23  |ddm|= 1.49e+03
+    CPU time for cycle= 1   1765.94 sec, wall time     64.32 sec
 diis-norm(errvec)=5.00913
 diis-c [-25.0913972+0.j   1.       +0.j]
 HOMO = 0.380355370385  LUMO = 0.865948441557
@@ -1149,7 +1149,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   5.01537849  5.01538931  5.04311419  5.1606927   5.16070133  5.29954982
   5.34325877  5.55323868  5.55324238  5.75240017  5.90423658  5.90424563
   6.14215268  6.14215901  6.40051342  6.40051437  6.58674729  6.83993729
-  6.83994094  7.29494064  7.31459493  7.31460536  7.6069277   9.28617253
+  6.83994094  7.29494064  7.31459493  7.31460536  7.6069277   9.28617252
  17.88742134 18.35461939 18.35462952 18.83153645 19.13255089 19.34246682
  19.34247463 22.82730998 42.29742109 42.29742731 42.3318642  42.3813995
  42.38140331 42.42401037 42.42401197 42.5133612  42.51336173 42.52407397
@@ -1164,7 +1164,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   5.01537849  5.0153893   5.04311419  5.16069269  5.16070133  5.29954983
   5.34325877  5.55323866  5.55324238  5.75240018  5.90423657  5.90424563
   6.14215267  6.14215901  6.40051342  6.40051436  6.58674729  6.83993721
-  6.83994078  7.29494064  7.3145949   7.31460536  7.60692798  9.28617289
+  6.83994078  7.29494064  7.3145949   7.31460536  7.60692798  9.28617288
  17.88742136 18.35461937 18.35462951 18.83153645 19.13255096 19.34246681
  19.34247463 22.82731004 42.29742109 42.29742731 42.3318642  42.3813995
  42.38140331 42.42401037 42.42401197 42.5133612  42.51336173 42.52407397
@@ -1194,7 +1194,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.83368742  4.8336946   4.96368564  5.081812    5.23716703  5.36667946
   5.36668164  5.52713707  5.55167413  5.83359396  5.83359646  5.90717035
   6.03547405  6.25963226  6.25963815  6.35218867  7.0578628   7.05787079
-  7.18709394  7.29154368  7.546763    7.54677205  7.95258425  8.47242087
+  7.18709394  7.29154368  7.54676301  7.54677205  7.95258425  8.47242087
  18.00340247 18.06068238 18.06068927 19.02727349 19.63493523 19.7259247
  19.72593008 20.26546591 42.2742229  42.28226394 42.34260943 42.34697006
  42.38778223 42.38778628 42.42015114 42.42015544 42.45716104 42.71737813
@@ -1208,13 +1208,13 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.07196298  4.27857399  4.34060198  4.35640206  4.45353183  4.48418128
   4.8005128   5.01619445  5.07850536  5.10991719  5.17585534  5.44780579
   5.46994412  5.63504837  5.78772612  5.80453069  5.96094961  5.96547945
-  6.00501429  6.16075152  6.50735678  6.51170938  6.56416753  6.84786173
+  6.00501429  6.16075152  6.50735677  6.51170938  6.56416753  6.84786173
   6.85499022  6.89565969  7.31861926  7.35650597  7.78903982  8.67922878
  17.39047194 17.57096946 18.06143884 18.14937077 18.44509056 18.66328403
  20.25735337 21.73017375 42.29851992 42.34595631 42.34827226 42.38613382
  42.39015083 42.43624842 42.45435475 42.49627225 42.50982857 42.53082215
  82.65552549 82.81442005 83.21975175 83.24997819 83.47138795 83.60602254
- 91.28070581 93.72106075]
+ 91.28070581 93.72106074]
    6 ( 0.000  0.667 -0.000)   [-10.58971981 -10.58815305  -0.53949416  -0.07071758   0.27368092
    0.27369721] [ 1.06232248  1.0680389   1.06806361  1.38164962  1.58250459  1.65084517
   1.65084866  1.77897228  2.30221157  2.30221221  2.46963237  2.49135373
@@ -1223,7 +1223,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.0852185   4.13941694  4.34426131  4.34426178  4.45457796  5.00709877
   5.01537848  5.01538931  5.04311419  5.16069265  5.16070136  5.2995498
   5.34325873  5.55323865  5.5532424   5.75240019  5.90423657  5.90424563
-  6.14215262  6.14215903  6.40051342  6.40051436  6.58674729  6.83993772
+  6.14215262  6.14215903  6.40051342  6.40051436  6.58674729  6.83993771
   6.83994035  7.29494059  7.31459489  7.31460536  7.60692766  9.28617215
  17.88742133 18.35461932 18.35462956 18.83153645 19.13255087 19.34246681
  19.34247463 22.82730978 42.29742109 42.29742731 42.3318642  42.3813995
@@ -1269,7 +1269,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   5.01537849  5.01538931  5.04311419  5.16069273  5.16070136  5.29954981
   5.34325881  5.55323875  5.55324242  5.75240021  5.90423661  5.90424564
   6.14215268  6.14215903  6.40051342  6.40051437  6.5867473   6.83993764
-  6.83994137  7.29494067  7.31459505  7.31460541  7.60692742  9.28617166
+  6.83994137  7.29494067  7.31459505  7.31460541  7.60692742  9.28617165
  17.88742132 18.35461942 18.35462955 18.83153646 19.13255085 19.34246685
  19.34247464 22.82730962 42.2974211  42.29742731 42.3318642  42.3813995
  42.38140331 42.42401037 42.42401197 42.5133612  42.51336174 42.52407397
@@ -1279,12 +1279,12 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
    0.1321038 ] [ 0.86594844  1.01791135  1.34680094  1.34680815  1.63233905  1.70284659
   1.98578408  2.12194255  2.1219465   2.26937561  2.30918642  2.30919237
   2.60556254  2.61174275  3.06851871  3.19805054  3.19805087  3.30255599
-  3.47165149  3.47977076  3.47977836  3.88282596  3.88282988  4.04928044
+  3.47165149  3.47977076  3.47977836  3.88282596  3.88282987  4.04928044
   4.0713292   4.47693375  4.5511838   4.55118753  4.65435101  4.75181085
   4.83368733  4.83369463  4.96368564  5.081812    5.23716704  5.36667945
   5.36668165  5.52713707  5.55167413  5.83359377  5.83359656  5.90717035
   6.03547405  6.25963226  6.25963815  6.3521887   7.05786267  7.05787084
-  7.18709394  7.29154369  7.54676165  7.54677279  7.95258427  8.47241936
+  7.18709394  7.29154369  7.54676165  7.54677278  7.95258427  8.47241936
  18.00340247 18.06068233 18.06068933 19.02727337 19.63493507 19.72592432
  19.72593053 20.26546591 42.2742229  42.28226394 42.34260943 42.34697006
  42.38778223 42.38778628 42.42015114 42.42015544 42.45716104 42.71737811
@@ -1343,7 +1343,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.0719768   4.27857765  4.3405996   4.35640641  4.45352894  4.48417085
   4.80050218  5.01619122  5.07850498  5.10991723  5.1758623   5.44780558
   5.4699457   5.63504734  5.78773041  5.80452808  5.96093974  5.96547683
-  6.0050138   6.16074755  6.50735453  6.51170549  6.56416498  6.84786378
+  6.0050138   6.16074755  6.50735453  6.51170549  6.56416498  6.84786377
   6.85499712  6.89566865  7.31861838  7.3565023   7.78903121  8.67923606
  17.39047913 17.5709636  18.06143528 18.14937624 18.44508506 18.66328399
  20.257355   21.73017631 42.29852323 42.3459554  42.34827283 42.38613543
@@ -1373,8 +1373,8 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.0719768   4.27857874  4.34059957  4.35640637  4.45352893  4.48417072
   4.80050216  5.01619122  5.07850496  5.10991726  5.1758623   5.44780528
   5.4699458   5.63504734  5.78773039  5.80452803  5.96093974  5.96547683
-  6.00501492  6.16074728  6.50735493  6.51170546  6.56416497  6.84786339
-  6.85499712  6.89566867  7.31861786  7.35650179  7.78903117  8.67923536
+  6.00501491  6.16074728  6.50735493  6.51170546  6.56416497  6.84786339
+  6.85499712  6.89566867  7.31861786  7.35650179  7.78903117  8.67923535
  17.39047913 17.57096359 18.06143528 18.14937624 18.44508505 18.66328397
  20.25735493 21.73017593 42.29852323 42.34595539 42.34827283 42.38613543
  42.39014769 42.43624586 42.45435729 42.49627596 42.509828   42.5308179
@@ -1415,7 +1415,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   1.79614462  2.07356659  2.30487962  2.3563041   2.5767315   2.58207345
   2.70154349  2.80937444  2.86197461  3.04525094  3.06942881  3.09057712
   3.33413931  3.53782523  3.55449948  3.73102513  3.76255142  4.00182764
-  4.07196298  4.27857845  4.34060198  4.35640206  4.45353183  4.48418139
+  4.07196298  4.27857844  4.34060198  4.35640206  4.45353183  4.48418139
   4.80051282  5.01619445  5.07850536  5.10991732  5.17585534  5.44780607
   5.46994455  5.63504837  5.78772612  5.80453072  5.9609496   5.96547945
   6.00501882  6.16075162  6.50735838  6.51170937  6.56416753  6.8478618
@@ -1434,9 +1434,9 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.83368681  4.83369442  4.96368564  5.081812    5.23716704  5.36667937
   5.36668162  5.52713707  5.55167413  5.83359307  5.83359611  5.90717035
   6.03547405  6.25963222  6.25963814  6.3521887   7.05786212  7.05787066
-  7.18709395  7.29154365  7.54675907  7.54676632  7.95258421  8.47241956
+  7.18709395  7.29154365  7.54675907  7.54676633  7.95258421  8.47241956
  18.00340247 18.06068214 18.06068926 19.02727342 19.63493508 19.72592315
- 19.72592985 20.26546591 42.2742229  42.28226394 42.34260943 42.34697006
+ 19.72592986 20.26546591 42.2742229  42.28226394 42.34260943 42.34697006
  42.38778222 42.38778628 42.42015114 42.42015544 42.45716104 42.71737811
  83.13024788 83.1667252  83.16672898 83.90640525 84.43086097 84.43086482
  90.23607933 91.24571426]
@@ -1474,7 +1474,7 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
    0.16150997] [ 0.96207071  1.29666468  1.30497961  1.38655689  1.40780819  1.65851583
   1.79614429  2.07357004  2.30488503  2.35629726  2.57673519  2.58206347
   2.70154727  2.80936946  2.86197766  3.0452468   3.0694274   3.09057012
-  3.33414333  3.5378367   3.55450347  3.73102089  3.76255461  4.0018313
+  3.33414333  3.5378367   3.55450347  3.73102089  3.76255462  4.0018313
   4.0719768   4.27857898  4.34059957  4.35640635  4.45352893  4.48417073
   4.80050217  5.01619122  5.07850495  5.10991727  5.1758623   5.44780532
   5.46994583  5.63504734  5.7877304   5.80452803  5.96093974  5.96547683
@@ -1494,8 +1494,8 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
   4.83368662  4.83369431  4.96368564  5.081812    5.23716704  5.36667934
   5.3666816   5.52713707  5.55167413  5.83359274  5.83359601  5.90717035
   6.03547405  6.25963222  6.25963813  6.35218869  7.05786188  7.05787053
-  7.18709395  7.2915437   7.54675515  7.54676662  7.95258422  8.47241935
- 18.00340247 18.06068209 18.06068921 19.0272734  19.63493506 19.72592281
+  7.18709395  7.2915437   7.54675515  7.54676663  7.95258422  8.47241935
+ 18.00340247 18.06068209 18.06068921 19.0272734  19.63493506 19.72592282
  19.72592965 20.26546591 42.2742229  42.28226394 42.34260943 42.34697006
  42.38778222 42.38778628 42.42015114 42.42015544 42.45716104 42.71737811
  83.13024788 83.16672521 83.16672898 83.90640525 84.43086106 84.43086477
@@ -1530,45 +1530,45 @@ HOMO = 0.380355370385  LUMO = 0.865948441557
  42.3814024  42.4240136  42.4240136  42.51336294 42.51336295 42.52406827
  83.18332275 83.39243052 83.39243053 83.76719468 84.12972645 84.12972645
  88.91211086 95.97513995]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.01 sec, wall time      0.04 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      2.73 sec, wall time      0.13 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      4.51 sec, wall time      0.35 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      5.69 sec, wall time      0.44 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      6.53 sec, wall time      0.45 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      7.48 sec, wall time      0.58 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)      8.86 sec, wall time      0.60 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     10.64 sec, wall time      0.65 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     11.39 sec, wall time      0.65 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     12.58 sec, wall time      0.84 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     14.51 sec, wall time      0.79 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     15.32 sec, wall time      0.92 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     16.94 sec, wall time      1.24 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     18.77 sec, wall time      1.20 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     18.82 sec, wall time      1.16 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     21.52 sec, wall time      1.38 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     22.08 sec, wall time      1.56 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     23.51 sec, wall time      1.46 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     22.43 sec, wall time      1.18 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     26.07 sec, wall time      1.58 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     26.07 sec, wall time      1.46 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     27.94 sec, wall time      1.75 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     29.05 sec, wall time      1.71 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     29.21 sec, wall time      1.84 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     31.13 sec, wall time      2.02 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     34.02 sec, wall time      2.33 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     35.15 sec, wall time      5.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      2.77 sec, wall time      0.14 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      7.87 sec, wall time      0.31 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     13.60 sec, wall time      0.47 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     18.35 sec, wall time      0.65 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     20.94 sec, wall time      0.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     24.93 sec, wall time      0.87 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     24.80 sec, wall time      0.91 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     28.68 sec, wall time      1.00 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     34.76 sec, wall time      1.18 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     42.49 sec, wall time      1.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     44.40 sec, wall time      1.59 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     49.73 sec, wall time      1.68 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     57.55 sec, wall time      1.97 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     57.15 sec, wall time      2.02 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     64.40 sec, wall time      2.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     68.95 sec, wall time      2.56 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     72.61 sec, wall time      2.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     80.53 sec, wall time      2.72 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     84.97 sec, wall time      2.98 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     85.12 sec, wall time      3.03 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)    105.55 sec, wall time      5.81 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     96.74 sec, wall time      3.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     97.51 sec, wall time      3.37 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    107.64 sec, wall time      3.67 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    112.19 sec, wall time      4.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    121.97 sec, wall time      4.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    127.86 sec, wall time      4.77 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     13.80 sec, wall time      3.31 sec
-    CPU time for get_j pass 2      0.82 sec, wall time      1.58 sec
-    CPU time for vj and vk    499.52 sec, wall time     38.83 sec
+    CPU time for get_j pass 1     47.97 sec, wall time      1.74 sec
+    CPU time for get_j pass 2      3.62 sec, wall time      1.00 sec
+    CPU time for vj and vk   1711.81 sec, wall time     63.43 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.27238849612462+4.5006652756206045e-14j)  E_coul = (4.275222498976382+3.1870936912119635e-14j)
-cycle= 2 E= -75.7682086464052  delta_E= -0.0184  |g|= 0.302  |ddm|=  963
-    CPU time for cycle= 2    499.73 sec, wall time     39.23 sec
+E1 = (-51.27238849612457+4.5073696827540984e-14j)  E_coul = (4.275222498976383+3.200795356477406e-14j)
+cycle= 2 E= -75.7682086464051  delta_E= -0.0184  |g|= 0.302  |ddm|=  963
+    CPU time for cycle= 2   1714.70 sec, wall time     64.12 sec
 diis-norm(errvec)=1.09357
-diis-c [-0.14896511+1.23259516e-32j -0.25766587-4.33154246e-18j
-  1.25766587+4.33154246e-18j]
+diis-c [-0.14896511+0.0000000e+00j -0.25766587-7.9755385e-19j
+  1.25766587+7.9755385e-19j]
 HOMO = 0.375408805316  LUMO = 0.876787637445
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-10.57341705 -10.57098589  -0.67633431   0.37540196   0.37540196
@@ -1619,7 +1619,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
    3 ( 0.000  0.333 -0.000)   [-10.57307145 -10.57145761  -0.53099586  -0.06712745   0.27049567
    0.2705017 ] [ 1.07651427  1.07651494  1.07703389  1.38806164  1.58714109  1.65165882
   1.65166073  1.78320857  2.30416063  2.30416206  2.47037192  2.49165683
-  2.49165817  2.67463368  3.1051289   3.10513056  3.29581619  3.43791114
+  2.49165817  2.67463368  3.1051289   3.10513056  3.29581618  3.43791114
   3.4379121   3.6839094   3.68390983  3.87128435  3.96382671  3.96382688
   4.0896689   4.14524629  4.34693209  4.34693367  4.45943348  5.00974641
   5.02149209  5.02149439  5.04738212  5.16562934  5.16563115  5.30425659
@@ -1654,7 +1654,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   4.08066909  4.27720665  4.34424598  4.35992755  4.45707465  4.48990443
   4.80765043  5.01963587  5.08364998  5.11681421  5.18144851  5.45141015
   5.47414891  5.63915766  5.79259848  5.80951726  5.96618425  5.9704639
-  6.00759383  6.16603404  6.51311295  6.51868522  6.57023189  6.85169571
+  6.00759384  6.16603404  6.51311295  6.51868522  6.57023189  6.85169571
   6.85959897  6.90202943  7.32174289  7.36059078  7.79817568  8.68791018
  17.40620391 17.58643665 18.07647412 18.16418188 18.46009242 18.67835522
  20.27203282 21.74447577 42.31557356 42.36302087 42.3653095  42.4031997
@@ -1697,7 +1697,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   2.60939562  2.61339078  3.0713764   3.19950203  3.19950213  3.30138851
   3.47304158  3.48535996  3.485362    3.88445904  3.88446032  4.05395527
   4.07790443  4.48214994  4.5536981   4.55369936  4.65994801  4.75895178
-  4.83842163  4.83842255  4.97102497  5.08721469  5.24192768  5.37069102
+  4.83842164  4.83842255  4.97102497  5.08721469  5.24192768  5.37069102
   5.37069125  5.52891155  5.55472751  5.83917092  5.8391713   5.91004211
   6.03925446  6.26593904  6.26593979  6.35573976  7.06384407  7.06384557
   7.19673611  7.29496176  7.5523375   7.55234161  7.96103197  8.47611957
@@ -1730,7 +1730,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   4.83842164  4.83842288  4.97102497  5.08721469  5.24192768  5.37069102
   5.37069129  5.52891155  5.55472751  5.83917075  5.83917203  5.9100421
   6.03925446  6.26593905  6.26593981  6.35573978  7.06384409  7.06384585
-  7.1967361   7.29496179  7.5523359   7.55234722  7.96103206  8.47611894
+  7.1967361   7.29496179  7.5523359   7.55234723  7.96103206  8.47611894
  18.01846343 18.07595593 18.07595661 19.04193791 19.65008154 19.74089806
  19.74090033 20.2801267  42.29126628 42.29931564 42.35965842 42.36400443
  42.40486866 42.40486873 42.43721981 42.43721997 42.47418092 42.73440083
@@ -1760,8 +1760,8 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   4.83842065  4.83842197  4.97102497  5.08721469  5.24192768  5.37069084
   5.37069115  5.52891155  5.55472751  5.83916915  5.83917077  5.9100421
   6.03925446  6.265939    6.26593975  6.35573976  7.06384294  7.06384477
-  7.1967361   7.2949618   7.5523222   7.55233625  7.96103205  8.47611869
- 18.01846343 18.07595554 18.07595626 19.04193789 19.65008151 19.74089532
+  7.1967361   7.2949618   7.55232221  7.55233625  7.96103205  8.47611869
+ 18.01846343 18.07595554 18.07595626 19.04193789 19.65008151 19.74089533
  19.7408982  20.2801267  42.29126628 42.29931564 42.35965842 42.36400443
  42.40486864 42.40486872 42.43721981 42.43721997 42.47418092 42.73440082
  83.14520721 83.18171338 83.1817135  83.92135335 84.44579049 84.44579089
@@ -1786,9 +1786,9 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   1.80130925  2.07210358  2.30438315  2.3589553   2.5783671   2.58305733
   2.70465385  2.81149403  2.86283261  3.04799527  3.07121456  3.09040466
   3.33343035  3.54222427  3.5548184   3.73400179  3.76120436  4.006685
-  4.08066518  4.27720638  4.34424647  4.35992609  4.457075    4.48990663
+  4.08066518  4.27720637  4.34424647  4.35992609  4.457075    4.48990663
   4.80765319  5.01963626  5.08365084  5.11681469  5.18144733  5.45140985
-  5.47414901  5.63915952  5.79259743  5.80951829  5.96618615  5.97046464
+  5.474149    5.63915952  5.79259743  5.80951829  5.96618615  5.97046464
   6.00759576  6.16603457  6.51311396  6.51868569  6.57023143  6.85169408
   6.85959799  6.90202779  7.32174396  7.36059125  7.79817774  8.68790851
  17.4062033  17.58643758 18.07647517 18.16418171 18.46009257 18.67835471
@@ -1835,7 +1835,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   4.80765319  5.01963625  5.08365083  5.11681474  5.18144733  5.45140997
   5.47414917  5.63915952  5.79259743  5.8095183   5.96618615  5.97046463
   6.00759759  6.16603467  6.51311463  6.51868569  6.57023142  6.85169391
-  6.85959799  6.90202784  7.32174415  7.36059131  7.79817769  8.68790915
+  6.85959799  6.90202784  7.32174416  7.36059131  7.79817769  8.68790915
  17.4062033  17.58643758 18.07647518 18.16418171 18.46009257 18.67835471
  20.27203249 21.74447523 42.31557345 42.36302089 42.36530949 42.40319967
  42.40723853 42.4533077  42.47142823 42.5132998  42.52688107 42.54785476
@@ -1892,7 +1892,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
   2.70465523  2.81149265  2.862833    3.04799417  3.07121465  3.09040209
   3.33343179  3.54222774  3.55481978  3.73400017  3.76120622  4.00668573
   4.08066909  4.27720893  4.344246    4.35992754  4.45707465  4.48990454
-  4.80765044  5.01963587  5.08364998  5.11681428  5.18144851  5.45141043
+  4.80765044  5.01963587  5.08364998  5.11681428  5.18144851  5.45141042
   5.47414913  5.63915766  5.79259848  5.8095173   5.96618425  5.9704639
   6.00759611  6.1660342   6.51311377  6.51868524  6.57023189  6.85169563
   6.85959897  6.90202947  7.3217438   7.36059106  7.79817567  8.68791077
@@ -1920,7 +1920,7 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
    0.15936724] [ 0.97057984  1.30570581  1.31107048  1.39929066  1.41227562  1.65773429
   1.80130924  2.07210358  2.30438315  2.3589553   2.5783671   2.58305732
   2.70465385  2.81149403  2.86283261  3.04799516  3.07121456  3.09040467
-  3.33343023  3.54222432  3.55481829  3.73400179  3.76120395  4.006685
+  3.33343023  3.54222433  3.55481829  3.73400179  3.76120395  4.006685
   4.08066517  4.27720772  4.34424644  4.35992604  4.457075    4.48990651
   4.80765317  5.01963625  5.08365081  5.11681473  5.18144733  5.4514096
   5.47414913  5.63915952  5.79259743  5.80951824  5.96618615  5.97046463
@@ -1976,45 +1976,45 @@ HOMO = 0.375408805316  LUMO = 0.876787637445
  42.39847677 42.44105353 42.44105353 42.53037896 42.53037897 42.5411315
  83.19829565 83.40742925 83.40742926 83.78214665 84.14463238 84.14463238
  88.92579914 95.98835641]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.39 sec, wall time      0.08 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      2.99 sec, wall time      0.79 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      4.17 sec, wall time      0.75 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      6.12 sec, wall time      2.03 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      6.93 sec, wall time      3.45 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      8.21 sec, wall time      1.46 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)      8.74 sec, wall time      2.11 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     10.10 sec, wall time      1.12 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     11.81 sec, wall time      1.28 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     13.14 sec, wall time      5.69 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     14.27 sec, wall time      2.74 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     15.39 sec, wall time      7.33 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     16.40 sec, wall time      2.05 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     17.69 sec, wall time      1.56 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     18.75 sec, wall time      1.90 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     20.07 sec, wall time      1.87 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     22.23 sec, wall time      1.90 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     23.52 sec, wall time      2.04 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     23.75 sec, wall time      3.36 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     25.28 sec, wall time      2.80 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     27.26 sec, wall time      2.51 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     27.10 sec, wall time      2.22 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     30.18 sec, wall time      2.34 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     31.99 sec, wall time      2.71 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     32.89 sec, wall time      2.82 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     32.75 sec, wall time      2.64 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     34.22 sec, wall time      2.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.28 sec, wall time      0.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      8.58 sec, wall time      0.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     15.40 sec, wall time      0.59 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     18.48 sec, wall time      0.74 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     24.28 sec, wall time      0.85 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     27.31 sec, wall time      1.09 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     34.91 sec, wall time      1.32 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     39.39 sec, wall time      1.47 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     42.92 sec, wall time      1.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     45.51 sec, wall time      1.77 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     51.80 sec, wall time      1.87 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     59.51 sec, wall time      2.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     63.35 sec, wall time      2.39 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     63.05 sec, wall time      2.34 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     72.49 sec, wall time      2.55 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     71.84 sec, wall time      2.62 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     72.83 sec, wall time      2.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     79.97 sec, wall time      2.70 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     87.92 sec, wall time      3.27 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     86.01 sec, wall time      2.96 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     95.12 sec, wall time      3.34 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     91.32 sec, wall time      3.55 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    106.32 sec, wall time      3.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    113.98 sec, wall time      4.10 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    114.66 sec, wall time      4.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    123.09 sec, wall time      4.22 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    124.95 sec, wall time      4.34 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     13.85 sec, wall time      1.32 sec
-    CPU time for get_j pass 2      0.71 sec, wall time      0.72 sec
-    CPU time for vj and vk    503.52 sec, wall time     66.73 sec
+    CPU time for get_j pass 1     45.15 sec, wall time      1.62 sec
+    CPU time for get_j pass 2      3.46 sec, wall time      0.73 sec
+    CPU time for vj and vk   1792.34 sec, wall time     65.41 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.275885699373035+3.0711248688144426e-14j)  E_coul = (4.277518277518274+1.2751710500124803e-14j)
+E1 = (-51.275885699373006+3.065496297025702e-14j)  E_coul = (4.277518277518285+1.2796673593444931e-14j)
 cycle= 3 E= -75.7694100711117  delta_E= -0.0012  |g|= 0.0216  |ddm|=  210
-    CPU time for cycle= 3    503.70 sec, wall time     68.15 sec
+    CPU time for cycle= 3   1794.94 sec, wall time     66.04 sec
 diis-norm(errvec)=0.0845258
-diis-c [-0.00263769+0.00000000e+00j  0.03439168+3.88718905e-18j
- -0.20888559-1.62524742e-17j  1.17449391+1.23652852e-17j]
+diis-c [-0.00263769+0.00000000e+00j  0.03439168-7.69707878e-19j
+ -0.20888559+5.05287304e-18j  1.17449391-4.28316516e-18j]
 HOMO = 0.374066240749  LUMO = 0.877008786017
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-10.57687809 -10.5744574   -0.67628607   0.37406596   0.37406624
@@ -2147,7 +2147,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   5.37017988  5.52860864  5.55456446  5.83840441  5.83840488  5.90964424
   6.03898787  6.2653796   6.26537972  6.35524913  7.06318702  7.06318733
   7.19577541  7.29441568  7.55164024  7.55164439  7.9602996   8.47546349
- 18.01568214 18.07318265 18.07318275 19.03926971 19.64754088 19.73816527
+ 18.01568214 18.07318265 18.07318275 19.03926971 19.64754088 19.73816526
  19.73816608 20.27762903 42.28777314 42.29582221 42.35616708 42.36051426
  42.40137766 42.40137769 42.43373148 42.43373152 42.47069523 42.73092445
  83.14100193 83.17750951 83.17750953 83.91715766 84.4415974  84.44159752
@@ -2176,7 +2176,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   4.83802133  4.83802218  4.9703151   5.08664552  5.24132884  5.3701798
   5.37017995  5.52860864  5.55456446  5.83840427  5.83840558  5.90964424
   6.03898787  6.26537961  6.26537973  6.35524915  7.06318684  7.06318781
-  7.19577539  7.29441571  7.55163866  7.55165001  7.96029968  8.47546286
+  7.19577539  7.29441571  7.55163865  7.55165001  7.96029968  8.47546285
  18.01568215 18.0731826  18.07318294 19.03926963 19.64754082 19.73816505
  19.7381673  20.27762902 42.28777314 42.29582221 42.35616708 42.36051426
  42.40137766 42.40137769 42.43373147 42.43373152 42.47069523 42.73092445
@@ -2190,7 +2190,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   4.0798417   4.27729185  4.34381626  4.3594213   4.45660151  4.48918876
   4.8068005   5.01914817  5.08306104  5.11616242  5.18104031  5.45103411
   5.47364081  5.63877852  5.79208267  5.80891818  5.96570707  5.96991875
-  6.00724408  6.16547016  6.51266314  6.51788288  6.56958106  6.85114315
+  6.00724408  6.16547016  6.51266314  6.51788288  6.56958106  6.85114314
   6.85905509  6.90134952  7.32132158  7.36020212  7.79724072  8.68692379
  17.40337269 17.58362562 18.07371578 18.16142753 18.45733463 18.67561247
  20.26952458 21.74197514 42.31208079 42.35952914 42.36181902 42.39970953
@@ -2206,7 +2206,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   4.83802027  4.83802134  4.9703151   5.08664552  5.24132884  5.37017962
   5.37017981  5.52860864  5.55456446  5.83840269  5.83840431  5.90964424
   6.03898787  6.26537955  6.26537969  6.35524914  7.06318558  7.06318684
-  7.19577539  7.29441572  7.55162497  7.55163902  7.96029967  8.47546261
+  7.19577539  7.29441572  7.55162497  7.55163901  7.96029967  8.47546261
  18.01568215 18.07318217 18.07318261 19.03926961 19.64754079 19.73816231
  19.73816517 20.27762902 42.28777314 42.29582221 42.35616708 42.36051426
  42.40137764 42.40137768 42.43373147 42.43373152 42.47069523 42.73092444
@@ -2265,7 +2265,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   4.07984218  4.27728857  4.3438162   4.35942149  4.45660146  4.48918828
   4.80680008  5.01914805  5.08306097  5.11616228  5.18104051  5.45103374
   5.4736405   5.63877834  5.79208275  5.80891797  5.96570676  5.96991865
-  6.00724052  6.16546984  6.51266181  6.5178827   6.56958105  6.85114293
+  6.00724051  6.16546984  6.51266181  6.5178827   6.56958105  6.85114293
   6.85905529  6.90134973  7.32132055  7.36020162  7.79724044  8.68692289
  17.40337282 17.58362546 18.07371562 18.1614276  18.45733455 18.67561251
  20.26952458 21.74197462 42.31208083 42.35952912 42.36181902 42.39970954
@@ -2295,8 +2295,8 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   4.08896335  4.14470568  4.34671227  4.34671247  4.45892154  5.00955591
   5.02098484  5.02098524  5.04704647  5.16495449  5.16495485  5.30383635
   5.34843908  5.55744447  5.55744455  5.75542428  5.90808619  5.9080865
-  6.1461859   6.14618609  6.40417106  6.40417112  6.59333125  6.8441472
-  6.84414773  7.30028412  7.32006101  7.32006133  7.61312345  9.29099922
+  6.1461859   6.14618609  6.40417106  6.40417112  6.59333125  6.84414721
+  6.84414773  7.30028412  7.32006101  7.32006133  7.61312344  9.29099921
  17.8999371  18.367322   18.36732219 18.84371793 19.14499349 19.35447549
  19.35447559 22.83882283 42.31098431 42.31098437 42.34546407 42.39498636
  42.3949864  42.43756578 42.43756581 42.52689536 42.52689537 42.53764718
@@ -2326,7 +2326,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   4.83802115  4.83802163  4.9703151   5.08664552  5.24132884  5.37017978
   5.37017986  5.52860864  5.55456446  5.83840401  5.83840468  5.90964424
   6.03898787  6.26537958  6.26537971  6.35524915  7.06318664  7.06318725
-  7.1957754   7.29441567  7.55163691  7.55164268  7.96029962  8.47546306
+  7.1957754   7.29441567  7.55163692  7.55164268  7.96029962  8.47546306
  18.01568214 18.07318251 18.07318277 19.03926968 19.64754084 19.7381646
  19.7381659  20.27762902 42.28777314 42.29582221 42.35616708 42.36051426
  42.40137765 42.40137769 42.43373147 42.43373152 42.47069523 42.73092445
@@ -2387,7 +2387,7 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
   5.37017987  5.52860864  5.55456446  5.83840354  5.83840475  5.90964424
   6.03898787  6.26537957  6.26537971  6.35524915  7.06318626  7.06318728
   7.1957754   7.29441572  7.55163287  7.55164334  7.96029962  8.47546284
- 18.01568214 18.07318241 18.07318277 19.03926966 19.64754082 19.73816394
+ 18.01568214 18.07318241 18.07318277 19.03926966 19.64754082 19.73816395
  19.73816606 20.27762902 42.28777314 42.29582221 42.35616708 42.36051426
  42.40137765 42.40137769 42.43373147 42.43373152 42.47069523 42.73092444
  83.14100193 83.17750949 83.17750955 83.91715765 84.44159735 84.44159763
@@ -2422,46 +2422,46 @@ HOMO = 0.374066240749  LUMO = 0.877008786017
  42.39498639 42.43756582 42.43756582 42.52689537 42.52689538 42.53764711
  83.19409047 83.40322529 83.4032253  83.7779477  84.14043985 84.14043985
  88.92150033 95.98408421]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.41 sec, wall time      0.07 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      2.98 sec, wall time      0.17 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      3.95 sec, wall time      0.29 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      5.72 sec, wall time      0.54 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      6.82 sec, wall time      0.51 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      7.88 sec, wall time      0.62 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)      9.09 sec, wall time      0.77 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     10.75 sec, wall time      0.68 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     11.92 sec, wall time      0.99 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     12.62 sec, wall time      1.06 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     14.49 sec, wall time      0.93 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     15.61 sec, wall time      1.11 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     16.76 sec, wall time      1.25 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     17.41 sec, wall time      1.13 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     17.79 sec, wall time      1.10 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     20.22 sec, wall time      1.28 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     21.55 sec, wall time      1.46 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     21.45 sec, wall time      1.43 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     23.89 sec, wall time      1.66 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     24.55 sec, wall time      1.52 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     26.79 sec, wall time      1.69 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     28.90 sec, wall time      2.56 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     30.62 sec, wall time      2.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     30.61 sec, wall time      2.17 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     31.35 sec, wall time      2.00 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     32.38 sec, wall time      2.33 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     34.07 sec, wall time      2.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      2.21 sec, wall time      0.10 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      7.69 sec, wall time      0.26 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     12.70 sec, wall time      0.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     16.93 sec, wall time      0.61 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     21.82 sec, wall time      0.73 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     27.76 sec, wall time      1.04 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     28.15 sec, wall time      1.02 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.76 sec, wall time      1.35 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     41.09 sec, wall time      1.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     44.73 sec, wall time      1.75 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     43.85 sec, wall time      1.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     48.47 sec, wall time      1.70 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     60.81 sec, wall time      2.23 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     64.93 sec, wall time      2.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     69.72 sec, wall time      2.45 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     73.11 sec, wall time      2.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     87.80 sec, wall time      5.95 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     89.00 sec, wall time      3.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     89.71 sec, wall time      3.29 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     93.26 sec, wall time      3.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     98.27 sec, wall time      3.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     98.59 sec, wall time      3.53 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    102.15 sec, wall time      3.61 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     98.65 sec, wall time      3.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    106.77 sec, wall time      3.67 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    113.73 sec, wall time      4.00 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    120.70 sec, wall time      3.99 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     14.95 sec, wall time      1.08 sec
-    CPU time for get_j pass 2      0.79 sec, wall time      0.75 sec
-    CPU time for vj and vk    498.21 sec, wall time     35.60 sec
+    CPU time for get_j pass 1     43.08 sec, wall time      1.63 sec
+    CPU time for get_j pass 2      3.60 sec, wall time      1.23 sec
+    CPU time for vj and vk   1750.84 sec, wall time     66.15 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.275992490261075+3.009748969283984e-14j)  E_coul = (4.2776175145414275+1.1775485830777657e-14j)
+E1 = (-51.27599249026108+3.00378059926065e-14j)  E_coul = (4.2776175145414275+1.1881448727691246e-14j)
 cycle= 4 E= -75.7694176249766  delta_E= -7.55e-06  |g|= 0.00191  |ddm|= 9.12
-    CPU time for cycle= 4    498.36 sec, wall time     35.80 sec
+    CPU time for cycle= 4   1753.46 sec, wall time     66.88 sec
 diis-norm(errvec)=0.00989668
-diis-c [-1.83083317e-05+0.00000000e+00j  1.52285595e-03-9.76026863e-19j
-  3.49534536e-04+5.69450786e-18j -1.32740915e-01-2.50221515e-17j
-  1.13086852e+00+2.03036705e-17j]
+diis-c [-1.83083317e-05-1.54074396e-33j  1.52285595e-03+5.17152920e-19j
+  3.49534535e-04-3.04835845e-18j -1.32740915e-01+1.31983164e-17j
+  1.13086852e+00-1.06671109e-17j]
 HOMO = 0.374083672786  LUMO = 0.877045099679
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-10.57646879 -10.57404573  -0.67625882   0.3740836    0.3740836
@@ -2502,7 +2502,7 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.08904133  4.14476478  4.34672854  4.34672862  4.45897379  5.00956321
   5.02102408  5.02102409  5.04707529  5.16502341  5.16502347  5.30387753
   5.34852423  5.55749071  5.55749083  5.75547259  5.90812522  5.90812528
-  6.14624783  6.14624787  6.40420193  6.40420196  6.59340367  6.84419746
+  6.14624782  6.14624787  6.40420193  6.40420196  6.59340367  6.84419746
   6.84419832  7.30035217  7.32014839  7.3201486   7.61319771  9.29110204
  17.90026314 18.36765523 18.36765531 18.84404242 19.14529737 19.35479906
  19.35479912 22.83911963 42.31140419 42.3114042  42.34588398 42.39540607
@@ -2518,7 +2518,7 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   5.02102408  5.02102409  5.04707529  5.16502341  5.16502348  5.30387752
   5.34852423  5.55749074  5.55749083  5.7554726   5.90812524  5.90812527
   6.14624782  6.14624786  6.40420193  6.40420196  6.59340367  6.84419757
-  6.84419845  7.30035214  7.32014843  7.32014859  7.61319742  9.29110197
+  6.84419845  7.30035214  7.32014843  7.32014859  7.61319742  9.29110196
  17.90026312 18.36765522 18.36765532 18.84404242 19.14529728 19.35479907
  19.35479912 22.83911973 42.31140419 42.3114042  42.34588398 42.39540607
  42.39540607 42.43798519 42.43798519 42.52731428 42.52731429 42.53806625
@@ -2531,9 +2531,9 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   3.47294031  3.484698    3.48469813  3.88417504  3.88417586  4.0535168
   4.0773297   4.48159482  4.5534841   4.55348411  4.6593116   4.75837002
   4.83805177  4.83805253  4.97037458  5.08669623  5.24138988  5.37022806
-  5.37022819  5.5286429   5.55457375  5.83848217  5.83848331  5.90968432
+  5.37022819  5.5286429   5.55457375  5.83848217  5.83848332  5.90968432
   6.03900265  6.26542611  6.26542615  6.35529679  7.06325106  7.06325195
-  7.19587614  7.29447628  7.55170872  7.55171881  7.96037545  8.47553267
+  7.19587614  7.29447628  7.55170873  7.55171881  7.96037545  8.47553267
  18.01601434 18.07351417 18.07351448 19.03958733 19.64784453 19.73849078
  19.73849289 20.27792534 42.28819305 42.29624213 42.35658678 42.36093389
  42.40179737 42.40179738 42.43415098 42.43415099 42.47111439 42.73134276
@@ -2548,7 +2548,7 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.80688105  5.0191966   5.08311801  5.11621718  5.18106771  5.45106569
   5.47368542  5.63880791  5.79213217  5.808978    5.96574733  5.96996899
   6.00727282  6.16552259  6.51269603  6.51796499  6.56964052  6.85120022
-  6.85910475  6.90141795  7.32135876  7.36023828  7.79734157  8.6870332
+  6.85910475  6.90141795  7.32135875  7.36023828  7.79734157  8.6870332
  17.40371083 17.58396152 18.07404594 18.16175648 18.45766346 18.67593996
  20.26982292 21.74227072 42.31250068 42.3599489  42.36223863 42.40012916
  42.40416726 42.45023908 42.46835962 42.51023484 42.52381518 42.54479032
@@ -2577,7 +2577,7 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.07992107  4.2772797   4.34385598  4.35947316  4.45664516  4.48926429
   4.80688105  5.0191966   5.08311801  5.11621716  5.18106771  5.45106568
   5.47368534  5.63880791  5.79213217  5.808978    5.96574733  5.96996899
-  6.00727204  6.16552259  6.51269575  6.517965    6.56964052  6.85120026
+  6.00727203  6.16552259  6.51269575  6.517965    6.56964052  6.85120026
   6.85910475  6.90141793  7.32135878  7.36023831  7.79734157  8.68703321
  17.40371083 17.58396152 18.07404595 18.16175648 18.45766346 18.67593996
  20.26982293 21.74227073 42.31250068 42.3599489  42.36223863 42.40012916
@@ -2607,8 +2607,8 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.0890413   4.14476478  4.34672861  4.34672863  4.45897379  5.00956322
   5.02102409  5.02102409  5.04707529  5.16502347  5.16502348  5.30387751
   5.34852428  5.55749081  5.55749086  5.75547262  5.90812527  5.90812529
-  6.14624785  6.14624788  6.40420195  6.40420196  6.59340368  6.84419823
-  6.8441986   7.3003522   7.32014856  7.32014863  7.61319717  9.29110085
+  6.14624785  6.14624788  6.40420195  6.40420196  6.59340368  6.84419822
+  6.8441986   7.3003522   7.32014856  7.32014863  7.61319717  9.29110084
  17.9002631  18.3676553  18.36765533 18.84404242 19.14529726 19.35479911
  19.35479912 22.83911923 42.31140419 42.3114042  42.34588398 42.39540607
  42.39540607 42.43798519 42.43798519 42.52731429 42.52731429 42.53806625
@@ -2712,7 +2712,7 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.07992103  4.27728235  4.34385596  4.35947312  4.45664515  4.48926422
   4.80688105  5.01919658  5.083118    5.11621724  5.18106772  5.45106547
   5.47368559  5.63880794  5.79213214  5.80897797  5.96574733  5.96996899
-  6.0072747   6.16552238  6.51269671  6.51796496  6.5696405   6.85119983
+  6.00727471  6.16552238  6.51269671  6.51796496  6.5696405   6.85119983
   6.85910476  6.90141799  7.32135868  7.36023787  7.79734156  8.68703249
  17.40371084 17.58396151 18.07404596 18.1617565  18.45766344 18.67593992
  20.26982287 21.74227032 42.31250068 42.35994889 42.36223863 42.40012917
@@ -2773,7 +2773,7 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.83805155  4.83805198  4.97037458  5.08669623  5.24138988  5.37022803
   5.37022811  5.52864289  5.55457375  5.8384818   5.83848247  5.90968432
   6.03900265  6.26542609  6.26542612  6.35529681  7.06325085  7.06325136
-  7.19587615  7.29447626  7.55170617  7.55171191  7.96037541  8.47553133
+  7.19587615  7.29447626  7.55170617  7.55171192  7.96037541  8.47553133
  18.01601434 18.07351411 18.0735143  19.03958726 19.64784438 19.73849033
  19.73849161 20.27792534 42.28819305 42.29624213 42.35658678 42.36093389
  42.40179736 42.40179738 42.43415098 42.43415099 42.47111439 42.73134274
@@ -2833,8 +2833,8 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
   4.83805122  4.83805202  4.97037458  5.08669623  5.24138988  5.37022797
   5.37022811  5.5286429   5.55457375  5.83848133  5.83848254  5.90968432
   6.03900265  6.26542608  6.26542612  6.3552968   7.06325045  7.0632514
-  7.19587615  7.29447631  7.55170212  7.55171258  7.96037542  8.47553111
- 18.01601434 18.07351399 18.07351432 19.03958724 19.64784436 19.73848967
+  7.19587615  7.29447631  7.55170211  7.55171258  7.96037542  8.47553111
+ 18.01601434 18.07351399 18.07351432 19.03958724 19.64784436 19.73848966
  19.73849177 20.27792534 42.28819305 42.29624213 42.35658678 42.36093389
  42.40179736 42.40179738 42.43415098 42.43415099 42.47111439 42.73134274
  83.14150152 83.178009   83.17800904 83.91765599 84.44209528 84.44209556
@@ -2869,42 +2869,42 @@ HOMO = 0.374083672786  LUMO = 0.877045099679
  42.39540607 42.4379852  42.4379852  42.52731429 42.5273143  42.53806623
  83.19459004 83.4037247  83.4037247  83.77844638 84.14093781 84.14093781
  88.922003   95.98458369]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.57 sec, wall time      0.08 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      3.09 sec, wall time      0.17 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      4.10 sec, wall time      0.44 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      5.66 sec, wall time      0.46 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      7.08 sec, wall time      0.50 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      7.89 sec, wall time      0.64 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)      9.14 sec, wall time      0.74 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     10.31 sec, wall time      0.69 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     11.02 sec, wall time      0.77 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     11.97 sec, wall time      0.70 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     13.75 sec, wall time      0.93 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     15.16 sec, wall time      1.06 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     16.86 sec, wall time      1.18 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     17.93 sec, wall time      1.22 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     19.66 sec, wall time      1.20 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     20.66 sec, wall time      1.45 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     21.90 sec, wall time      1.54 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     22.48 sec, wall time      1.63 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     23.05 sec, wall time      1.32 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     24.23 sec, wall time      1.38 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     24.63 sec, wall time      1.40 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     28.23 sec, wall time      1.70 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     28.49 sec, wall time      1.85 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     30.65 sec, wall time      2.00 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     32.12 sec, wall time      2.36 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     31.75 sec, wall time      2.62 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     33.76 sec, wall time      2.67 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.60 sec, wall time      0.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      8.32 sec, wall time      0.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     13.40 sec, wall time      0.44 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     17.42 sec, wall time      0.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     21.51 sec, wall time      0.75 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     25.63 sec, wall time      0.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     36.28 sec, wall time      1.47 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.77 sec, wall time      1.26 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     34.63 sec, wall time      1.21 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     45.04 sec, wall time      1.54 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     45.30 sec, wall time      1.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     53.65 sec, wall time      1.78 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     62.00 sec, wall time      2.31 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     61.39 sec, wall time      2.11 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     67.05 sec, wall time      2.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     73.03 sec, wall time      2.45 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     74.11 sec, wall time      2.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     80.78 sec, wall time      3.14 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     89.65 sec, wall time      3.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     94.76 sec, wall time      3.37 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     91.90 sec, wall time      3.34 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)    102.94 sec, wall time      3.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    104.40 sec, wall time      3.83 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    112.25 sec, wall time      3.99 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    112.17 sec, wall time      3.86 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    121.68 sec, wall time      4.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    126.15 sec, wall time      4.52 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     13.55 sec, wall time      1.37 sec
-    CPU time for get_j pass 2      0.65 sec, wall time      0.56 sec
-    CPU time for vj and vk    492.35 sec, wall time     34.73 sec
+    CPU time for get_j pass 1     51.89 sec, wall time      1.76 sec
+    CPU time for get_j pass 2      3.51 sec, wall time      0.80 sec
+    CPU time for vj and vk   1776.92 sec, wall time     64.24 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.27586759926619+3.009357650196847e-14j)  E_coul = (4.277492554095364+1.1790946198853928e-14j)
-cycle= 5 E= -75.7694176944278  delta_E= -6.95e-08  |g|= 0.000179  |ddm|= 1.36
-    CPU time for cycle= 5    492.54 sec, wall time     34.95 sec
+E1 = (-51.27586759926612+3.016308764425961e-14j)  E_coul = (4.277492554095364+1.1832493562514899e-14j)
+cycle= 5 E= -75.7694176944277  delta_E= -6.95e-08  |g|= 0.000179  |ddm|= 1.36
+    CPU time for cycle= 5   1779.79 sec, wall time     64.96 sec
 HOMO = 0.374082980784  LUMO = 0.87704369775
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-10.57647483 -10.57405183  -0.67626015   0.37408296   0.37408296
@@ -2958,7 +2958,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   2.4915706   2.67486824  3.10460483  3.10460487  3.29547331  3.4374672
   3.43746732  3.68367671  3.68367672  3.87100031  3.96341828  3.96341832
   4.08904105  4.14476484  4.34672843  4.3467285   4.45897365  5.0095631
-  5.02102381  5.02102382  5.04707527  5.16502301  5.16502307  5.30387745
+  5.02102381  5.02102382  5.04707527  5.16502301  5.16502308  5.30387745
   5.34852364  5.55749071  5.5574908   5.75547262  5.90812486  5.9081249
   6.14624776  6.1462478   6.40420178  6.40420179  6.59340374  6.8441973
   6.84419818  7.30035188  7.32014792  7.32014807  7.61319698  9.29110183
@@ -3006,7 +3006,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   5.02102381  5.02102382  5.04707527  5.165023    5.16502307  5.30387744
   5.34852361  5.55749071  5.55749079  5.75547262  5.90812486  5.90812489
   6.14624775  6.1462478   6.40420178  6.40420179  6.59340374  6.84419724
-  6.84419808  7.30035186  7.32014792  7.32014803  7.61319695  9.29110115
+  6.84419807  7.30035186  7.32014792  7.32014803  7.61319695  9.29110115
  17.90025894 18.36765083 18.36765092 18.84403822 19.14529374 19.35479484
  19.35479487 22.83911577 42.31139798 42.31139798 42.34587776 42.39539985
  42.39539985 42.43797898 42.43797898 42.52730806 42.52730807 42.53806004
@@ -3023,7 +3023,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   6.00727198  6.16552237  6.5126956   6.51796479  6.56964042  6.85120011
   6.85910471  6.90141763  7.32135901  7.36023826  7.79734119  8.68703278
  17.40370632 17.58395708 18.07404158 18.16175213 18.45765915 18.67593566
- 20.26981954 21.74226722 42.31249445 42.35994267 42.3622324  42.40012294
+ 20.26981953 21.74226722 42.31249445 42.35994267 42.3622324  42.40012294
  42.40416104 42.45023286 42.4683534  42.51022864 42.52380897 42.54478411
  82.66683779 82.82570088 83.2309807  83.26119354 83.48262168 83.6172622
  91.29044782 93.73065039]
@@ -3036,7 +3036,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   4.83805151  4.83805183  4.97037446  5.08669602  5.24138977  5.37022812
   5.37022817  5.52864289  5.55457345  5.83848185  5.83848232  5.9096845
   6.03900247  6.26542595  6.26542596  6.3552966   7.06325074  7.06325112
-  7.19587582  7.29447646  7.55170893  7.55171311  7.96037514  8.4755316
+  7.19587582  7.29447646  7.55170892  7.55171311  7.96037514  8.47553159
  18.01600997 18.07350979 18.07350992 19.03958323 19.6478409  19.73848674
  19.7384876  20.27792199 42.28818682 42.2962359  42.35658056 42.36092767
  42.40179116 42.40179116 42.43414477 42.43414478 42.47110818 42.73133655
@@ -3051,7 +3051,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   5.02102382  5.02102382  5.04707527  5.16502306  5.16502308  5.30387745
   5.34852369  5.55749078  5.55749083  5.75547264  5.90812489  5.90812492
   6.1462478   6.14624783  6.40420179  6.4042018   6.59340374  6.84419795
-  6.84419833  7.30035194  7.32014804  7.32014811  7.61319673  9.29110071
+  6.84419833  7.30035194  7.32014804  7.32014812  7.61319673  9.29110071
  17.90025893 18.36765091 18.36765094 18.84403823 19.14529372 19.35479487
  19.35479489 22.83911564 42.31139798 42.31139798 42.34587776 42.39539985
  42.39539985 42.43797898 42.43797898 42.52730807 42.52730808 42.53806004
@@ -3080,7 +3080,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   4.07992113  4.27728588  4.34385565  4.35947276  4.45664467  4.4892641
   4.80688058  5.01919628  5.08311789  5.11621708  5.18106745  5.45106572
   5.4736857   5.63880771  5.79213212  5.80897785  5.96574714  5.96996881
-  6.00727805  6.16552243  6.51269779  6.51796478  6.56964041  6.85120007
+  6.00727804  6.16552243  6.51269779  6.51796478  6.56964041  6.85120007
   6.85910471  6.90141776  7.32135988  7.36023825  7.79734119  8.68703316
  17.40370632 17.58395708 18.07404159 18.16175214 18.45765915 18.67593566
  20.26981953 21.74226746 42.31249445 42.35994268 42.3622324  42.40012295
@@ -3125,7 +3125,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   4.07992112  4.27728141  4.34385565  4.35947277  4.45664467  4.48926407
   4.80688058  5.01919627  5.0831179   5.11621695  5.18106746  5.45106562
   5.47368527  5.63880772  5.79213211  5.80897785  5.96574714  5.96996881
-  6.00727356  6.16552242  6.51269616  6.51796479  6.56964041  6.85120008
+  6.00727356  6.16552241  6.51269616  6.51796479  6.56964041  6.85120008
   6.85910472  6.90141766  7.32135939  7.36023836  7.79734121  8.68703278
  17.40370632 17.58395708 18.07404159 18.16175214 18.45765915 18.67593565
  20.26981955 21.74226719 42.31249445 42.35994267 42.3622324  42.40012295
@@ -3152,10 +3152,10 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   1.80050341  2.07214677  2.30433215  2.35851206  2.57815805  2.58279155
   2.70428393  2.8111854   2.8626793   3.04784859  3.07109061  3.09044053
   3.33345224  3.54173571  3.5547999   3.73370476  3.76128161  4.00601897
-  4.07992112  4.27728249  4.34385562  4.35947273  4.45664467  4.48926394
+  4.07992112  4.27728248  4.34385562  4.35947273  4.45664467  4.48926394
   4.80688056  5.01919627  5.08311787  5.11621698  5.18106746  5.45106532
   5.47368538  5.63880772  5.7921321   5.80897781  5.96574714  5.9699688
-  6.00727465  6.16552215  6.51269655  6.51796477  6.56964041  6.8511997
+  6.00727464  6.16552215  6.51269655  6.51796477  6.56964041  6.8511997
   6.85910472  6.90141768  7.3213589   7.36023782  7.79734117  8.68703208
  17.40370632 17.58395708 18.07404159 18.16175214 18.45765914 18.67593563
  20.26981948 21.74226681 42.31249445 42.35994267 42.3622324  42.40012295
@@ -3216,7 +3216,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   4.83805125  4.83805169  4.97037446  5.08669602  5.24138977  5.37022807
   5.37022815  5.52864289  5.55457345  5.83848146  5.83848212  5.9096845
   6.03900247  6.26542593  6.26542596  6.35529662  7.06325045  7.06325096
-  7.19587582  7.29447645  7.55170562  7.55171137  7.96037516  8.47553117
+  7.19587582  7.29447645  7.55170563  7.55171137  7.96037516  8.47553116
  18.01600997 18.07350969 18.07350988 19.0395832  19.64784086 19.73848611
  19.73848739 20.27792198 42.28818682 42.2962359  42.35658056 42.36092767
  42.40179115 42.40179116 42.43414477 42.43414478 42.47110818 42.73133654
@@ -3230,7 +3230,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   4.07992113  4.27728289  4.34385566  4.35947275  4.45664467  4.48926414
   4.80688059  5.01919628  5.08311788  5.11621699  5.18106745  5.45106581
   5.47368541  5.63880771  5.79213212  5.80897787  5.96574714  5.9699688
-  6.00727505  6.16552253  6.5126967   6.51796481  6.56964041  6.85119999
+  6.00727504  6.16552253  6.5126967   6.51796481  6.56964041  6.85119999
   6.85910471  6.90141769  7.3213599   7.36023852  7.79734118  8.68703336
  17.40370632 17.58395708 18.07404159 18.16175214 18.45765916 18.67593565
  20.26981951 21.74226756 42.31249445 42.35994268 42.3622324  42.40012295
@@ -3257,10 +3257,10 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   1.80050341  2.07214677  2.30433215  2.35851206  2.57815805  2.58279155
   2.70428393  2.8111854   2.8626793   3.04784858  3.07109061  3.09044053
   3.33345225  3.54173572  3.55479992  3.73370476  3.76128168  4.00601897
-  4.07992112  4.27728275  4.34385563  4.35947272  4.45664467  4.48926395
+  4.07992112  4.27728275  4.34385563  4.35947272  4.45664467  4.48926396
   4.80688056  5.01919627  5.08311787  5.11621699  5.18106746  5.45106537
   5.4736854   5.63880772  5.79213211  5.80897781  5.96574714  5.9699688
-  6.00727492  6.1655222   6.51269667  6.51796475  6.5696404   6.85119973
+  6.00727491  6.1655222   6.51269667  6.51796475  6.5696404   6.85119973
   6.85910472  6.90141769  7.32135883  7.36023775  7.79734114  8.68703253
  17.40370632 17.58395708 18.07404159 18.16175214 18.45765914 18.67593564
  20.26981944 21.74226715 42.31249445 42.35994267 42.3622324  42.40012295
@@ -3290,7 +3290,7 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
   4.07992112  4.277281    4.34385566  4.35947276  4.45664467  4.48926411
   4.80688059  5.01919627  5.08311789  5.11621694  5.18106746  5.45106574
   5.47368523  5.63880772  5.79213212  5.80897786  5.96574714  5.96996881
-  6.00727315  6.1655225   6.51269603  6.51796478  6.56964041  6.8512001
+  6.00727316  6.1655225   6.51269604  6.51796478  6.56964041  6.8512001
   6.85910472  6.90141765  7.32135964  7.36023834  7.79734118  8.68703339
  17.40370632 17.58395708 18.07404159 18.16175214 18.45765915 18.67593566
  20.26981952 21.74226763 42.31249445 42.35994268 42.3622324  42.40012295
@@ -3312,41 +3312,41 @@ HOMO = 0.374082980784  LUMO = 0.87704369775
  42.39539985 42.43797898 42.43797898 42.52730807 42.52730808 42.53806004
  83.19457703 83.4037117  83.40371171 83.77843341 84.14092485 84.14092485
  88.9219884  95.98456892]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      1.42 sec, wall time      0.07 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      3.19 sec, wall time      0.17 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      4.72 sec, wall time      0.36 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)      5.77 sec, wall time      0.64 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)      7.52 sec, wall time      0.69 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)      8.91 sec, wall time      0.83 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     10.12 sec, wall time      0.85 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     11.67 sec, wall time      1.01 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     13.50 sec, wall time      1.11 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     14.69 sec, wall time      1.18 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     15.93 sec, wall time      0.94 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     17.39 sec, wall time      1.14 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     18.71 sec, wall time      1.24 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     19.88 sec, wall time      1.16 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     21.22 sec, wall time      1.29 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     22.39 sec, wall time      1.73 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     23.68 sec, wall time      1.81 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     24.52 sec, wall time      1.63 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     26.67 sec, wall time      1.69 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     28.52 sec, wall time      1.91 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     28.08 sec, wall time      1.95 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     28.72 sec, wall time      1.92 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     32.97 sec, wall time      2.19 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     36.64 sec, wall time      2.29 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     32.92 sec, wall time      2.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     34.95 sec, wall time      2.34 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     36.57 sec, wall time      2.32 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.83 sec, wall time      0.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      7.83 sec, wall time      0.26 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     14.07 sec, wall time      0.45 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     17.88 sec, wall time      0.67 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     21.45 sec, wall time      0.76 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     25.88 sec, wall time      0.96 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     31.31 sec, wall time      1.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     33.02 sec, wall time      1.18 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     42.27 sec, wall time      1.48 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     47.04 sec, wall time      1.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     59.73 sec, wall time      3.06 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     53.80 sec, wall time      3.01 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     59.59 sec, wall time      2.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     64.74 sec, wall time      2.22 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     65.12 sec, wall time      2.31 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     71.58 sec, wall time      2.62 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     75.50 sec, wall time      2.85 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     82.15 sec, wall time      2.87 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     92.14 sec, wall time      3.37 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     92.28 sec, wall time      3.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)    101.33 sec, wall time      3.72 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)    101.45 sec, wall time      3.83 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    112.14 sec, wall time      4.12 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    112.10 sec, wall time      4.21 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    122.01 sec, wall time      4.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    128.07 sec, wall time      4.74 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    131.33 sec, wall time      4.77 sec
 Monkhorst pack size [3 3 3] ew_eta 2.0680636387390696 ew_cut 3.402350398388744
 Ewald components = 0, -1.16695765003732, 1.05358783663642
-    CPU time for get_j pass 1     14.03 sec, wall time      1.20 sec
-    CPU time for get_j pass 2      0.78 sec, wall time      1.18 sec
-    CPU time for vj and vk    546.91 sec, wall time     39.12 sec
+    CPU time for get_j pass 1     64.42 sec, wall time      2.23 sec
+    CPU time for get_j pass 2      3.48 sec, wall time      1.01 sec
+    CPU time for vj and vk   1841.66 sec, wall time     70.23 sec
 Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
-E1 = (-51.275869123501046+3.0128412118891734e-14j)  E_coul = (4.277494077824739+1.1608021071098369e-14j)
-Extra cycle  E= -75.7694176949333  delta_E= -5.05e-10  |g|= 4.09e-05  |ddm|= 0.0995
-    CPU time for scf_cycle  33477.69 sec, wall time   1421.14 sec
-    CPU time for SCF  33477.73 sec, wall time   1421.28 sec
-converged SCF energy = -75.7694176949333
+E1 = (-51.275869123500996+3.021212917597644e-14j)  E_coul = (4.277494077824724+1.1664201311080601e-14j)
+Extra cycle  E= -75.7694176949332  delta_E= -5.06e-10  |g|= 4.09e-05  |ddm|= 0.0995
+    CPU time for scf_cycle  43500.36 sec, wall time   1652.10 sec
+    CPU time for SCF  43500.40 sec, wall time   1652.16 sec
+converged SCF energy = -75.7694176949332
