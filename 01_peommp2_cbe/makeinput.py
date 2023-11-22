@@ -136,7 +136,7 @@ with open("joblist.txt", "w") as fout:
                     frozen = None
                     if peommp2_ip_storage(nkpts, nocc, nvir) > 16:
                         def f(x):
-                            return peommp2_ip_storage(nkpts, nocc, x) - 12
+                            return peommp2_ip_storage(nkpts, nocc, x) - 1
                         res = root_scalar(f, x0=float(nvir), x1=float(nocc))
                         frozen = list(range(nocc + int(res.root), nmo))
                     if frozen is not None:
