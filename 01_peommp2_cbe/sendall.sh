@@ -1,3 +1,6 @@
 #!/bin/bash
-./submit.sh c_ccpcvtz_k3_C_1s_nvir_act25 716800 5-00:00:00
-./submit.sh c_ccpcvtz_k2_C_1s_nvir_act25 716800 5-00:00:00
+./submit.sh si_ccpcvtz_k4_Si_2p_nvir_act11 716800 5-00:00:00
+./submit.sh si_ccpcvtz_k3_Si_2p_nvir_act11 716800 5-00:00:00
+./submit.sh si_ccpcvtz_k2_Si_2p_nvir_act11 716800 5-00:00:00
+./submit.sh si_ccpcvtz_k3_Si_2p 716800 5-00:00:00
+./submit.sh si_ccpcvtz_k2_Si_2p 716800 5-00:00:00
