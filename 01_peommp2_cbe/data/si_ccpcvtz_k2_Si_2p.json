@@ -26,12 +26,7 @@
         2,
         3
     ],
-    "frozen": [
-        0,
-        1,
-        2,
-        3
-    ],
+    "frozen": null,
     "chk": "si_ccpcvtz_k2_Si_2p.chk",
     "cderi": "si_ccpcvtz_k2_Si_2p_cderi.h5",
     "ekrhf": "si_ccpcvtz_k2_Si_2p_ekrhf.json",
