@@ -104,7 +104,7 @@ def peommp2_ip_storage(nkpts, nocc, nvir):
 
 def get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout):
     key = "{}_{}_k{}_{}".format(formula, basis, kdensity, orbital)
-    if frozen != frozen_core[formula]:
+    if frozen is not None:
         key += "_nvir_act{}".format(int(res.root))
     material = dict([
         ("formula", formula),
@@ -143,14 +143,13 @@ with open("joblist.txt", "w") as fout:
                     nocc, nvir, nmo = get_nmo(formula, basis)
                     nkpts = kmax**3
                     # Check if storage is within limits 16 TB
-                    frozen = []
-                    frozen += frozen_core[formula]
+                    frozen = None
                     if peommp2_ip_storage(nkpts, nocc - len(frozen_core[formula]), nvir) > 16:
                         def f(x):
                             return peommp2_ip_storage(nkpts, nocc, x) - 1
                         res = root_scalar(f, x0=float(nvir), x1=float(nocc))
-                        frozen += list(range(nocc + int(res.root), nmo))
-                    if frozen != frozen_core[formula]:
+                        frozen = frozen_core[formula] + list(range(nocc + int(res.root), nmo))
+                    if frozen is not None:
                         for kdensity in range(kmax, 1, -1):
                             key, material, filename = get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout)
                     else:
