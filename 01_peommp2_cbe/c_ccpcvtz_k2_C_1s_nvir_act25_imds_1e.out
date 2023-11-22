@@ -1,0 +1,30 @@
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      2.49 sec, wall time      0.12 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      8.84 sec, wall time      0.29 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      8.49 sec, wall time      0.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     10.79 sec, wall time      0.35 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     15.43 sec, wall time      0.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     16.94 sec, wall time      0.53 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     21.60 sec, wall time      0.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     21.29 sec, wall time      0.68 sec
+Monkhorst pack size [2 2 2] ew_eta 3.0566830812214194 ew_cut 2.30320412508748
+Ewald components = 0, -1.72482326343322, 1.55476854344923
+    CPU time for get_j pass 1      9.41 sec, wall time      0.31 sec
+    CPU time for get_j pass 2      5.22 sec, wall time      0.17 sec
+    CPU time for vj and vk    125.85 sec, wall time      4.10 sec
+    CPU time for vnuc pass1: analytic int    409.42 sec, wall time     13.24 sec
+    CPU time for contracting Vnuc [0:216]     12.47 sec, wall time      0.40 sec
+    CPU time for contracting Vnuc     12.48 sec, wall time      0.40 sec
+    CPU time for get_nuc    421.93 sec, wall time     13.64 sec
+Ewald components = 3.0606179073546e-132, -242.469443607053, 213.698400957796
+    CPU time for vnuc pass1: analytic int    407.17 sec, wall time     13.10 sec
+    CPU time for contracting Vnuc [0:216]     12.54 sec, wall time      0.40 sec
+    CPU time for contracting Vnuc     12.54 sec, wall time      0.40 sec
+    CPU time for get_nuc    419.75 sec, wall time     13.50 sec
+E1 = (-51.306897794874324-4.231241603817571e-19j)  E_coul = (4.370425289075026-1.0871498934993447e-19j)
+using incore ERI storage
+    CPU time for CCSD integral transformation   4341.38 sec, wall time    139.11 sec
+    CPU time for EOM-CCSD shared one-electron intermediates     30.30 sec, wall time      1.03 sec
+IMDS key to save: Loo , type: <class 'numpy.ndarray'>
+IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
+IMDS key to save: Fov , type: <class 'numpy.ndarray'>
+Made 1e intermediates
