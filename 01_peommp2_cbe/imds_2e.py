@@ -16,3 +16,4 @@ grp_imds = h5file["imds"]
 ovoo_dest = grp_imds.create_dataset("Wovoo", (nkpts, nkpts, nkpts, nocc, nvir, nocc, nocc), dtype=t1.dtype.char)
 ovoo = Wovoo(t1, t2, eris, kconserv, ovoo_dest)
 h5file.close()
+print("Made 2e intermediates")
