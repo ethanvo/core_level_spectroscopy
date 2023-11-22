@@ -27,3 +27,4 @@ for k, v in imds.__dict__.items():
         print("IMDS key to save:", k, ", type:", type(v))
         grp_imds.create_dataset(k, data=v)
 h5file.close()
+print("Made 1e intermediates")
