@@ -1,0 +1,44 @@
+{
+    "formula": "si",
+    "basis": "ccpcvtz",
+    "kdensity": 3,
+    "vb_scaled_center": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "vb_nroots": 3,
+    "exp_to_discard": null,
+    "core": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "nmo": 118,
+    "nocc": 14,
+    "nvir": 104,
+    "frozen_core": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "frozen": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "chk": "si_ccpcvtz_k3_Si_2p.chk",
+    "cderi": "si_ccpcvtz_k3_Si_2p_cderi.h5",
+    "ekrhf": "si_ccpcvtz_k3_Si_2p_ekrhf.json",
+    "ekrmp2": "si_ccpcvtz_k3_Si_2p_ekrmp2.json",
+    "imds": "si_ccpcvtz_k3_Si_2p_imds.h5",
+    "eomip_valence": "si_ccpcvtz_k3_Si_2p_eomip_valence.json",
+    "eomip_core": "si_ccpcvtz_k3_Si_2p_eomip_core.json",
+    "cbe": "si_ccpcvtz_k3_Si_2p_cbe.json",
+    "vip": "si_ccpcvtz_k3_Si_2p_vip.h5"
+}
