@@ -31,26 +31,35 @@ from scipy.optimize import root_scalar
 
 au2ev = 27.211386245988
 
-materials = ["c"]
+materials = ["si"]
 
 basis_sets = ["ccpcvtz"]
 
 vb_scaled_centers = {
         "c": [0.0, 0.0, 0.0],
+        'si': [0.0, 0.0, 0.0],
         }
 
 vb_nroots = {
         "c": 3,
+        "si": 3,
         }
 
 core_orbitals = {
         "c": {"C_1s": [0, 1]},
+        "si": {"Si_2p": [0, 1, 2, 3, 4, 5]},
         }
 
 
 exp_to_discard = {
         "c": None,
+        "si": None,
         }
+
+frozen_core = {
+        "c": None,
+        "si": [0, 1, 2, 3],
+}
 
 def get_nmo(formula, basis):
     cell = gto.Cell()
@@ -95,7 +104,7 @@ def peommp2_ip_storage(nkpts, nocc, nvir):
 
 def get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout):
     key = "{}_{}_k{}_{}".format(formula, basis, kdensity, orbital)
-    if frozen is not None:
+    if frozen != frozen_core[formula]:
         key += "_nvir_act{}".format(int(res.root))
     material = dict([
         ("formula", formula),
@@ -108,6 +117,7 @@ def get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen
         ("nmo", nmo),
         ("nocc", nocc),
         ("nvir", nvir),
+        ("frozen_core", frozen_core[formula]),
         ("frozen", frozen),
         ("chk", "{}.chk".format(key)),
         ("cderi", "{}_cderi.h5".format(key)),
@@ -133,16 +143,16 @@ with open("joblist.txt", "w") as fout:
                     nocc, nvir, nmo = get_nmo(formula, basis)
                     nkpts = kmax**3
                     # Check if storage is within limits 16 TB
-                    frozen = None
-                    if peommp2_ip_storage(nkpts, nocc, nvir) > 16:
+                    frozen = []
+                    frozen += frozen_core[formula]
+                    if peommp2_ip_storage(nkpts, nocc - len(frozen_core[formula]), nvir) > 16:
                         def f(x):
                             return peommp2_ip_storage(nkpts, nocc, x) - 1
                         res = root_scalar(f, x0=float(nvir), x1=float(nocc))
-                        frozen = list(range(nocc + int(res.root), nmo))
-                    if frozen is not None:
+                        frozen += list(range(nocc + int(res.root), nmo))
+                    if frozen != frozen_core[formula]:
                         for kdensity in range(kmax, 1, -1):
                             key, material, filename = get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout)
                     else:
                         kdensity = kmax
                         key, material, filename = get_keydict(formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout)
-
