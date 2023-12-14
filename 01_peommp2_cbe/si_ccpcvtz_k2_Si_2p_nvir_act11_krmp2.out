@@ -1,0 +1,46 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 10, nmo = 21
+frozen orbitals [0, 1, 2, 3, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 86 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.37 sec, wall time      0.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     16.17 sec, wall time      0.65 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     25.96 sec, wall time      0.93 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     37.18 sec, wall time      1.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     46.80 sec, wall time      1.70 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     55.86 sec, wall time      1.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     59.63 sec, wall time      2.03 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     77.18 sec, wall time      2.65 sec
+Monkhorst pack size [2 2 2] ew_eta 2.038424097097503 ew_cut 3.4517505012467886
+Ewald components = 0, -1.15023249212893, 1.03854934433327
+    CPU time for get_j pass 1     22.95 sec, wall time      0.75 sec
+    CPU time for get_j pass 2      4.84 sec, wall time      0.57 sec
+    CPU time for vj and vk    357.53 sec, wall time     13.00 sec
+    CPU time for vnuc pass1: analytic int    233.67 sec, wall time      7.48 sec
+    CPU time for contracting Vnuc [0:729]     50.52 sec, wall time      1.69 sec
+    CPU time for contracting Vnuc     50.53 sec, wall time      1.69 sec
+    CPU time for get_nuc    284.39 sec, wall time      9.18 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 10, nmo = 21
+frozen orbitals [0, 1, 2, 3, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 932 MB)
+    CPU time for transforming DF-MP2 integrals    317.78 sec, wall time     14.74 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>

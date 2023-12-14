@@ -1,0 +1,48 @@
+
+******** <class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> ********
+max_space = 20
+max_cycle = 50
+conv_tol = 1e-07
+partition = mp
+max_memory 700000 MB (current use 81 MB)
+tol 1e-07  toloose 0.000316228
+max_cycle 50  max_space 40  max_memory 2000  incore False
+davidson 0 6  |r|= 1.13  e= [3.8343329  3.83433384 4.06251992 4.06252086 4.06252086 4.06252086]  max|de|= 4.06  lindep= 0.000472
+root 3 converged  |r|= 7.9e-05  e= 4.0625208564871205  max|de|= -3.11e-14
+root 4 converged  |r|= 0.000116  e= 4.062520856487744  max|de|= -3.2e-14
+root 5 converged  |r|= 7.91e-05  e= 4.062520856489065  max|de|= -2.84e-14
+Throwing out eigenvector 3 with norm=7.9e-05
+Throwing out eigenvector 4 with norm=0.000116
+Throwing out eigenvector 5 with norm=7.91e-05
+davidson 1 12  |r|= 2.15  e= [3.65331904 3.65333993 4.06252039 4.06252086 4.06252086 4.06252086]  max|de|= -0.181  lindep= 0.694
+Throwing out eigenvector 3 with norm=4.71e-05
+Throwing out eigenvector 4 with norm=0.000117
+Throwing out eigenvector 5 with norm=4.02e-05
+davidson 2 15  |r|= 0.0209  e= [3.65505501 3.65507568 4.0625204  4.06252086 4.06252086 4.06252086]  max|de|= 0.00174  lindep= 0.812
+Throwing out eigenvector 3 with norm=4.7e-05
+Throwing out eigenvector 4 with norm=0.000116
+Throwing out eigenvector 5 with norm=3.89e-05
+davidson 3 18  |r|= 0.00513  e= [3.65505405 3.65507471 4.06252041 4.06252086 4.06252086 4.06252086]  max|de|= -9.65e-07  lindep= 0.838
+root 0 converged  |r|= 0.00013  e= 3.6550540462910397  max|de|= -1.91e-10
+root 1 converged  |r|= 0.000167  e= 3.6550747097187357  max|de|= -3.1e-10
+Throwing out eigenvector 0 with norm=0.00013
+Throwing out eigenvector 1 with norm=0.000167
+Throwing out eigenvector 3 with norm=4.72e-05
+Throwing out eigenvector 4 with norm=0.000116
+Throwing out eigenvector 5 with norm=4.09e-05
+davidson 4 21  |r|= 0.00191  e= [3.65505405 3.65507471 4.06252041 4.06252086 4.06252086 4.06252086]  max|de|= 1.3e-09  lindep= 0.733
+Throwing out eigenvector 0 with norm=0.000131
+Throwing out eigenvector 1 with norm=0.000167
+Throwing out eigenvector 3 with norm=4.7e-05
+Throwing out eigenvector 4 with norm=0.000116
+Throwing out eigenvector 5 with norm=4.09e-05
+davidson 5 22  |r|= 0.000451  e= [3.65505405 3.65507471 4.06252041 4.06252086 4.06252086 4.06252086]  max|de|= 3.97e-10  lindep= 0.747
+root 2 converged  |r|= 0.000238  e= 4.0625204083447315  max|de|= 6.97e-11
+converged 6 23  |r|= 0.000238  e= [3.65505405 3.65507471 4.06252041 4.06252086 4.06252086 4.06252086]  max|de|= 6.97e-11
+EOM-CCSD root 0 E = 3.655054046292737  qpwt = 0.962747
+EOM-CCSD root 1 E = 3.655074709716305  qpwt = 0.962746
+EOM-CCSD root 2 E = 4.062520408344731  qpwt = 5.39883e-07
+EOM-CCSD root 3 E = 4.06252085648712  qpwt = 1.47563e-19
+EOM-CCSD root 4 E = 4.062520856487742  qpwt = 7.50188e-17
+EOM-CCSD root 5 E = 4.062520856489059  qpwt = 2.37857e-17
+    CPU time for EOM-CCSD    252.46 sec, wall time    211.90 sec
