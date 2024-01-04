@@ -4,3 +4,4 @@ The following have been reloaded with a version change:
 
 ==> Error: Spec 'gcc@13.2.0' matches no installed packages.
 ==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
+<class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> does not have attributes  mandatory
