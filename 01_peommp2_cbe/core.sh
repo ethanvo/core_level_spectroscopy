@@ -7,7 +7,7 @@
 #SBATCH --time=0-12:00:00
 #SBATCH --error="%x.err"
 #SBATCH --output="%x.output"
-#SBATCH --account=berkelbach
+#SBATCH --account=ccce
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=eav2136@columbia.edu
 
