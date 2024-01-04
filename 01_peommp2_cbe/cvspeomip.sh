@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-task=32
 #SBATCH --error="%x.err"
 #SBATCH --output="%x.out"
-#SBATCH --account=berkelbach
+#SBATCH --account=ccce
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=eav2136@columbia.edu
 
