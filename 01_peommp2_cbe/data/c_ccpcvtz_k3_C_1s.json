@@ -16,6 +16,7 @@
     "nmo": 86,
     "nocc": 6,
     "nvir": 80,
+    "frozen_core": [],
     "frozen": null,
     "chk": "c_ccpcvtz_k3_C_1s.chk",
     "cderi": "c_ccpcvtz_k3_C_1s_cderi.h5",
