@@ -142,8 +142,8 @@ def peommp2_ea_complexity(nkpts, nocc, nvir):
     return "%d-%02d:%02d:%02d" % (days, hours, minutes, seconds)                        
 
 nkpts = 3**3
-nocc = 14
-nvir = 104
+nocc = 6
+nvir = 80
 print("Total storage for nkpts = %d, nocc = %d, nvir = %d" % (nkpts, nocc, nvir))
 print("P-EOM-IP-MP2: %f GB" % peommp2_ip_storage(nkpts, nocc, nvir))
 print("P-EOM-EA-MP2: %f GB" % peommp2_ea_storage(nkpts, nocc, nvir))
