@@ -144,9 +144,9 @@ with open("joblist.txt", "w") as fout:
                     nkpts = kmax**3
                     # Check if storage is within limits 16 TB
                     frozen = None
-                    if peommp2_ip_storage(nkpts, nocc - len(frozen_core[formula]), nvir) > 1:
+                    if peommp2_ip_storage(nkpts, nocc - len(frozen_core[formula]), nvir) > 1.5:
                         def f(x):
-                            return peommp2_ip_storage(nkpts, nocc, x) - 1
+                            return peommp2_ip_storage(nkpts, nocc, x) - 1.5
                         res = root_scalar(f, x0=float(nvir), x1=float(nocc))
                         frozen = frozen_core[formula] + list(range(nocc + int(res.root), nmo))
                     if frozen is not None:
