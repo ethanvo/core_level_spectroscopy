@@ -31,34 +31,39 @@ from scipy.optimize import root_scalar
 
 au2ev = 27.211386245988
 
-materials = ["si"]
+materials = ["c", "sic"]
 
 basis_sets = ["ccpcvtz"]
 
 vb_scaled_centers = {
         "c": [0.0, 0.0, 0.0],
         'si': [0.0, 0.0, 0.0],
+        "sic": [0.0, 0.0, 0.0],
         }
 
 vb_nroots = {
         "c": 3,
         "si": 3,
+        "sic": 3,
         }
 
 core_orbitals = {
         "c": {"C_1s": [0, 1]},
         "si": {"Si_2p": [0, 1, 2, 3, 4, 5]},
+        "sic": {"C_1s": [0]},
         }
 
 
 exp_to_discard = {
         "c": None,
         "si": None,
+        "sic": None,
         }
 
 frozen_core = {
-        "c": None,
+        "c": [],
         "si": [0, 1, 2, 3],
+        "sic": [0]
 }
 
 def get_nmo(formula, basis):
