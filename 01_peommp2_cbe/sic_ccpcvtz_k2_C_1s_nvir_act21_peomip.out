@@ -1,0 +1,163 @@
+
+******** <class 'pyscf.pbc.cc.eom_kccsd_rhf.EOMIP'> ********
+max_space = 20
+max_cycle = 50
+conv_tol = 1e-07
+partition = mp
+max_memory 700000 MB (current use 105 MB)
+tol 1e-07  toloose 0.000316228
+max_cycle 50  max_space 28  max_memory 2000  incore True
+davidson 0 3  |r|= 1.06e+04  e= [-0.50105412  0.20673422  0.48433279]  max|de|= -0.501  lindep=    1
+davidson 1 5  |r|=  516  e= [-124.27435891    0.20671452  125.60198287]  max|de|=  125  lindep=    1
+Old state -> New state
+    1     ->     0 
+davidson 2 8  |r|= 27.7  e= [2.06674108e-01 2.06746200e-01 3.36528313e+02]  max|de|=  211  lindep= 0.934
+Old state -> New state
+    2     ->     0 
+    0     ->     1 
+    1     ->     2 
+davidson 3 11  |r|=  177  e= [-120.6598777     0.20672669    0.20674118]  max|de|= -457  lindep=    1
+Old state -> New state
+    1     ->     0 
+    2     ->     1 
+    0     ->     2 
+davidson 4 14  |r|= 11.4  e= [2.06733395e-01 2.06925497e-01 3.36667843e+02]  max|de|=  457  lindep= 0.298
+Old state -> New state
+    0     ->     1 
+    1     ->     2 
+davidson 5 17  |r|= 0.0128  e= [0.20673422 0.20673422 0.20674478]  max|de|= -0.000181  lindep= 0.686
+Old state -> New state
+    2     ->     0 
+    2     ->     1 
+    0     ->     2 
+davidson 6 20  |r|= 0.00221  e= [0.2067326  0.20673417 0.20673422]  max|de|= -1.22e-05  lindep= 0.258
+Old state -> New state
+    1     ->     0 
+    0     ->     1 
+davidson 7 23  |r|= 0.0131  e= [0.20666503 0.2067336  0.20673422]  max|de|= -6.91e-05  lindep= 0.0399
+Old state -> New state
+    0     ->     1 
+    0     ->     2 
+davidson 8 26  |r|= 0.0214  e= [0.20672387 0.2067242  0.20672821]  max|de|= 6.32e-05  lindep= 0.0119
+davidson 9 3  |r|= 0.0214  e= [0.20672387 0.2067242  0.20672821]  max|de|= 7.97e-11  lindep= 0.311
+Old state -> New state
+    2     ->     0 
+    0     ->     1 
+    1     ->     2 
+davidson 10 6  |r|= 0.033  e= [0.20672698 0.20674036 0.20683345]  max|de|= 0.000109  lindep= 0.0408
+Old state -> New state
+    1     ->     0 
+    1     ->     2 
+davidson 11 9  |r|= 0.0534  e= [0.206639   0.20673424 0.20673749]  max|de|= -0.000101  lindep= 0.15
+Old state -> New state
+    2     ->     1 
+    1     ->     2 
+davidson 12 12  |r|= 0.00735  e= [0.20672721 0.2067342  0.20673425]  max|de|= 8.82e-05  lindep= 0.0275
+Old state -> New state
+    2     ->     1 
+davidson 13 15  |r|= 0.00287  e= [0.2067292  0.20673405 0.20673431]  max|de|= 1.99e-06  lindep= 0.129
+Old state -> New state
+    0     ->     1 
+    0     ->     2 
+davidson 14 18  |r|= 0.00216  e= [0.20672499 0.20673134 0.20673353]  max|de|= 4.33e-06  lindep= 0.0103
+Old state -> New state
+    1     ->     0 
+    1     ->     2 
+davidson 15 21  |r|= 0.0277  e= [0.20613864 0.2067229  0.20672655]  max|de|= -0.000593  lindep= 0.0174
+Old state -> New state
+    1     ->     2 
+davidson 16 24  |r|= 0.00245  e= [0.20581754 0.20655943 0.20672621]  max|de|= -0.000321  lindep= 0.0554
+davidson 17 27  |r|= 0.00754  e= [0.2057116  0.20639949 0.20673278]  max|de|= -0.00016  lindep= 0.019
+davidson 18 3  |r|= 0.00754  e= [0.20571159 0.20639977 0.20673284]  max|de|= 2.75e-07  lindep= 0.663
+davidson 19 6  |r|= 0.012  e= [0.20568464 0.20646407 0.20672993]  max|de|= 6.43e-05  lindep= 0.0705
+Old state -> New state
+    0     ->     1 
+    1     ->     2 
+davidson 20 9  |r|= 0.0103  e= [0.2043362  0.20568704 0.2065596 ]  max|de|= -0.00135  lindep= 0.0968
+davidson 21 12  |r|= 0.00488  e= [0.20422295 0.20566624 0.20666852]  max|de|= -0.000113  lindep= 0.0557
+Old state -> New state
+    1     ->     0 
+    2     ->     1 
+davidson 22 15  |r|= 0.0041  e= [0.20471087 0.20667044 0.20671783]  max|de|= -0.000955  lindep= 0.0927
+Old state -> New state
+    0     ->     1 
+    1     ->     2 
+davidson 23 18  |r|= 0.00347  e= [0.20512287 0.20652774 0.20668918]  max|de|= 0.00182  lindep= 0.0348
+Old state -> New state
+    2     ->     1 
+davidson 24 21  |r|= 0.0037  e= [0.20588591 0.20670333 0.20671385]  max|de|= 0.000763  lindep= 0.0798
+Old state -> New state
+    2     ->     1 
+    0     ->     2 
+davidson 25 24  |r|= 0.00324  e= [0.20606027 0.20640822 0.20663006]  max|de|= 0.000744  lindep= 0.0278
+Old state -> New state
+    0     ->     1 
+    1     ->     2 
+davidson 26 27  |r|= 0.00345  e= [0.20525221 0.20613595 0.20630323]  max|de|= -0.000808  lindep= 0.00935
+davidson 27 3  |r|= 0.00349  e= [0.20524988 0.20613094 0.20631366]  max|de|= 1.04e-05  lindep= 0.872
+davidson 28 6  |r|= 0.00362  e= [0.20526422 0.20620476 0.2063384 ]  max|de|= 7.38e-05  lindep= 0.0227
+Old state -> New state
+    2     ->     1 
+    1     ->     2 
+davidson 29 9  |r|= 0.00922  e= [0.20552688 0.20634768 0.20701249]  max|de|= 0.000808  lindep= 0.028
+Old state -> New state
+    1     ->     2 
+davidson 30 12  |r|= 0.00352  e= [0.20527235 0.20596705 0.20616072]  max|de|= -0.000381  lindep= 0.0275
+Old state -> New state
+    1     ->     0 
+    2     ->     1 
+davidson 31 15  |r|= 0.00254  e= [0.20304563 0.20620083 0.20657568]  max|de|= -0.00292  lindep= 0.0633
+Old state -> New state
+    1     ->     0 
+    0     ->     2 
+davidson 32 18  |r|= 0.0026  e= [0.20239226 0.20566145 0.20600664]  max|de|= -0.00381  lindep= 0.0264
+Old state -> New state
+    1     ->     0 
+    2     ->     1 
+    1     ->     2 
+davidson 33 21  |r|= 0.00158  e= [0.20513353 0.20544514 0.20641144]  max|de|= 0.00075  lindep= 0.00886
+Old state -> New state
+    2     ->     0 
+    0     ->     1 
+    1     ->     2 
+davidson 34 24  |r|= 0.0019  e= [0.20148162 0.20537054 0.2066166 ]  max|de|= -0.00493  lindep= 0.0131
+Old state -> New state
+    0     ->     1 
+davidson 35 27  |r|= 0.00181  e= [0.20648684 0.20654732 0.20671208]  max|de|= 0.00507  lindep= 0.0118
+davidson 36 3  |r|= 0.0018  e= [0.20648208 0.20654719 0.20671181]  max|de|= -4.76e-06  lindep= 0.447
+davidson 37 6  |r|= 0.00186  e= [0.2064696  0.20652773 0.2067074 ]  max|de|= -1.95e-05  lindep= 0.00449
+davidson 38 9  |r|= 0.00434  e= [0.2064548  0.20662913 0.20668997]  max|de|= 0.000101  lindep= 0.00482
+Old state -> New state
+    1     ->     0 
+    0     ->     1 
+    0     ->     2 
+davidson 39 12  |r|= 0.00168  e= [0.20652062 0.20662764 0.20668148]  max|de|= 0.000227  lindep= 0.00253
+Old state -> New state
+    2     ->     0 
+    0     ->     1 
+    0     ->     2 
+davidson 40 15  |r|= 0.00155  e= [0.20651719 0.20652234 0.20653644]  max|de|= -0.000164  lindep= 0.000813
+Old state -> New state
+    1     ->     0 
+    0     ->     1 
+davidson 41 18  |r|= 0.00131  e= [0.2056998  0.20638183 0.20638476]  max|de|= -0.000823  lindep= 0.00368
+Old state -> New state
+    1     ->     0 
+davidson 42 21  |r|= 0.000944  e= [0.20616921 0.20635345 0.2064613 ]  max|de|= -0.000213  lindep= 0.00182
+Old state -> New state
+    1     ->     0 
+davidson 43 24  |r|= 0.00117  e= [0.20585696 0.20628595 0.20635886]  max|de|= -0.000496  lindep= 0.00274
+davidson 44 27  |r|= 0.00153  e= [0.20385323 0.20631456 0.20656569]  max|de|= -0.002  lindep= 0.00358
+davidson 45 3  |r|= 0.00153  e= [0.20384838 0.20631543 0.20656718]  max|de|= -4.84e-06  lindep= 0.875
+davidson 46 6  |r|= 0.0017  e= [0.20402682 0.20631216 0.20656872]  max|de|= 0.000178  lindep= 0.0179
+davidson 47 9  |r|= 0.00166  e= [0.203763   0.20632192 0.20657835]  max|de|= -0.000264  lindep= 0.00659
+Old state -> New state
+    2     ->     0 
+davidson 48 12  |r|= 0.00247  e= [0.20495098 0.20634277 0.20658193]  max|de|= -0.00163  lindep= 0.00611
+Old state -> New state
+    2     ->     0 
+davidson 49 15  |r|= 0.00143  e= [0.20523185 0.20636373 0.20652619]  max|de|= -0.00135  lindep= 0.00606
+EOM-CCSD root 0 E = 0.2052318522253853  qpwt = 1.85073e-14
+EOM-CCSD root 1 E = 0.2063637297907553  qpwt = 1.6246e-14
+EOM-CCSD root 2 E = 0.2065261932039053  qpwt = 1.65874e-14
+    CPU time for EOM-CCSD     11.92 sec, wall time     12.51 sec

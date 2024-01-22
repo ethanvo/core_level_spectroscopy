@@ -1,0 +1,52 @@
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.62 sec, wall time      0.23 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      9.88 sec, wall time      0.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     14.95 sec, wall time      0.47 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     19.41 sec, wall time      0.61 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     24.75 sec, wall time      0.78 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     25.07 sec, wall time      0.79 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     28.07 sec, wall time      0.89 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     34.07 sec, wall time      1.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     37.02 sec, wall time      1.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     42.28 sec, wall time      1.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     46.70 sec, wall time      1.48 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     53.69 sec, wall time      1.70 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     56.62 sec, wall time      1.82 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     68.48 sec, wall time      2.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     69.14 sec, wall time      2.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     69.15 sec, wall time      2.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     73.60 sec, wall time      2.31 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     76.79 sec, wall time      2.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     77.69 sec, wall time      2.44 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     82.93 sec, wall time      2.61 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     88.96 sec, wall time      2.80 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     90.95 sec, wall time      2.87 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     96.79 sec, wall time      3.04 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    102.18 sec, wall time      3.22 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    109.93 sec, wall time      3.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    111.87 sec, wall time      3.51 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    132.45 sec, wall time      4.29 sec
+Monkhorst pack size [3 3 3] ew_eta 1.7082808598635142 ew_cut 4.117786017015192
+Ewald components = 0, -0.963937826851544, 0.870979792219628
+    CPU time for get_j pass 1     54.73 sec, wall time      1.74 sec
+    CPU time for get_j pass 2      6.98 sec, wall time      1.11 sec
+    CPU time for vj and vk   1714.63 sec, wall time     55.23 sec
+    CPU time for vnuc pass1: analytic int    674.59 sec, wall time     21.54 sec
+    CPU time for contracting Vnuc [0:512]     58.77 sec, wall time      1.88 sec
+    CPU time for contracting Vnuc     58.77 sec, wall time      1.88 sec
+    CPU time for get_nuc    733.55 sec, wall time     23.43 sec
+Ewald components = 9.00674411881527e-134, -644.974612150364, 572.081161138653
+    CPU time for vnuc pass1: analytic int    659.53 sec, wall time     21.09 sec
+    CPU time for contracting Vnuc [0:512]     58.26 sec, wall time      1.83 sec
+    CPU time for contracting Vnuc     58.27 sec, wall time      1.83 sec
+    CPU time for get_nuc    717.96 sec, wall time     22.93 sec
+E1 = (-317.58522651980564-1.7663735390492772e-14j)  E_coul = (63.59720824196815+9.895012571848094e-16j)
+using HDF5 ERI storage
+    CPU time for transforming oopq 179708.29 sec, wall time   6195.02 sec
+    CPU time for transforming ovpq 181304.34 sec, wall time   6196.37 sec
+    CPU time for transforming vvvv   1627.57 sec, wall time     51.05 sec
+    CPU time for CCSD integral transformation 365811.89 sec, wall time  12544.23 sec
+    CPU time for EOM-CCSD shared one-electron intermediates   1974.38 sec, wall time     63.55 sec
+IMDS key to save: Loo , type: <class 'numpy.ndarray'>
+IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
+IMDS key to save: Fov , type: <class 'numpy.ndarray'>
+Made 1e intermediates
