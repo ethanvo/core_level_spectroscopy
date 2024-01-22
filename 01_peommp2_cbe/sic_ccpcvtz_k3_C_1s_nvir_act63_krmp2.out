@@ -1,0 +1,65 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 9, nmo = 72
+frozen orbitals [0, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 113 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.93 sec, wall time      0.20 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      8.86 sec, wall time      0.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     13.24 sec, wall time      0.44 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     18.96 sec, wall time      0.60 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     22.26 sec, wall time      0.70 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     25.40 sec, wall time      0.80 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     30.80 sec, wall time      0.97 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.75 sec, wall time      1.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     38.84 sec, wall time      1.24 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     44.23 sec, wall time      1.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     45.99 sec, wall time      1.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     49.22 sec, wall time      1.58 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     59.25 sec, wall time      1.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     58.75 sec, wall time      1.86 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     67.98 sec, wall time      2.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     65.40 sec, wall time      2.07 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     71.80 sec, wall time      2.26 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     75.53 sec, wall time      2.38 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     85.85 sec, wall time      2.72 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     88.74 sec, wall time      2.82 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     85.67 sec, wall time      2.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     94.97 sec, wall time      3.00 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     96.92 sec, wall time      3.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    104.79 sec, wall time      3.32 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    107.37 sec, wall time      3.43 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    108.09 sec, wall time      3.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    115.07 sec, wall time      3.62 sec
+Monkhorst pack size [3 3 3] ew_eta 1.7082808598635142 ew_cut 4.117786017015192
+Ewald components = 0, -0.963937826851544, 0.870979792219628
+    CPU time for get_j pass 1     54.25 sec, wall time      1.71 sec
+    CPU time for get_j pass 2      6.97 sec, wall time      1.09 sec
+    CPU time for vj and vk   1691.93 sec, wall time     54.56 sec
+    CPU time for vnuc pass1: analytic int    673.24 sec, wall time     21.45 sec
+    CPU time for contracting Vnuc [0:512]     58.37 sec, wall time      1.84 sec
+    CPU time for contracting Vnuc     58.37 sec, wall time      1.84 sec
+    CPU time for get_nuc    731.78 sec, wall time     23.29 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 9, nmo = 72
+frozen orbitals [0, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 324 MB)
+    CPU time for transforming DF-MP2 integrals   1613.86 sec, wall time     50.58 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>

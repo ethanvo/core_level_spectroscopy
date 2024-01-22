@@ -1,0 +1,17 @@
+
+******** <class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> ********
+max_space = 20
+max_cycle = 50
+conv_tol = 1e-07
+partition = mp
+max_memory 700000 MB (current use 169 MB)
+tol 1e-07  toloose 0.000316228
+max_cycle 50  max_space 20  max_memory 2000  incore False
+davidson 0 1  |r|= 2.28e+05  e= [10.57750195]  max|de|= 10.6  lindep=    1
+davidson 1 2  |r|=  207  e= [7.6656947]  max|de|= -2.91  lindep=    1
+davidson 2 3  |r|= 6.76  e= [7.55436389]  max|de|= -0.111  lindep= 0.993
+davidson 3 4  |r|= 0.000469  e= [7.55411567]  max|de|= -0.000248  lindep= 2.75e-05
+davidson 4 5  |r|= 0.0108  e= [7.55411573]  max|de|= 6.07e-08  lindep=    1
+Linear dependency in trial subspace. |r| for each state [0.01083484]
+EOM-CCSD root 0 E = 7.554115734535909  qpwt = 1.25755e-06
+    CPU time for EOM-CCSD     29.05 sec, wall time     29.37 sec
