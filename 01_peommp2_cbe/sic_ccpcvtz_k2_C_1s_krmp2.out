@@ -1,0 +1,44 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 10, nmo = 102
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 105 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.01 sec, wall time      0.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      6.22 sec, wall time      0.22 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     12.23 sec, wall time      0.43 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     17.20 sec, wall time      0.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     21.83 sec, wall time      0.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     28.13 sec, wall time      0.89 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     29.71 sec, wall time      0.95 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.64 sec, wall time      1.17 sec
+Monkhorst pack size [2 2 2] ew_eta 2.524363791145886 ew_cut 2.788138014809477
+Ewald components = 0, -1.42444163786916, 1.28500458605009
+    CPU time for get_j pass 1     15.33 sec, wall time      0.50 sec
+    CPU time for get_j pass 2      5.97 sec, wall time      0.31 sec
+    CPU time for vj and vk    180.86 sec, wall time      6.04 sec
+    CPU time for vnuc pass1: analytic int    513.08 sec, wall time     16.32 sec
+    CPU time for contracting Vnuc [0:512]     39.77 sec, wall time      1.26 sec
+    CPU time for contracting Vnuc     39.77 sec, wall time      1.26 sec
+    CPU time for get_nuc    552.91 sec, wall time     17.58 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 10, nmo = 102
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 284 MB)
+    CPU time for transforming DF-MP2 integrals    132.54 sec, wall time      4.15 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>
