@@ -1,0 +1,89 @@
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.44 sec, wall time      0.44 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.71 sec, wall time      0.54 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.79 sec, wall time      0.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     24.92 sec, wall time      0.79 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     45.46 sec, wall time      1.45 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     40.30 sec, wall time      1.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     46.46 sec, wall time      1.47 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     57.94 sec, wall time      1.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     70.99 sec, wall time      2.36 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     68.13 sec, wall time      2.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     79.92 sec, wall time      2.62 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     73.20 sec, wall time      2.42 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     94.01 sec, wall time      3.11 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     93.72 sec, wall time      3.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     91.67 sec, wall time      2.92 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)    108.04 sec, wall time      3.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)    137.17 sec, wall time      7.90 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)    187.18 sec, wall time     25.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)    144.66 sec, wall time      5.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)    127.31 sec, wall time      4.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)    131.10 sec, wall time      4.14 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)    132.46 sec, wall time      4.18 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    137.28 sec, wall time      4.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    144.84 sec, wall time      4.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    175.56 sec, wall time      5.64 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    175.32 sec, wall time      5.54 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    182.61 sec, wall time      6.05 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (27,*)    172.07 sec, wall time      5.62 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (28,*)    202.15 sec, wall time      6.60 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (29,*)    201.86 sec, wall time      6.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (30,*)    191.58 sec, wall time      6.05 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (31,*)    212.94 sec, wall time      6.83 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (32,*)    218.17 sec, wall time      7.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (33,*)    220.97 sec, wall time      7.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (34,*)    230.27 sec, wall time      7.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (35,*)    218.69 sec, wall time      6.93 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (36,*)    223.24 sec, wall time      7.10 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (37,*)    253.66 sec, wall time      8.13 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (38,*)    232.57 sec, wall time      7.42 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (39,*)    237.49 sec, wall time      7.66 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (40,*)    248.99 sec, wall time      8.11 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (41,*)    253.47 sec, wall time      8.01 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (42,*)    247.26 sec, wall time      7.81 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (43,*)    251.97 sec, wall time      7.96 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (44,*)    266.81 sec, wall time      8.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (45,*)    279.86 sec, wall time      8.94 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (46,*)    298.98 sec, wall time      9.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (47,*)    280.25 sec, wall time      9.35 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (48,*)    309.57 sec, wall time     10.09 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (49,*)    297.90 sec, wall time      9.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (50,*)    336.37 sec, wall time     10.89 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (51,*)    338.60 sec, wall time     10.86 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (52,*)    293.35 sec, wall time      9.31 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (53,*)    336.88 sec, wall time     10.93 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (54,*)    336.17 sec, wall time     10.81 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (55,*)    329.75 sec, wall time     10.73 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (56,*)    342.46 sec, wall time     10.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (57,*)    357.68 sec, wall time     11.79 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (58,*)    345.17 sec, wall time     10.98 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (59,*)    371.62 sec, wall time     11.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (60,*)    362.76 sec, wall time     11.78 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (61,*)    384.53 sec, wall time     12.27 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (62,*)    404.98 sec, wall time     12.96 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (63,*)    385.04 sec, wall time     12.41 sec
+Monkhorst pack size [4 4 4] ew_eta 1.2952459123645264 ew_cut 5.428678483328133
+Ewald components = 0, -0.730869601067801, 0.661151075018325
+    CPU time for get_j pass 1    126.29 sec, wall time      4.02 sec
+    CPU time for get_j pass 2      8.59 sec, wall time      2.61 sec
+    CPU time for vj and vk  13222.96 sec, wall time    451.79 sec
+    CPU time for vnuc pass1: analytic int   1155.71 sec, wall time     37.14 sec
+    CPU time for contracting Vnuc [0:512]     86.36 sec, wall time      2.88 sec
+    CPU time for contracting Vnuc     86.36 sec, wall time      2.88 sec
+    CPU time for get_nuc   1242.45 sec, wall time     40.03 sec
+Ewald components = 9.00674411881527e-134, -644.974612150364, 572.081161138653
+    CPU time for vnuc pass1: analytic int   1121.59 sec, wall time     36.12 sec
+    CPU time for contracting Vnuc [0:512]     86.22 sec, wall time      2.90 sec
+    CPU time for contracting Vnuc     86.22 sec, wall time      2.90 sec
+    CPU time for get_nuc   1208.22 sec, wall time     39.03 sec
+E1 = (-317.5745362562549+3.4741610828152097e-15j)  E_coul = (63.583448419953875+1.076422892534628e-15j)
+using HDF5 ERI storage
+    CPU time for transforming oopq 2423346.44 sec, wall time  82242.64 sec
+    CPU time for transforming ovpq 2480946.05 sec, wall time  86718.02 sec
+    CPU time for transforming vvvv  10932.01 sec, wall time    344.19 sec
+    CPU time for CCSD integral transformation 4930905.02 sec, wall time 169835.99 sec
+    CPU time for EOM-CCSD shared one-electron intermediates 277997.38 sec, wall time   9704.20 sec
+IMDS key to save: Loo , type: <class 'numpy.ndarray'>
+IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
+IMDS key to save: Fov , type: <class 'numpy.ndarray'>
+Made 1e intermediates
