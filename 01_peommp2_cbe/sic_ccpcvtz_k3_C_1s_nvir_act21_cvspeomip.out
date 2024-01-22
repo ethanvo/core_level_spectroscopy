@@ -1,0 +1,27 @@
+
+******** <class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> ********
+max_space = 20
+max_cycle = 50
+conv_tol = 1e-07
+partition = mp
+max_memory 700000 MB (current use 113 MB)
+tol 1e-07  toloose 0.000316228
+max_cycle 50  max_space 20  max_memory 2000  incore True
+davidson 0 1  |r|= 2.07e+05  e= [10.56981368]  max|de|= 10.6  lindep=    1
+davidson 1 2  |r|= 84.9  e= [10.83612771]  max|de|= 0.266  lindep= 0.0968
+davidson 2 3  |r|= 17.7  e= [11.06873458]  max|de|= 0.233  lindep= 0.535
+davidson 3 4  |r|= 2.41  e= [11.04773108]  max|de|= -0.021  lindep= 0.945
+davidson 4 5  |r|= 0.0181  e= [11.04880329]  max|de|= 0.00107  lindep= 0.0164
+davidson 5 6  |r|= 1.02e+03  e= [11.01793191]  max|de|= -0.0309  lindep= 0.0008
+davidson 6 7  |r|= 76.8  e= [11.01178972]  max|de|= -0.00614  lindep= 0.0443
+davidson 7 8  |r|= 0.00187  e= [11.01178856]  max|de|= -1.16e-06  lindep= 0.0658
+davidson 8 9  |r|= 0.014  e= [11.01178856]  max|de|= -1.18e-10  lindep= 1.51e-06
+davidson 9 10  |r|= 70.9  e= [11.01178934]  max|de|= 7.8e-07  lindep= 1.59e-05
+davidson 10 11  |r|= 27.4  e= [11.01185953]  max|de|= 7.02e-05  lindep= 1.26e-05
+davidson 11 12  |r|= 57.8  e= [11.0118404]  max|de|= -1.91e-05  lindep= 3.95e-07
+davidson 12 13  |r|=  484  e= [0.01803373]  max|de|=  -11  lindep= 0.998
+davidson 13 14  |r|= 7.57  e= [2.66597117e-11]  max|de|= -0.018  lindep=    1
+root 0 converged  |r|= 6.56e-06  e= -1.2641194770314335e-13  max|de|= -2.68e-11
+converged 14 15  |r|= 6.56e-06  e= [-1.26411948e-13]  max|de|= -2.68e-11
+EOM-CCSD root 0 E = -1.264119477031434e-13  qpwt = 3.73226e-30
+    CPU time for EOM-CCSD     13.70 sec, wall time     35.15 sec
