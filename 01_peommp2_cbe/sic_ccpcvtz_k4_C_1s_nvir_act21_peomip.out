@@ -1,0 +1,46 @@
+
+******** <class 'pyscf.pbc.cc.eom_kccsd_rhf.EOMIP'> ********
+max_space = 20
+max_cycle = 50
+conv_tol = 1e-07
+partition = mp
+max_memory 700000 MB (current use 170 MB)
+tol 1e-07  toloose 0.000316228
+max_cycle 50  max_space 28  max_memory 2000  incore False
+davidson 0 3  |r|= 4.98e+04  e= [-0.23272326  0.1444626   0.14457645]  max|de|= -0.233  lindep=    1
+Old state -> New state
+    1     ->     0 
+    2     ->     1 
+    1     ->     2 
+davidson 1 5  |r|= 1.08e+03  e= [0.0509081  0.14446284 0.28914293]  max|de|= 0.145  lindep= 0.928
+Old state -> New state
+    1     ->     0 
+    0     ->     1 
+davidson 2 8  |r|= 14.7  e= [ 0.14446126  0.14447242 21.62472238]  max|de|= 21.3  lindep= 0.996
+davidson 3 11  |r|= 0.235  e= [0.14446258 0.14446556 0.1444911 ]  max|de|= -21.5  lindep= 0.245
+Old state -> New state
+    1     ->     0 
+    0     ->     1 
+    0     ->     2 
+davidson 4 14  |r|= 0.0863  e= [0.14445857 0.14446234 0.14446247]  max|de|= -6.99e-06  lindep= 0.288
+Old state -> New state
+    1     ->     0 
+davidson 5 17  |r|= 0.0023  e= [0.14446225 0.1444626  0.1444626 ]  max|de|= 2.59e-07  lindep= 0.0733
+Old state -> New state
+    1     ->     0 
+    0     ->     2 
+davidson 6 20  |r|= 0.000772  e= [0.14446176 0.14446235 0.14446259]  max|de|= -8.34e-07  lindep= 0.00414
+Old state -> New state
+    1     ->     2 
+davidson 7 23  |r|= 0.00226  e= [0.14443938 0.14446034 0.14446092]  max|de|= -2.24e-05  lindep= 0.011
+Old state -> New state
+    1     ->     0 
+davidson 8 26  |r|= 0.000158  e= [0.14445714 0.14446064 0.14446207]  max|de|= -3.2e-06  lindep= 0.00597
+root 0 converged  |r|= 9.96e-05  e= 0.14445713565666693  max|de|= 1.63e-12
+root 1 converged  |r|= 0.000158  e= 0.14446064276254023  max|de|= -1.03e-12
+root 2 converged  |r|= 8.15e-05  e= 0.14446206887554827  max|de|= 1.84e-13
+converged 9 3  |r|= 0.000158  e= [0.14445714 0.14446064 0.14446207]  max|de|= 1.63e-12
+EOM-CCSD root 0 E = 0.1444571356566669  qpwt = 4.41113e-13
+EOM-CCSD root 1 E = 0.1444606427625402  qpwt = 1.52996e-13
+EOM-CCSD root 2 E = 0.1444620688755483  qpwt = 6.46128e-15
+    CPU time for EOM-CCSD    244.08 sec, wall time    322.10 sec

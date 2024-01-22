@@ -1,0 +1,12 @@
+
+The following have been reloaded with a version change:
+  1) gcc/10.2.0 => gcc/13.0.1
+
+==> Error: Spec 'gcc@13.2.0' matches no installed packages.
+==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
+<class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> does not have attributes  mandatory
+/burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/lib/linalg_helper.py:619: UserWarning: Only 0 eigenvalues (out of   1 requested roots) with imaginary part < 0.001.
+
+  warnings.warn('Only %d eigenvalues (out of %3d requested roots) with imaginary part < %4.3g.\n'
+/burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/lib/linalg_helper.py:958: UserWarning: 1 davidson root: #0 has a very small norm: 9.988e-12
+  warnings.warn("{:d} davidson root{_s}: {} {_has} very small norm{_s}: {}".format(
