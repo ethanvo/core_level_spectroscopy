@@ -1,0 +1,8 @@
+{
+    "formula": "zno",
+    "basis": "ccpcvtz",
+    "path": "LGXWKG",
+    "npoints": 100,
+    "e_kn_file": "data/zno_ccpcvtz_wide_e_kn.h5",
+    "output_file": "data/zno_ccpcvtz_wide_data.json"
+}
