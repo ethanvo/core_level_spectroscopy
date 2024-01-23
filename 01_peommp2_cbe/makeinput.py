@@ -31,7 +31,7 @@ from scipy.optimize import root_scalar
 
 au2ev = 27.211386245988
 
-materials = ["c", "sic"]
+materials = ["bn", "aln", "alp", "mgo", "zno", "gan", "gaas", "lif", "licl", "mno"]
 
 basis_sets = ["ccpcvtz"]
 
@@ -39,18 +39,48 @@ vb_scaled_centers = {
         "c": [0.0, 0.0, 0.0],
         'si': [0.0, 0.0, 0.0],
         "sic": [0.0, 0.0, 0.0],
+        "bn": [0.0, 0.0, 0.0],
+        "aln": [0.0, 0.0, 0.0],
+        "alp": [0.0, 0.0, 0.0],
+        "mgo": [0.0, 0.0, 0.0],
+        "zno": [0.0, 0.0, 0.0],
+        "gan": [0.010101010101010102, 0.0, 0.010101010101010102], # Check
+        "gaas": [0.0, 0.0, 0.0],
+        "lif": [0.0, 0.0, 0.0],
+        "licl": [0.0530303, 0.0530303, 0.10606061],
+        "mno" :
         }
 
 vb_nroots = {
         "c": 3,
         "si": 3,
         "sic": 3,
+        "bn" : 3
+        "aln" : 1,
+        "alp" : 3,
+        "mgo" : 3,
+        "zno" :
+        "gan" :
+        "gaas" :
+        "lif" : 3,
+        "licl" : 1,
+        "mno"
         }
 
 core_orbitals = {
         "c": {"C_1s": [0, 1]},
         "si": {"Si_2p": [0, 1, 2, 3, 4, 5]},
         "sic": {"C_1s": [0]},
+        "bn" : 
+        "aln" : 
+        "alp" : 
+        "mgo" : 
+        "zno" :
+        "gan" :
+        "gaas" :
+        "lif" : 
+        "licl" : 
+        "mno" :
         }
 
 
@@ -58,12 +88,30 @@ exp_to_discard = {
         "c": None,
         "si": None,
         "sic": None,
+        "bn"
+        "aln"
+        "alp"
+        "mgo"
+        "zno"
+        "gan"
+        "gaas"
+        "lif"
+        "licl"
+        "mno"
         }
 
 frozen_core = {
         "c": [],
         "si": [0, 1, 2, 3],
         "sic": [0]
+        "bn"
+        "aln"
+        "alp"
+        "mgo"
+        "zno"
+        "gan"
+        "gaas"
+        "mno"
 }
 
 def get_nmo(formula, basis):
