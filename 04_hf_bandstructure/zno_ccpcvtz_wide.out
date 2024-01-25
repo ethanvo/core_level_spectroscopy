@@ -19706,3 +19706,6 @@ HOMO = 0.128656226257  LUMO = 0.553499739104
     CPU time for get_k_kpts: make_kpt ki>=kj (60,*)   3434.27 sec, wall time    142.33 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (61,*)   3462.53 sec, wall time    147.46 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (62,*)   3518.99 sec, wall time    147.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (63,*)   3588.57 sec, wall time    149.37 sec
+Monkhorst pack size [4 4 4] ew_eta 0.6437683161814155 ew_cut 10.910716061151202
+Ewald components = 5.16077419879108e-112, -0.363391872740418, 0.317015710452027
