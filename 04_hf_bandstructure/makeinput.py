@@ -3,7 +3,7 @@ from fileutils import dump
 
 materials = ["zno", "gan", "gaas", "mno"]
 basis = "ccpcvtz"
-paths = {"zno" : "LGXWKG",
+paths = {"zno" : "GMKGALHA",
          "gan" : "LGXWKG",
          "gaas" : "LGXWKG",
          "mno" : "LGXWKG"}
@@ -21,6 +21,6 @@ for formula in materials:
     data["e_kn_file"] = "data/{}_e_kn.h5".format(key)
     data["output_file"] = "data/{}_data.json".format(key)
     dump(data, "data/{}.json".format(key))
-    fout.write("sbatch -J {} /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf-job.sh hf_bandstructure.py {}.json\n".format(key, key))
+    fout.write("sbatch -J {} /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh hf_bandstructure.py {}.json\n".format(key, key))
 
 fout.close()
