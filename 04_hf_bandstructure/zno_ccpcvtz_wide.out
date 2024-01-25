@@ -19705,3 +19705,4 @@ HOMO = 0.128656226257  LUMO = 0.553499739104
     CPU time for get_k_kpts: make_kpt ki>=kj (59,*)   3351.20 sec, wall time    157.12 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (60,*)   3434.27 sec, wall time    142.33 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (61,*)   3462.53 sec, wall time    147.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (62,*)   3518.99 sec, wall time    147.50 sec
