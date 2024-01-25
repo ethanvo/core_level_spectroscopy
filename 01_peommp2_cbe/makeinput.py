@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pyscf.pbc import gto
 from pyscf.pbc.tools import lattice, pyscf_ase
-from fileutils import load, dump
+from fileutils import dump
 from scipy.optimize import root_scalar
 
 # Components of input file
@@ -31,7 +31,8 @@ from scipy.optimize import root_scalar
 
 au2ev = 27.211386245988
 
-materials = ["bn", "aln", "alp", "mgo", "zno", "gan", "gaas", "lif", "licl", "mno"]
+materials = ["bn", "aln", "alp", "mgo"]
+#materials = ["bn", "aln", "alp", "mgo", "zno", "gan", "gaas", "lif", "licl", "mno"]
 
 basis_sets = ["ccpcvtz"]
 
@@ -48,39 +49,39 @@ vb_scaled_centers = {
         "gaas": [0.0, 0.0, 0.0],
         "lif": [0.0, 0.0, 0.0],
         "licl": [0.0530303, 0.0530303, 0.10606061],
-        "mno" :
+        "mno" : [0.0, 0.0, 0.0],
         }
 
 vb_nroots = {
         "c": 3,
         "si": 3,
         "sic": 3,
-        "bn" : 3
+        "bn" : 3,
         "aln" : 1,
         "alp" : 3,
         "mgo" : 3,
-        "zno" :
-        "gan" :
-        "gaas" :
+        "zno" : 1, # Check
+        "gan" : 3, # Check
+        "gaas" : 3, # Check
         "lif" : 3,
         "licl" : 1,
-        "mno"
+        "mno" : 3, # Check
         }
 
 core_orbitals = {
         "c": {"C_1s": [0, 1]},
         "si": {"Si_2p": [0, 1, 2, 3, 4, 5]},
         "sic": {"C_1s": [0]},
-        "bn" : 
-        "aln" : 
-        "alp" : 
-        "mgo" : 
-        "zno" :
-        "gan" :
-        "gaas" :
-        "lif" : 
-        "licl" : 
-        "mno" :
+        "bn" : {"N_1s": [0], "B_1s": [1]},
+        "aln" : {"N_1s": [0, 1], "Al_2p": [4, 5, 6, 7, 8, 9]},
+        "alp" : {"Al_2p": [0, 1, 2]},
+        "mgo" : {"O_1s": [0], "Mg_2p": [2, 3, 4]},
+        "zno" : {},
+        "gan" : {},
+        "gaas" : {},
+        "lif" : {},
+        "licl" : {},
+        "mno" : {},
         }
 
 
@@ -88,30 +89,30 @@ exp_to_discard = {
         "c": None,
         "si": None,
         "sic": None,
-        "bn"
-        "aln"
-        "alp"
-        "mgo"
-        "zno"
-        "gan"
-        "gaas"
-        "lif"
-        "licl"
-        "mno"
+        "bn" : None,
+        "aln" : None,
+        "alp" : None,
+        "mgo" : 0.033,
+        "zno" : None,
+        "gan" : None,
+        "gaas" : None,
+        "lif" : None,
+        "licl" : None,
+        "mno" : None,
         }
 
 frozen_core = {
         "c": [],
         "si": [0, 1, 2, 3],
-        "sic": [0]
-        "bn"
-        "aln"
-        "alp"
-        "mgo"
-        "zno"
-        "gan"
-        "gaas"
-        "mno"
+        "sic": [0],
+        "bn" : [],
+        "aln" : [0, 1],
+        "alp" : [0, 1, 2, 3, 4, 5, 6],
+        "mgo" : [0],
+        "zno" : [],
+        "gan" : [],
+        "gaas" : [],
+        "mno" : [],
 }
 
 def get_nmo(formula, basis):
