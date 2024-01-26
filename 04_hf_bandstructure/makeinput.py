@@ -2,23 +2,25 @@
 from fileutils import dump
 
 materials = ["zno", "gan", "gaas", "mno"]
-basis = "ccpcvtz"
+basis = "ccecpccpvtz"
+pseudo = "ccecp"
 paths = {"zno" : "GMKGALHA",
          "gan" : "LGXWKG",
          "gaas" : "LGXWKG",
          "mno" : "LGXWKG"}
 
-fout = open("sendall.sh", "w")
+fout = open("sendall.sh", "a")
 fout.write("#!/bin/bash\n")
 
 for formula in materials:
-    key = "{}_{}_222_wide".format(formula, basis)
+    key = "{}_{}_444_wide".format(formula, basis)
     data = {}
     data["formula"] = formula
     data["basis"] = basis
+    data["pseudo"] = pseudo
     data["path"] = paths[formula]
     data["npoints"] = 100
-    data["kmesh"] = [2, 2, 2]
+    data["kmesh"] = [4, 4, 4]
     data["e_kn_file"] = "data/{}_e_kn.h5".format(key)
     data["output_file"] = "data/{}_data.json".format(key)
     dump(data, "data/{}.json".format(key))
