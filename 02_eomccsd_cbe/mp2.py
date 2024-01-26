@@ -66,12 +66,12 @@ for k in range(nkpts):
     n, v = np.linalg.eigh(dm[k][nocc:, nocc:])
     idx = np.argsort(n)[::-1]
     n, v = n[idx], v[:, idx]
-    fvv = np.diag(mo_energy[k][nocc:(nocc + mp2_act)])
+    fvv = np.diag(mo_energy[k][nocc:])
     fvv_no = reduce(np.dot, (v.T.conj(), fvv, v))
     _, v_canon = np.linalg.eigh(fvv_no[:nvir_act,:nvir_act])
-    no_coeff_1 = reduce(np.dot, (mo_coeff[k][:, nocc:(nocc + mp2_act)], v[:, :nvir_act], v_canon))
-    no_coeff_2 = np.dot(mo_coeff[k][:, nocc:(nocc + mp2_act)], v[:, nvir_act:])
-    no_coeff_k = np.concatenate((mo_coeff[k][:, :nocc], no_coeff_1, no_coeff_2, mo_coeff[k][:,(nocc + mp2_act):]), axis=1)
+    no_coeff_1 = reduce(np.dot, (mo_coeff[k][:, nocc:], v[:, :nvir_act], v_canon))
+    no_coeff_2 = np.dot(mo_coeff[k][:, nocc:], v[:, nvir_act:])
+    no_coeff_k = np.concatenate((mo_coeff[k][:, :nocc], no_coeff_1, no_coeff_2), axis=1)
     no_coeff.append(no_coeff_k)
 
 with h5py.File("data/{}".format(material["nos"]), 'w') as fout: # output
