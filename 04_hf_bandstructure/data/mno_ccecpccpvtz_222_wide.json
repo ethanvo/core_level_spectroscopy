@@ -1,0 +1,14 @@
+{
+    "formula": "mno",
+    "basis": "ccecpccpvtz",
+    "pseudo": "ccecp",
+    "path": "LGXWKG",
+    "npoints": 100,
+    "kmesh": [
+        2,
+        2,
+        2
+    ],
+    "e_kn_file": "data/mno_ccecpccpvtz_222_wide_e_kn.h5",
+    "output_file": "data/mno_ccecpccpvtz_222_wide_data.json"
+}
