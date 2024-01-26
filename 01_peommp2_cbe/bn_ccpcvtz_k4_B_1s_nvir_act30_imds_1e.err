@@ -1,0 +1,7 @@
+
+The following have been reloaded with a version change:
+  1) gcc/10.2.0 => gcc/13.0.1
+
+==> Error: Spec 'gcc@13.2.0' matches no installed packages.
+==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
+slurmstepd: error: *** JOB 11415729 ON g107 CANCELLED AT 2024-01-26T15:25:10 ***

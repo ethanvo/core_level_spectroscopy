@@ -1,0 +1,13 @@
+{
+    "formula": "gan",
+    "basis": "ccpcvtz",
+    "path": "LGXWKG",
+    "npoints": 100,
+    "kmesh": [
+        2,
+        2,
+        2
+    ],
+    "e_kn_file": "data/gan_ccpcvtz_222_wide_e_kn.h5",
+    "output_file": "data/gan_ccpcvtz_222_wide_data.json"
+}

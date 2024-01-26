@@ -1,0 +1,44 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 20, nmo = 204
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 103 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)     26.62 sec, wall time      1.07 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     72.22 sec, wall time      2.56 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)    110.32 sec, wall time      4.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)    158.30 sec, wall time      6.00 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)    184.36 sec, wall time      6.80 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)    226.30 sec, wall time      8.91 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)    259.31 sec, wall time      9.10 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)    320.27 sec, wall time     12.07 sec
+Monkhorst pack size [2 2 2] ew_eta 1.3059867597572923 ew_cut 5.384097344598738
+Ewald components = 2.1452953489755e-105, -0.737233080691535, 0.64037152459719
+    CPU time for get_j pass 1     98.82 sec, wall time      3.13 sec
+    CPU time for get_j pass 2      7.75 sec, wall time      2.25 sec
+    CPU time for vj and vk   1469.27 sec, wall time     56.24 sec
+    CPU time for vnuc pass1: analytic int   2797.10 sec, wall time     88.10 sec
+    CPU time for contracting Vnuc [0:896]    221.55 sec, wall time      7.16 sec
+    CPU time for contracting Vnuc    221.55 sec, wall time      7.17 sec
+    CPU time for get_nuc   3018.89 sec, wall time     95.28 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 20, nmo = 204
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 1115 MB)
+    CPU time for transforming DF-MP2 integrals    696.06 sec, wall time     31.68 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>

@@ -12,12 +12,13 @@ fout = open("sendall.sh", "w")
 fout.write("#!/bin/bash\n")
 
 for formula in materials:
-    key = "{}_{}_wide".format(formula, basis)
+    key = "{}_{}_222_wide".format(formula, basis)
     data = {}
     data["formula"] = formula
     data["basis"] = basis
     data["path"] = paths[formula]
     data["npoints"] = 100
+    data["kmesh"] = [2, 2, 2]
     data["e_kn_file"] = "data/{}_e_kn.h5".format(key)
     data["output_file"] = "data/{}_data.json".format(key)
     dump(data, "data/{}.json".format(key))

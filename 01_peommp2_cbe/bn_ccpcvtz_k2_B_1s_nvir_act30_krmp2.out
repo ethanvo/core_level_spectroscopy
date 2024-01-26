@@ -1,0 +1,46 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 6, nmo = 36
+frozen orbitals [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 100 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      2.43 sec, wall time      0.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     11.91 sec, wall time      0.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     18.18 sec, wall time      0.58 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     21.81 sec, wall time      0.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.72 sec, wall time      1.13 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     26.80 sec, wall time      0.86 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     28.21 sec, wall time      0.90 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.45 sec, wall time      1.16 sec
+Monkhorst pack size [2 2 2] ew_eta 3.017379283613466 ew_cut 2.333163107269861
+Ewald components = 0, -1.70264454950703, 1.53485722578667
+    CPU time for get_j pass 1      7.95 sec, wall time      0.29 sec
+    CPU time for get_j pass 2      4.64 sec, wall time      0.18 sec
+    CPU time for vj and vk    198.34 sec, wall time      6.70 sec
+    CPU time for vnuc pass1: analytic int   1053.74 sec, wall time     33.94 sec
+    CPU time for contracting Vnuc [0:216]     18.37 sec, wall time      0.59 sec
+    CPU time for contracting Vnuc     18.37 sec, wall time      0.59 sec
+    CPU time for get_nuc   1072.16 sec, wall time     34.53 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 6, nmo = 36
+frozen orbitals [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 689 MB)
+    CPU time for transforming DF-MP2 integrals     88.71 sec, wall time      2.78 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>

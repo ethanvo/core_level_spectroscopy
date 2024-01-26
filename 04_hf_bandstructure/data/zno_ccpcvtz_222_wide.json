@@ -1,0 +1,13 @@
+{
+    "formula": "zno",
+    "basis": "ccpcvtz",
+    "path": "GMKGALHA",
+    "npoints": 100,
+    "kmesh": [
+        2,
+        2,
+        2
+    ],
+    "e_kn_file": "data/zno_ccpcvtz_222_wide_e_kn.h5",
+    "output_file": "data/zno_ccpcvtz_222_wide_data.json"
+}

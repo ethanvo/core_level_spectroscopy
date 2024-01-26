@@ -1,0 +1,13 @@
+{
+    "formula": "mno",
+    "basis": "ccpcvtz",
+    "path": "LGXWKG",
+    "npoints": 100,
+    "kmesh": [
+        3,
+        3,
+        3
+    ],
+    "e_kn_file": "data/mno_ccpcvtz_333_wide_e_kn.h5",
+    "output_file": "data/mno_ccpcvtz_333_wide_data.json"
+}
