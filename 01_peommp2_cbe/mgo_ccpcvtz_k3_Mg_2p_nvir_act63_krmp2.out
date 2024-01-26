@@ -1,0 +1,65 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 9, nmo = 72
+frozen orbitals [0, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 90 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.41 sec, wall time      0.40 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     17.27 sec, wall time      0.63 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     21.07 sec, wall time      0.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     33.50 sec, wall time      1.07 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     35.64 sec, wall time      1.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     44.44 sec, wall time      1.43 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     55.04 sec, wall time      1.74 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     59.19 sec, wall time      2.02 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     58.89 sec, wall time      1.87 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     82.69 sec, wall time      2.82 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     76.26 sec, wall time      2.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     89.93 sec, wall time      2.91 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     97.80 sec, wall time      3.13 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     98.32 sec, wall time      3.19 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)    105.95 sec, wall time      3.43 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)    110.53 sec, wall time      3.59 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)    131.09 sec, wall time      4.34 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     96.60 sec, wall time      3.09 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)    144.57 sec, wall time      4.88 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)    136.55 sec, wall time      4.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)    127.44 sec, wall time      4.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)    149.58 sec, wall time      4.75 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)    143.78 sec, wall time      4.56 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)    165.92 sec, wall time      6.39 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    167.37 sec, wall time      5.36 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    186.36 sec, wall time      6.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    167.58 sec, wall time      5.33 sec
+Monkhorst pack size [3 3 3] ew_eta 1.7617206716074303 ew_cut 3.993056330944369
+Ewald components = 0, -0.994093035724495, 0.898112154971916
+    CPU time for get_j pass 1     48.82 sec, wall time      1.65 sec
+    CPU time for get_j pass 2      6.94 sec, wall time      0.96 sec
+    CPU time for vj and vk   2672.27 sec, wall time     90.07 sec
+    CPU time for vnuc pass1: analytic int   5126.25 sec, wall time    173.62 sec
+    CPU time for contracting Vnuc [0:343]     81.86 sec, wall time      2.64 sec
+    CPU time for contracting Vnuc     81.87 sec, wall time      2.64 sec
+    CPU time for get_nuc   5208.26 sec, wall time    176.26 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 9, nmo = 72
+frozen orbitals [0, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 1014 MB)
+    CPU time for transforming DF-MP2 integrals   1392.11 sec, wall time     43.67 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>

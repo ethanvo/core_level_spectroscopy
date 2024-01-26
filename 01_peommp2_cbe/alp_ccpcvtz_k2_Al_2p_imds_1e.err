@@ -1,0 +1,7 @@
+
+The following have been reloaded with a version change:
+  1) gcc/10.2.0 => gcc/13.0.1
+
+==> Error: Spec 'gcc@13.2.0' matches no installed packages.
+==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
+/cm/local/apps/slurm/var/spool/job11415883/slurm_script: line 21: 3123728 Segmentation fault      (core dumped) python imds_1e.py $1

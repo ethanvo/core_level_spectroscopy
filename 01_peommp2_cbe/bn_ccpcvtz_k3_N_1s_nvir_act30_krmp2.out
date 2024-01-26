@@ -1,0 +1,65 @@
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 6, nmo = 36
+frozen orbitals [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 86 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      2.28 sec, wall time      0.12 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)      7.59 sec, wall time      0.26 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)      8.51 sec, wall time      0.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     10.95 sec, wall time      0.36 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     15.86 sec, wall time      0.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     17.97 sec, wall time      0.57 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     21.69 sec, wall time      0.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     26.59 sec, wall time      0.90 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (8,*)     29.96 sec, wall time      0.98 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (9,*)     34.33 sec, wall time      1.12 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (10,*)     36.95 sec, wall time      1.21 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (11,*)     35.84 sec, wall time      1.14 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (12,*)     39.15 sec, wall time      1.24 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (13,*)     41.97 sec, wall time      1.32 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (14,*)     48.46 sec, wall time      1.53 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (15,*)     46.58 sec, wall time      1.47 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (16,*)     50.44 sec, wall time      1.59 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (17,*)     53.13 sec, wall time      1.67 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (18,*)     56.05 sec, wall time      1.78 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (19,*)     58.36 sec, wall time      1.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (20,*)     63.46 sec, wall time      2.02 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (21,*)     61.44 sec, wall time      1.96 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (22,*)     66.05 sec, wall time      2.09 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (23,*)     68.80 sec, wall time      2.17 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (24,*)     74.16 sec, wall time      2.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (25,*)     76.41 sec, wall time      2.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (26,*)     76.17 sec, wall time      2.41 sec
+Monkhorst pack size [3 3 3] ew_eta 2.0415012507608057 ew_cut 3.446555143149695
+Ewald components = 0, -1.15196888453017, 1.04011066863786
+    CPU time for get_j pass 1     28.07 sec, wall time      1.12 sec
+    CPU time for get_j pass 2      5.98 sec, wall time      0.69 sec
+    CPU time for vj and vk   1168.44 sec, wall time     37.95 sec
+    CPU time for vnuc pass1: analytic int   1501.95 sec, wall time     48.56 sec
+    CPU time for contracting Vnuc [0:216]     27.46 sec, wall time      0.87 sec
+    CPU time for contracting Vnuc     27.47 sec, wall time      0.87 sec
+    CPU time for get_nuc   1529.52 sec, wall time     49.43 sec
+
+******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
+CC2 = 0
+CCSD nocc = 6, nmo = 36
+frozen orbitals [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85]
+max_cycle = 50
+direct = 1
+conv_tol = 1e-07
+conv_tol_normt = 1e-05
+diis_space = 6
+diis_start_cycle = 0
+diis_start_energy_diff = 1e+09
+max_memory 700000 MB (current use 792 MB)
+    CPU time for transforming DF-MP2 integrals   1021.26 sec, wall time     32.00 sec
+t1 type: <class 'numpy.ndarray'>
+t2 type: <class 'numpy.ndarray'>
