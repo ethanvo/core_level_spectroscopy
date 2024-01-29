@@ -1,0 +1,35 @@
+
+The following have been reloaded with a version change:
+  1) gcc/10.2.0 => gcc/13.0.1
+
+==> Error: No such environment: 'pyscf-gcc-openblas'
+==> Error: No such environment: 'pyscf-intel-mkl'
+==> Error: Spec 'gcc@13.2.0' matches no installed packages.
+==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
+/burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/pbc/tools/lattice.py:106: UserWarning: Use ase.build.bulk() instead
+  ase_atom = bulk('GaAs', 'zincblende', a=5.648*A2B)
+WARNING!
+  Very diffused basis functions are found in the basis set. They may lead to severe
+  linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
+  to remove the diffused Gaussians whose exponents are less than 0.1.
+
+Traceback (most recent call last):
+  File "/burg/ccce/users/eav2136/projects/core_level_spectroscopy/04_hf_bandstructure/hf_bandstructure.py", line 9, in <module>
+    vbmax_kpt, cbmin_kpt, g_vbmax, g_cbmin = get_all_electron_bandstructure(data["formula"], cell, data["path"], data["npoints"], data["kmesh"], e_kn_file=data["e_kn_file"], output_file=data["output_file"])
+  File "/burg/berkelbach/users/eav2136/builds/work_tools/pyscf_tools/bandstructure.py", line 52, in get_all_electron_bandstructure
+    dump({"vbmax_k": vbmax_k, "cbmin_k": cbmin_k, "g_vbmax": g_vbmax, "g_cbmin": g_cbmin}, output_file)
+  File "/burg/berkelbach/users/eav2136/builds/work_tools/utilities/fileutils.py", line 12, in dump
+    fout.write(json.dumps(data, indent=4))
+  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/._view/dccfb6cgvddlly4gsycwdc4ig7fx3dvw/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/._view/dccfb6cgvddlly4gsycwdc4ig7fx3dvw/lib/python3.10/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/._view/dccfb6cgvddlly4gsycwdc4ig7fx3dvw/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/._view/dccfb6cgvddlly4gsycwdc4ig7fx3dvw/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/._view/dccfb6cgvddlly4gsycwdc4ig7fx3dvw/lib/python3.10/json/encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/._view/dccfb6cgvddlly4gsycwdc4ig7fx3dvw/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable

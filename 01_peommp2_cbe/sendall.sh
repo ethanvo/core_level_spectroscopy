@@ -1,16 +1,5 @@
 #!/bin/bash
-./submit.sh bn_ccpcvtz_k4_N_1s_nvir_act30 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k3_N_1s_nvir_act30 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k3_N_1s 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k4_B_1s_nvir_act30 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k3_B_1s_nvir_act30 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k2_B_1s_nvir_act30 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k3_B_1s 716800 5-00:00:00
-./submit.sh bn_ccpcvtz_k2_B_1s 716800 5-00:00:00
-./submit.sh aln_ccpcvtz_k4_N_1s_nvir_act6 716800 5-00:00:00
-./submit.sh aln_ccpcvtz_k3_N_1s_nvir_act6 716800 5-00:00:00
-./submit.sh aln_ccpcvtz_k2_N_1s_nvir_act6 716800 5-00:00:00
-#./submit.sh aln_ccpcvtz_k3_N_1s_nvir_act39 716800 5-00:00:00
+./submit.sh aln_ccpcvtz_k3_N_1s_nvir_act39 716800 5-00:00:00
 #./submit.sh aln_ccpcvtz_k2_N_1s_nvir_act39 716800 5-00:00:00
 #./submit.sh aln_ccpcvtz_k2_N_1s 716800 5-00:00:00
 #./submit.sh aln_ccpcvtz_k4_Al_2p_nvir_act6 716800 5-00:00:00
