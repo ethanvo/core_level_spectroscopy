@@ -10,9 +10,11 @@ import h5py
 from pyscf.pbc.cc.eom_kccsd_rhf import _IMDS, EOMIP, CVSEOMIP
 from pyscf.pbc.cc.kintermediates_rhf import Wovoo, Woooo, Wooov
 
+
 class _ERIS:
     def __init__(self, cc):
         pass
+
 
 def load_h5(h5file, key):
     data = {}
@@ -20,13 +22,14 @@ def load_h5(h5file, key):
         data[k] = v
     return data
 
+
 au2ev = 27.211386245988
 
 material = load("data/{}".format(sys.argv[1]))
 h5file = h5py.File("data/{}".format(material["imds"]), "a")
-################################################################################
+###############################################################################
 # Cell
-################################################################################
+###############################################################################
 cell = gto.Cell()
 ase_atom = lattice.get_ase_atom(material["formula"])
 cell.atom = pyscf_ase.ase_atoms_to_pyscf(ase_atom)
@@ -37,9 +40,9 @@ cell.exp_to_discard = material["exp_to_discard"]
 cell.verbose = 7
 cell.build()
 
-################################################################################
+###############################################################################
 # Mean Field
-################################################################################
+###############################################################################
 kmesh = material["kmesh"]
 kpts = cell.make_kpts(kmesh, scaled_center=material["vb_scaled_center"])
 mymf = scf.KRHF(cell, kpts=kpts, exxdiv="ewald")
@@ -52,9 +55,9 @@ material["ekrhf"] = float(ekrhf)
 material["mf_convergence"] = bool(convergence)
 dump(material, f'data/{material["source"]}')
 
-################################################################################
+###############################################################################
 # Natural Orbital Coefficients
-################################################################################
+###############################################################################
 nvir_act = material["nvir_act"]
 mo_coeff = mymf.mo_coeff
 mo_energy = mymf.mo_energy
@@ -70,7 +73,7 @@ for k in range(nkpts):
     n, v = n[idx], v[:, idx]
     fvv = np.diag(mo_energy[k][nocc:])
     fvv_no = reduce(np.dot, (v.T.conj(), fvv, v))
-    _, v_canon = np.linalg.eigh(fvv_no[:nvir_act,:nvir_act])
+    _, v_canon = np.linalg.eigh(fvv_no[:nvir_act, :nvir_act])
     no_coeff_1 = reduce(np.dot, (mo_coeff[k][:, nocc:], v[:, :nvir_act], v_canon))
     no_coeff_2 = np.dot(mo_coeff[k][:, nocc:], v[:, nvir_act:])
     no_coeff_k = np.concatenate((mo_coeff[k][:, :nocc], no_coeff_1, no_coeff_2), axis=1)
