@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 from fileutils import load, dump
-from support import load_mp
+from support import load_cc
 from pyscf.pbc.cc.eom_kccsd_rhf import _IMDS
 import h5py
 import sys
 
 material = load("data/{}".format(sys.argv[1]))
-mycc, h5file = load_mp(sys.argv[1])
+mycc, h5file = load_cc(sys.argv[1])
 imds = _IMDS(mycc)
 eris = imds.eris
 imds._make_shared_1e()
