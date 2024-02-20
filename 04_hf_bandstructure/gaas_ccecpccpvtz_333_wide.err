@@ -2,6 +2,13 @@
 The following have been reloaded with a version change:
   1) gcc/10.2.0 => gcc/13.0.1
 
+<<<<<<< HEAD
+=======
+==> Error: No such environment: 'pyscf-gcc-openblas'
+==> Error: No such environment: 'pyscf-intel-mkl'
+==> Error: Spec 'gcc@13.2.0' matches no installed packages.
+==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
+>>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 /burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/pbc/tools/lattice.py:106: UserWarning: Use ase.build.bulk() instead
   ase_atom = bulk('GaAs', 'zincblende', a=5.648*A2B)
 WARNING!
@@ -9,3 +16,7 @@ WARNING!
   linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
   to remove the diffused Gaussians whose exponents are less than 0.1.
 
+<<<<<<< HEAD
+=======
+slurmstepd: error: *** JOB 11426087 ON g108 CANCELLED AT 2024-01-29T14:53:53 ***
+>>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
