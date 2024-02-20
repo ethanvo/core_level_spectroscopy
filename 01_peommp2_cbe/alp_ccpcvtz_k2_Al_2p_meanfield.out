@@ -38,7 +38,7 @@ dump(mymf_data, "data/{}".format(material["ekrhf"]))
 System: uname_result(system='Linux', node='g150', release='4.18.0-193.el8.x86_64', version='#1 SMP Fri Mar 27 14:35:58 UTC 2020', machine='x86_64')  Threads 32
 Python 3.10.12 (main, Jul 29 2023, 11:27:27) [GCC 13.2.0]
 numpy 1.25.1  scipy 1.10.1
-Date: Fri Feb  2 13:46:14 2024
+Date: Thu Jan 25 13:54:23 2024
 PySCF version 2.0.1
 PySCF path  /burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf
 GIT ORIG_HEAD 0bfbc692adf3ea63b8a509210433219cd1c472a2
@@ -176,7 +176,7 @@ bas 28, expnt(s) = [2.701]
 bas 29, expnt(s) = [12.891]
 bas 30, expnt(s) = [4.056]
 bas 31, expnt(s) = [8.462]
-CPU time:         0.96
+CPU time:         1.06
 lattice vectors  a1 [0.000000000, 5.150448183, 5.150448183]
                  a2 [5.150448183, 0.000000000, 5.150448183]
                  a3 [5.150448183, 5.150448183, 0.000000000]
@@ -205,7 +205,7 @@ SCF max_cycles = 50
 direct_scf = True
 direct_scf_tol = 1e-13
 chkfile to save SCF result = data/alp_ccpcvtz_k2_Al_2p.chk
-max_memory 700000 MB (current use 100 MB)
+max_memory 700000 MB (current use 88 MB)
 
 
 ******** PBC SCF flags ********
@@ -223,15 +223,15 @@ Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     madelung (= occupied orbital energy shift) = 0.2225467531401204
     Total energy shift due to Ewald probe charge = -1/2 * Nelec*madelung = -3.11565454396
-DF object = <pyscf.pbc.df.df.GDF object at 0x155553f4bfd0>
+DF object = <pyscf.pbc.df.df.GDF object at 0x155553f43fd0>
 Set gradient conv threshold to 0.000316228
 Big error detected in the electron number of initial guess density matrix (Ne/cell = 27.9748)!
   This can cause huge error in Fock matrix and lead to instability in SCF for low-dimensional systems.
   DM is normalized wrt the number of electrons 28.0
-    CPU time for vnuc pass1: analytic int    496.99 sec, wall time     15.79 sec
-    CPU time for contracting Vnuc [0:729]     68.42 sec, wall time      2.18 sec
-    CPU time for contracting Vnuc     68.43 sec, wall time      2.18 sec
-    CPU time for get_nuc    565.53 sec, wall time     17.97 sec
+    CPU time for vnuc pass1: analytic int    496.18 sec, wall time     15.75 sec
+    CPU time for contracting Vnuc [0:729]     67.64 sec, wall time      2.15 sec
+    CPU time for contracting Vnuc     67.64 sec, wall time      2.15 sec
+    CPU time for get_nuc    563.94 sec, wall time     17.90 sec
 
 
 ******** <class 'pyscf.pbc.df.df.GDF'> ********
@@ -258,7 +258,7 @@ make aux basis, num shells = 123, num cGTOs = 511
 auxcell.rcut 17.24916021658648
 make compensating basis, num shells = 10, num cGTOs = 50
 chgcell.rcut 11.482117703874595
-    CPU time for 3c2e  41911.79 sec, wall time   1385.38 sec
+    CPU time for 3c2e  42139.87 sec, wall time   1403.60 sec
 Num uniq kpts 14
 uniq_kpts [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
  [-3.04982454e-01 -3.04982454e-01  3.04982454e-01]
@@ -274,13 +274,13 @@ uniq_kpts [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
  [ 1.11022302e-16  0.00000000e+00 -6.09964908e-01]
  [ 3.04982454e-01  3.04982454e-01 -9.14947362e-01]
  [-3.04982454e-01 -3.04982454e-01 -3.04982454e-01]]
-max_memory 698691.250176 (MB)  blocksize 31135973
+max_memory 698650.146816 (MB)  blocksize 31134142
 Cholesky decomposition for j2c at kpt 0
 Symmetry pattern (k - [0. 0. 0.])*a= 2n pi
     make_kpt for uniq_kptji_ids [0]
 kpt = [0. 0. 0.]
 adapted_ji_idx = [ 0  2  5  9 14 20 27 35]
-memory = 1314.95936
+memory = 1354.510336
 int3c2e [1/1], AO [0:32], ncol = 7021
 Symmetry pattern (k + [0. 0. 0.])*a= 2n pi
     make_kpt for [0]
@@ -289,7 +289,7 @@ Symmetry pattern (k - [-0.30498245 -0.30498245  0.30498245])*a= 2n pi
     make_kpt for uniq_kptji_ids [1]
 kpt = [-0.30498245 -0.30498245  0.30498245]
 adapted_ji_idx = [ 1  8 19 34]
-memory = 1565.179904
+memory = 1569.906688
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [-0.30498245 -0.30498245  0.30498245])*a= 2n pi
     make_kpt for [1]
@@ -298,7 +298,7 @@ Symmetry pattern (k - [-0.30498245  0.30498245 -0.30498245])*a= 2n pi
     make_kpt for uniq_kptji_ids [2]
 kpt = [-0.30498245  0.30498245 -0.30498245]
 adapted_ji_idx = [ 3  7 25 33]
-memory = 1661.841408
+memory = 1665.712128
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [-0.30498245  0.30498245 -0.30498245])*a= 2n pi
     make_kpt for [2]
@@ -307,11 +307,11 @@ Symmetry pattern (k - [ 1.11022302e-16  6.09964908e-01 -6.09964908e-01])*a= 2n p
     make_kpt for uniq_kptji_ids [3 4]
 kpt = [ 1.11022302e-16  6.09964908e-01 -6.09964908e-01]
 adapted_ji_idx = [ 4 26]
-memory = 1678.37696
+memory = 1685.495808
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [-6.09964908e-01 -5.55111512e-17  0.00000000e+00]
 adapted_ji_idx = [ 6 32]
-memory = 1690.648576
+memory = 1702.432768
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 1.11022302e-16  6.09964908e-01 -6.09964908e-01])*a= 2n pi
     make_kpt for [3 4]
@@ -320,7 +320,7 @@ Symmetry pattern (k - [ 0.30498245 -0.30498245 -0.30498245])*a= 2n pi
     make_kpt for uniq_kptji_ids [5]
 kpt = [ 0.30498245 -0.30498245 -0.30498245]
 adapted_ji_idx = [10 16 23 31]
-memory = 1694.007296
+memory = 1703.276544
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 0.30498245 -0.30498245 -0.30498245])*a= 2n pi
     make_kpt for [5]
@@ -329,11 +329,11 @@ Symmetry pattern (k - [ 6.09964908e-01  5.55111512e-17 -6.09964908e-01])*a= 2n p
     make_kpt for uniq_kptji_ids [6 9]
 kpt = [ 6.09964908e-01  5.55111512e-17 -6.09964908e-01]
 adapted_ji_idx = [11 24]
-memory = 1694.789632
+memory = 1710.268416
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 0.         -0.60996491  0.        ]
 adapted_ji_idx = [15 30]
-memory = 1695.985664
+memory = 1711.353856
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 6.09964908e-01  5.55111512e-17 -6.09964908e-01])*a= 2n pi
     make_kpt for [6 9]
@@ -342,11 +342,11 @@ Symmetry pattern (k - [ 0.60996491 -0.60996491  0.        ])*a= 2n pi
     make_kpt for uniq_kptji_ids [ 7 11]
 kpt = [ 0.60996491 -0.60996491  0.        ]
 adapted_ji_idx = [12 18]
-memory = 1695.199232
+memory = 1710.518272
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 1.11022302e-16  0.00000000e+00 -6.09964908e-01]
 adapted_ji_idx = [21 29]
-memory = 1693.949952
+memory = 1711.009792
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 0.60996491 -0.60996491  0.        ])*a= 2n pi
     make_kpt for [ 7 11]
@@ -355,10 +355,41 @@ Symmetry pattern (k - [ 0.91494736 -0.30498245 -0.30498245])*a= 2n pi
     make_kpt for uniq_kptji_ids [ 8 10 12 13]
 kpt = [ 0.91494736 -0.30498245 -0.30498245]
 adapted_ji_idx = [13]
-memory = 1694.191616
+memory = 1711.489024
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 0.30498245 -0.91494736  0.30498245]
 adapted_ji_idx = [17]
+<<<<<<<<< Temporary merge branch 1
+memory = 1711.988736
+int3c2e [1/1], AO [0:32], ncol = 13924
+kpt = [ 0.30498245  0.30498245 -0.91494736]
+adapted_ji_idx = [22]
+memory = 1711.448064
+int3c2e [1/1], AO [0:32], ncol = 13924
+kpt = [-0.30498245 -0.30498245 -0.30498245]
+adapted_ji_idx = [28]
+memory = 1711.263744
+int3c2e [1/1], AO [0:32], ncol = 13924
+Symmetry pattern (k + [ 0.91494736 -0.30498245 -0.30498245])*a= 2n pi
+    make_kpt for [ 8 10 12 13]
+    CPU time for j3c  43805.91 sec, wall time   1471.91 sec
+    CPU time for Init get_k_kpts  43806.43 sec, wall time   1471.92 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      7.88 sec, wall time      0.33 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     15.75 sec, wall time      0.51 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     24.78 sec, wall time      0.78 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.37 sec, wall time      0.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     37.23 sec, wall time      1.18 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     39.14 sec, wall time      1.23 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     47.94 sec, wall time      1.51 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     57.44 sec, wall time      1.82 sec
+Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
+Ewald components = 0, -1.14616786107368, 1.03489448450362
+    CPU time for get_j pass 1     17.75 sec, wall time      0.64 sec
+    CPU time for get_j pass 2      5.69 sec, wall time      0.36 sec
+    CPU time for vj and vk  44089.50 sec, wall time   1481.23 sec
+Ewald components = 1.25967104982813e-135, -881.045459580493, 778.181077139905
+E1 = (-616.420476518362+1.2608308008238785e-16j)  E_coul = (135.49241510417622+1.5543638180181785e-17j)
+=========
 memory = 1697.824768
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 0.30498245  0.30498245 -0.91494736]
@@ -391,7 +422,7 @@ E1 = (-616.420476518362+1.2608308008238785e-16j)  E_coul = (135.49241510417622+1
 init E= -583.792443854774
 cond(S) = [ 146986.70275657 1174203.15271724 1174203.15269207  710205.32976435
  1174203.15264031  710205.32969575  710205.32971403 1174203.15273224]
-    CPU time for initialize scf  44420.24 sec, wall time   1478.75 sec
+    CPU time for initialize scf  44663.08 sec, wall time   1499.61 sec
 HOMO = 0.278605577481  LUMO = 0.41198865502
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.41071592 -57.93656111  -7.05586763  -4.92583937  -4.92583672
@@ -554,14 +585,14 @@ HOMO = 0.278605577481  LUMO = 0.41198865502
  27.78889214 34.27253906 34.27253907 34.35582942 34.39412632 34.39412632
  36.77125483 36.77125483 36.7719091  43.342387   43.60907421 43.60907421
  47.11967911 74.33774145]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.79 sec, wall time      0.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     12.88 sec, wall time      0.40 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.91 sec, wall time      0.66 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     27.37 sec, wall time      0.86 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     37.57 sec, wall time      1.18 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     40.16 sec, wall time      1.27 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     49.24 sec, wall time      1.54 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     53.95 sec, wall time      1.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.92 sec, wall time      0.15 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     15.79 sec, wall time      0.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     23.25 sec, wall time      0.73 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.60 sec, wall time      0.83 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     37.87 sec, wall time      1.20 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     43.59 sec, wall time      1.37 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     50.23 sec, wall time      1.58 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     51.14 sec, wall time      1.61 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     15.31 sec, wall time      0.55 sec
@@ -570,7 +601,7 @@ Ewald components = 0, -1.14616786107368, 1.03489448450362
 Ewald components = 1.25967104982813e-135, -881.045459580493, 778.181077139905
 E1 = (-615.2881909768604+1.2130180581540266e-16j)  E_coul = (135.40012190338604+8.770800654398052e-18j)
 cycle= 1 E= -582.752451514062  delta_E= 1.04  |g|= 0.654  |ddm|= 6.88
-    CPU time for cycle= 1    275.44 sec, wall time      8.92 sec
+    CPU time for cycle= 1    284.65 sec, wall time      9.19 sec
 diis-norm(errvec)=1.84871
 diis-c [-3.41771373+0.j  1.        +0.j]
 HOMO = 0.135352951879  LUMO = 0.455358112758
@@ -738,14 +769,14 @@ HOMO = 0.135352951879  LUMO = 0.455358112758
  27.87462365 34.3446294  34.3446294  34.42790717 34.46609541 34.46609541
  36.62231044 36.62231044 36.6227837  43.39266649 43.66064555 43.66064555
  46.97814496 74.38525703]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.06 sec, wall time      0.16 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.45 sec, wall time      0.46 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.35 sec, wall time      0.61 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.31 sec, wall time      0.83 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     32.23 sec, wall time      1.02 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     38.40 sec, wall time      1.21 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     47.40 sec, wall time      1.49 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     52.75 sec, wall time      1.67 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.08 sec, wall time      0.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.38 sec, wall time      0.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     23.75 sec, wall time      0.76 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.91 sec, wall time      0.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.90 sec, wall time      1.07 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     39.31 sec, wall time      1.24 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     48.09 sec, wall time      1.52 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     54.09 sec, wall time      1.70 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     18.58 sec, wall time      0.60 sec
@@ -756,8 +787,7 @@ E1 = (-615.3448927616674+1.227689989368126e-16j)  E_coul = (135.4373687775921+1.
 cycle= 2 E= -582.771906424663  delta_E= -0.0195  |g|=  0.2  |ddm|= 3.36
     CPU time for cycle= 2    269.50 sec, wall time      8.69 sec
 diis-norm(errvec)=0.624249
-diis-c [-0.35948715-4.37905770e-47j -0.11033585-1.11800061e-31j
-  1.11033585+1.11800061e-31j]
+diis-c [-0.35948715+0.j -0.11033585-0.j  1.11033585+0.j]
 HOMO = 0.122637679435  LUMO = 0.458781295321
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.45153777 -58.02960979  -6.99941743  -4.89557748  -4.89557748
@@ -912,7 +942,7 @@ HOMO = 0.122637679435  LUMO = 0.458781295321
   1.82645526  1.8390782   1.8390782   1.89707938  2.05531738  2.21409502
   2.21409502  2.24649992  2.26711424  2.26711433  2.37256558  2.53637422
   2.53637427  2.60071477  2.70166841  2.70166842  2.75582045  2.78612881
-  2.81677604  2.81677607  2.98120751  3.0070463   3.00704642  3.43212806
+  2.81677604  2.81677607  2.98120751  3.00704631  3.00704642  3.43212806
   3.43212808  3.59208325  3.81412071  3.9168761   3.9168761   4.15631881
   5.78437522  5.78437522  5.95973379  5.95973379  6.09535831  8.23197638
   8.23197638  8.38263566  8.44810627  8.44810628  8.88459336 10.57781691
@@ -923,14 +953,14 @@ HOMO = 0.122637679435  LUMO = 0.458781295321
  27.8215127  34.29151003 34.29151003 34.37484994 34.41313923 34.41313924
  36.69668685 36.69668685 36.69727112 43.34128866 43.60836823 43.60836823
  47.04901967 74.33423813]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.00 sec, wall time      0.16 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.25 sec, wall time      0.42 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.97 sec, wall time      0.66 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.05 sec, wall time      0.82 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     31.83 sec, wall time      1.00 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     37.79 sec, wall time      1.19 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     44.93 sec, wall time      1.41 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     51.16 sec, wall time      1.61 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.83 sec, wall time      0.15 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     11.71 sec, wall time      0.37 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.33 sec, wall time      0.61 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     28.53 sec, wall time      0.90 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.66 sec, wall time      1.06 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     38.43 sec, wall time      1.21 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     47.14 sec, wall time      1.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     53.00 sec, wall time      1.66 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     17.80 sec, wall time      0.57 sec
@@ -941,8 +971,8 @@ E1 = (-615.3950914614021+1.238011150814681e-16j)  E_coul = (135.48537981261975+1
 cycle= 3 E= -582.77409408937  delta_E= -0.00219  |g|= 0.0781  |ddm|= 0.57
     CPU time for cycle= 3    262.96 sec, wall time      8.44 sec
 diis-norm(errvec)=0.193106
-diis-c [-0.01839292+0.00000000e+00j -0.08548839-6.55509884e-32j
-  0.04986107+8.16320099e-32j  1.03562732-1.60810215e-32j]
+diis-c [-0.01839292-6.56858655e-47j -0.08548839+5.37853077e-32j
+  0.04986107-3.71917492e-31j  1.03562732+3.18132184e-31j]
 HOMO = 0.124149291891  LUMO = 0.459381963411
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.42946254 -58.05647226  -6.98405595  -4.8798705   -4.87987019
@@ -1108,14 +1138,14 @@ HOMO = 0.124149291891  LUMO = 0.459381963411
  27.83719199 34.30861373 34.30861373 34.39193799 34.43021133 34.43021133
  36.67885055 36.67885055 36.67940943 43.35909325 43.62641145 43.62641145
  47.03230985 74.35223053]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.76 sec, wall time      0.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.62 sec, wall time      0.43 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.72 sec, wall time      0.65 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     23.68 sec, wall time      0.74 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     32.69 sec, wall time      1.03 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     40.38 sec, wall time      1.27 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     45.49 sec, wall time      1.43 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     52.80 sec, wall time      1.66 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.70 sec, wall time      0.15 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.04 sec, wall time      0.44 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     21.73 sec, wall time      0.68 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     29.62 sec, wall time      0.93 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     31.16 sec, wall time      0.98 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     39.51 sec, wall time      1.24 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     47.11 sec, wall time      1.49 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     53.78 sec, wall time      1.69 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     19.07 sec, wall time      0.60 sec
@@ -1126,9 +1156,9 @@ E1 = (-615.4036776623213+1.2373963009632794e-16j)  E_coul = (135.4936286127738+1
 cycle= 4 E= -582.774431490135  delta_E= -0.000337  |g|= 0.0196  |ddm|= 0.25
     CPU time for cycle= 4    269.38 sec, wall time      8.64 sec
 diis-norm(errvec)=0.0584303
-diis-c [-0.00202035-8.75811540e-47j  0.02595148+1.72761586e-31j
- -0.06760156-4.67737085e-31j -0.25943389-2.84397179e-31j
-  1.30108397+5.79372677e-31j]
+diis-c [-0.00202035-4.37905770e-47j  0.02595148+9.54915393e-32j
+ -0.06760156-3.05915830e-32j -0.25943389-1.07302477e-30j
+  1.30108397+1.00812481e-30j]
 HOMO = 0.12434528669  LUMO = 0.45948218132
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43416105 -58.05216489  -6.98497898  -4.88080403  -4.88080385
@@ -1294,14 +1324,14 @@ HOMO = 0.12434528669  LUMO = 0.45948218132
  27.83646654 34.30694389 34.30694389 34.39027277 34.42855211 34.42855211
  36.68171506 36.68171506 36.68227878 43.35667255 43.62395285 43.62395285
  47.03503821 74.34960073]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.11 sec, wall time      0.16 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     12.43 sec, wall time      0.39 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.51 sec, wall time      0.61 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     31.16 sec, wall time      0.98 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     34.67 sec, wall time      1.09 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     41.29 sec, wall time      1.30 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     45.96 sec, wall time      1.44 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     53.78 sec, wall time      1.69 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.15 sec, wall time      0.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.06 sec, wall time      0.41 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     21.60 sec, wall time      0.70 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     29.67 sec, wall time      0.96 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     34.17 sec, wall time      1.10 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     42.79 sec, wall time      1.38 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     48.04 sec, wall time      1.51 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     52.88 sec, wall time      1.66 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     17.65 sec, wall time      0.60 sec
@@ -1312,10 +1342,10 @@ E1 = (-615.4092451769137+1.237718589081002e-16j)  E_coul = (135.49914772909+1.35
 cycle= 5 E= -582.774479888411  delta_E= -4.84e-05  |g|= 0.00563  |ddm|= 0.182
     CPU time for cycle= 5    275.93 sec, wall time      8.89 sec
 diis-norm(errvec)=0.017754
-diis-c [-8.35730652e-05-1.75162308e-46j  5.41365195e-03-4.61089047e-31j
- -2.77390056e-03+1.10534612e-30j -6.88965025e-02+4.57534000e-30j
- -2.04709348e-01-1.59065271e-29j  1.27096610e+00+1.06869300e-29j]
-HOMO = 0.124130330343  LUMO = 0.459547125771
+diis-c [-8.35730652e-05+0.00000000e+00j  5.41365195e-03-1.58993435e-31j
+ -2.77390056e-03+1.32701012e-31j -6.88965025e-02+1.92997981e-30j
+ -2.04709348e-01-4.80406710e-30j  1.27096610e+00+2.90037972e-30j]
+HOMO = 0.124130330343  LUMO = 0.459547125772
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43360306 -58.05160431  -6.98558726  -4.88135493  -4.88135491
   -4.88135491  -4.46100887  -2.77702754  -2.77702745  -2.77702745
@@ -1480,14 +1510,14 @@ HOMO = 0.124130330343  LUMO = 0.459547125771
  27.8358257  34.30658257 34.30658257 34.3899118  34.42819306 34.42819306
  36.68245566 36.68245566 36.68302146 43.3565812  43.6238559  43.6238559
  47.03575566 74.34956306]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      6.61 sec, wall time      0.21 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.89 sec, wall time      0.47 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.38 sec, wall time      0.64 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.49 sec, wall time      0.83 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.39 sec, wall time      1.05 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     39.40 sec, wall time      1.24 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     46.80 sec, wall time      1.47 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     53.53 sec, wall time      1.68 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.96 sec, wall time      0.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     18.12 sec, wall time      0.58 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.81 sec, wall time      0.66 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     27.22 sec, wall time      0.86 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     32.40 sec, wall time      1.02 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     39.53 sec, wall time      1.25 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     47.07 sec, wall time      1.48 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     52.06 sec, wall time      1.64 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     20.19 sec, wall time      0.63 sec
@@ -1498,10 +1528,10 @@ E1 = (-615.412156279848+1.2374706380989777e-16j)  E_coul = (135.50205410546386+1
 cycle= 6 E= -582.774484614972  delta_E= -4.73e-06  |g|= 0.000761  |ddm|= 0.0718
     CPU time for cycle= 6    275.67 sec, wall time      8.85 sec
 diis-norm(errvec)=0.0032726
-diis-c [-2.10575892e-06-8.75811540e-47j -3.05248496e-03-7.41030950e-32j
-  3.30901116e-03-2.04873798e-31j  3.89276958e-02+1.86808135e-30j
-  2.68122294e-02+1.62194583e-30j -4.86617446e-01-1.44954878e-29j
-  1.42062099e+00+1.12844375e-29j]
+diis-c [-2.10575892e-06+1.75162308e-46j -3.05248496e-03-2.48366436e-31j
+  3.30901116e-03+2.27592848e-31j  3.89276958e-02+3.17648127e-30j
+  2.68122294e-02+1.07142883e-29j -4.86617446e-01-6.32809300e-29j
+  1.42062099e+00+4.94109341e-29j]
 HOMO = 0.12415184316  LUMO = 0.45956049348
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43371655 -58.05139509  -6.98555595  -4.88133716  -4.88133716
@@ -1667,23 +1697,23 @@ HOMO = 0.12415184316  LUMO = 0.45956049348
  27.83585942 34.30658401 34.30658401 34.38991328 34.42819492 34.42819492
  36.68264241 36.68264241 36.68320859 43.35654968 43.62382292 43.62382292
  47.03593388 74.34952169]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.93 sec, wall time      0.15 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.04 sec, wall time      0.41 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.98 sec, wall time      0.63 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     25.99 sec, wall time      0.81 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     31.23 sec, wall time      0.98 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     39.74 sec, wall time      1.25 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     45.24 sec, wall time      1.42 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     50.65 sec, wall time      1.59 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.20 sec, wall time      0.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.45 sec, wall time      0.46 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.89 sec, wall time      0.66 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     28.96 sec, wall time      0.92 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     31.90 sec, wall time      1.01 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     38.56 sec, wall time      1.22 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     47.71 sec, wall time      1.50 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     58.24 sec, wall time      1.83 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     19.97 sec, wall time      0.63 sec
     CPU time for get_j pass 2      6.49 sec, wall time      0.38 sec
     CPU time for vj and vk    261.33 sec, wall time      8.38 sec
 Ewald components = 1.25967104982813e-135, -881.045459580493, 778.181077139905
-E1 = (-615.4127506889246+1.2374534228284675e-16j)  E_coul = (135.5026484337053+1.3542339752420667e-17j)
-cycle= 7 E= -582.774484695807  delta_E= -8.08e-08  |g|= 9.27e-05  |ddm|= 0.00595
-    CPU time for cycle= 7    265.03 sec, wall time      8.50 sec
+E1 = (-615.4127506889241+1.2374534228273949e-16j)  E_coul = (135.50264843370545+1.3542339753429118e-17j)
+cycle= 7 E= -582.774484695806  delta_E= -8.08e-08  |g|= 9.27e-05  |ddm|= 0.00595
+    CPU time for cycle= 7    284.87 sec, wall time      9.22 sec
 HOMO = 0.124150376272  LUMO = 0.459562354484
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43370928 -58.05138379  -6.98556823  -4.88134739  -4.88134739
@@ -1849,22 +1879,22 @@ HOMO = 0.124150376272  LUMO = 0.459562354484
  27.83584615 34.30657469 34.30657469 34.38990394 34.42818564 34.42818564
  36.68264803 36.68264803 36.68321428 43.35654597 43.62381919 43.62381919
  47.03593926 74.34951963]
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.80 sec, wall time      0.18 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.67 sec, wall time      0.47 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.46 sec, wall time      0.62 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     27.09 sec, wall time      0.85 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.23 sec, wall time      1.04 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     41.44 sec, wall time      1.30 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     50.10 sec, wall time      1.61 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     60.88 sec, wall time      1.93 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.23 sec, wall time      0.13 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.63 sec, wall time      0.43 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.47 sec, wall time      0.62 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     24.73 sec, wall time      0.78 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     29.26 sec, wall time      0.92 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     36.82 sec, wall time      1.16 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     41.54 sec, wall time      1.30 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     45.52 sec, wall time      1.43 sec
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for get_j pass 1     26.30 sec, wall time      0.85 sec
     CPU time for get_j pass 2      6.47 sec, wall time      0.38 sec
     CPU time for vj and vk    290.22 sec, wall time      9.38 sec
 Ewald components = 1.25967104982813e-135, -881.045459580493, 778.181077139905
-E1 = (-615.4127438523659+1.2374528439036716e-16j)  E_coul = (135.5026415963993+1.3542803549725136e-17j)
-Extra cycle  E= -582.774484696554  delta_E= -7.47e-10  |g|= 3.1e-05  |ddm|= 0.00143
-    CPU time for scf_cycle  46607.58 sec, wall time   1549.17 sec
-    CPU time for SCF  46607.62 sec, wall time   1549.20 sec
-converged SCF energy = -582.774484696554
+E1 = (-615.4127438523661+1.237452843897786e-16j)  E_coul = (135.5026415963992+1.3542803549641699e-17j)
+Extra cycle  E= -582.774484696555  delta_E= -7.48e-10  |g|= 3.1e-05  |ddm|= 0.00143
+    CPU time for scf_cycle  46865.45 sec, wall time   1570.74 sec
+    CPU time for SCF  46865.49 sec, wall time   1570.78 sec
+converged SCF energy = -582.774484696555
