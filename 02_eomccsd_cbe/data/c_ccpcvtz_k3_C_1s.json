@@ -1,0 +1,45 @@
+{
+    "formula": "c",
+    "basis": "ccpcvtz",
+    "kmesh": [
+        3,
+        3,
+        3
+    ],
+    "vb_scaled_center": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "vb_nroots": 3,
+    "exp_to_discard": null,
+    "core": [
+        0,
+        1
+    ],
+    "nmo": 86,
+    "nocc": 6,
+    "nvir": 80,
+    "nvir_act": null,
+    "frozen_core": [],
+    "frozen": null,
+    "chk": "c_ccpcvtz_k3_C_1s.chk",
+    "cderi": "c_ccpcvtz_k3_C_1s_cderi.h5",
+    "ekrhf": "c_ccpcvtz_k3_C_1s_ekrhf.json",
+    "ekrccsd": "c_ccpcvtz_k3_C_1s_ekrccsd.json",
+    "imds": "c_ccpcvtz_k3_C_1s_imds.h5",
+    "eomip_valence": "c_ccpcvtz_k3_C_1s_eomip_valence.json",
+    "eomip_core": "c_ccpcvtz_k3_C_1s_eomip_core.json",
+    "cbe": "c_ccpcvtz_k3_C_1s_cbe.json",
+    "vip": "c_ccpcvtz_k3_C_1s_vip.h5",
+    "made_no_coeff": false,
+    "made_eris": false,
+    "diis": "c_ccpcvtz_k3_C_1s_diis.h5",
+    "made_imds": false,
+    "made_imds_1e": false,
+    "made_Wovov": false,
+    "made_Wovvo": false,
+    "made_Wovoo": false,
+    "made_Woooo": false,
+    "made_Wooov": false
+}
