@@ -318,6 +318,9 @@ auxcell.rcut 17.24916021658648
 make compensating basis, num shells = 20, num cGTOs = 100
 chgcell.rcut 11.482117703874595
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cluster
     CPU time for 3c2e 257653.45 sec, wall time   8361.81 sec
 Num uniq kpts 63
 uniq_kpts [[ 0.          0.          0.        ]
@@ -9935,5 +9938,8 @@ Extra cycle  E= -593.141599269518  delta_E= -1.09e-09  |g|= 9.86e-05  |ddm|= 0.0
     CPU time for scf_cycle 410311.93 sec, wall time  14543.26 sec
     CPU time for SCF 410311.97 sec, wall time  14543.30 sec
 converged SCF energy = -593.141599269518
+<<<<<<< HEAD
 =======
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+=======
+>>>>>>> cluster

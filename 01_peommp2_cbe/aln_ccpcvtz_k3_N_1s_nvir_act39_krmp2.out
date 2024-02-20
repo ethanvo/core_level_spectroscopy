@@ -11,6 +11,9 @@ diis_space = 6
 diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cluster
 max_memory 700000 MB (current use 127 MB)
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)     23.56 sec, wall time      0.85 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     56.08 sec, wall time      1.80 sec
@@ -39,6 +42,7 @@ max_memory 700000 MB (current use 127 MB)
     CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    738.97 sec, wall time     23.97 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    724.89 sec, wall time     23.37 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    795.57 sec, wall time     25.55 sec
+<<<<<<< HEAD
 Monkhorst pack size [3 3 3] ew_eta 0.8844880366313383 ew_cut 7.945196698079207
 Ewald components = 7.43877040383099e-109, -0.499283113992858, 0.434708743263287
     CPU time for get_j pass 1    370.83 sec, wall time     11.71 sec
@@ -87,6 +91,17 @@ Ewald components = 7.43877040383099e-109, -0.499283113992858, 0.434708743263287
     CPU time for contracting Vnuc    319.34 sec, wall time     10.83 sec
     CPU time for get_nuc   3934.09 sec, wall time    125.23 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+=======
+Monkhorst pack size [3 3 3] ew_eta 0.8844880366313383 ew_cut 7.945196698079207
+Ewald components = 7.43877040383099e-109, -0.499283113992858, 0.434708743263287
+    CPU time for get_j pass 1    370.83 sec, wall time     11.71 sec
+    CPU time for get_j pass 2     13.94 sec, wall time      7.87 sec
+    CPU time for vj and vk  11425.54 sec, wall time    376.15 sec
+    CPU time for vnuc pass1: analytic int   3693.85 sec, wall time    117.06 sec
+    CPU time for contracting Vnuc [0:896]    306.19 sec, wall time     10.38 sec
+    CPU time for contracting Vnuc    306.19 sec, wall time     10.38 sec
+    CPU time for get_nuc   4000.87 sec, wall time    127.47 sec
+>>>>>>> cluster
 
 ******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
 CC2 = 0
@@ -100,11 +115,16 @@ diis_space = 6
 diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
 <<<<<<< HEAD
+<<<<<<< HEAD
 max_memory 700000 MB (current use 1396 MB)
     CPU time for transforming DF-MP2 integrals   7562.26 sec, wall time    366.09 sec
 =======
 max_memory 700000 MB (current use 1291 MB)
     CPU time for transforming DF-MP2 integrals   7593.57 sec, wall time    373.45 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+=======
+max_memory 700000 MB (current use 1396 MB)
+    CPU time for transforming DF-MP2 integrals   7562.26 sec, wall time    366.09 sec
+>>>>>>> cluster
 t1 type: <class 'numpy.ndarray'>
 t2 type: <class 'numpy.ndarray'>

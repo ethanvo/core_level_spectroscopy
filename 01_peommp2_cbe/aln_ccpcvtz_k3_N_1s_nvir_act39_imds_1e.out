@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)     24.63 sec, wall time      1.03 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     76.07 sec, wall time      2.57 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)    110.50 sec, wall time      3.94 sec
@@ -26,6 +29,7 @@
     CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    961.51 sec, wall time     33.61 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (25,*)   1012.96 sec, wall time     35.90 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (26,*)   1040.30 sec, wall time     36.24 sec
+<<<<<<< HEAD
 Monkhorst pack size [3 3 3] ew_eta 0.8844880366313383 ew_cut 7.945196698079207
 Ewald components = 7.43877040383099e-109, -0.499283113992858, 0.434708743263287
     CPU time for get_j pass 1    376.93 sec, wall time     11.88 sec
@@ -79,20 +83,34 @@ Made 1e intermediates
     CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    966.69 sec, wall time     34.78 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (25,*)   1004.29 sec, wall time     37.19 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (26,*)   1023.08 sec, wall time     41.08 sec
+=======
+>>>>>>> cluster
 Monkhorst pack size [3 3 3] ew_eta 0.8844880366313383 ew_cut 7.945196698079207
 Ewald components = 7.43877040383099e-109, -0.499283113992858, 0.434708743263287
-    CPU time for get_j pass 1    362.76 sec, wall time     11.51 sec
-    CPU time for get_j pass 2     14.34 sec, wall time      8.20 sec
-    CPU time for vj and vk  14975.91 sec, wall time    568.85 sec
-    CPU time for vnuc pass1: analytic int   3602.42 sec, wall time    113.85 sec
-    CPU time for contracting Vnuc [0:896]    302.19 sec, wall time     10.30 sec
-    CPU time for contracting Vnuc    302.19 sec, wall time     10.30 sec
-    CPU time for get_nuc   3905.45 sec, wall time    124.18 sec
+    CPU time for get_j pass 1    376.93 sec, wall time     11.88 sec
+    CPU time for get_j pass 2     14.51 sec, wall time      8.33 sec
+    CPU time for vj and vk  14552.04 sec, wall time    526.73 sec
+    CPU time for vnuc pass1: analytic int   3569.16 sec, wall time    112.83 sec
+    CPU time for contracting Vnuc [0:896]    312.95 sec, wall time     10.68 sec
+    CPU time for contracting Vnuc    312.95 sec, wall time     10.68 sec
+    CPU time for get_nuc   3882.98 sec, wall time    123.55 sec
 Ewald components = 1.30435514859409e-35, -627.49757153652, 488.979720419325
-    CPU time for vnuc pass1: analytic int   3580.74 sec, wall time    113.13 sec
-    CPU time for contracting Vnuc [0:896]    318.53 sec, wall time     10.83 sec
-    CPU time for contracting Vnuc    318.53 sec, wall time     10.83 sec
-    CPU time for get_nuc   3900.16 sec, wall time    123.99 sec
-E1 = (-567.7161474464701+3.3529981221296102e-12j)  E_coul = (113.09239929414666+9.546676294396877e-12j)
+    CPU time for vnuc pass1: analytic int   3588.51 sec, wall time    113.34 sec
+    CPU time for contracting Vnuc [0:896]    299.76 sec, wall time     10.16 sec
+    CPU time for contracting Vnuc    299.76 sec, wall time     10.16 sec
+    CPU time for get_nuc   3889.08 sec, wall time    123.52 sec
+E1 = (-567.716147446463+3.352745637223733e-12j)  E_coul = (113.09239929413987+9.605302984409939e-12j)
 using HDF5 ERI storage
+<<<<<<< HEAD
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+=======
+    CPU time for transforming oopq 309263.49 sec, wall time  38237.11 sec
+    CPU time for transforming ovpq 338657.33 sec, wall time  40105.59 sec
+    CPU time for transforming vvvv   7588.83 sec, wall time    382.33 sec
+    CPU time for CCSD integral transformation 677847.26 sec, wall time  79499.41 sec
+    CPU time for EOM-CCSD shared one-electron intermediates  63775.66 sec, wall time   2224.65 sec
+IMDS key to save: Loo , type: <class 'numpy.ndarray'>
+IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
+IMDS key to save: Fov , type: <class 'numpy.ndarray'>
+Made 1e intermediates
+>>>>>>> cluster

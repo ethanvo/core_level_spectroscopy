@@ -14,6 +14,7 @@ WARNING!
   to remove the diffused Gaussians whose exponents are less than 0.1.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Traceback (most recent call last):
   File "/burg/ccce/users/eav2136/projects/core_level_spectroscopy/04_hf_bandstructure/hf_bandstructure.py", line 9, in <module>
@@ -36,3 +37,5 @@ Traceback (most recent call last):
     raise TypeError(f'Object of type {o.__class__.__name__} '
 TypeError: Object of type ndarray is not JSON serializable
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+=======
+>>>>>>> cluster
