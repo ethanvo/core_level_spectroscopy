@@ -1,0 +1,19 @@
+
+******** <class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> ********
+max_space = 20
+max_cycle = 50
+conv_tol = 1e-07
+partition = mp
+max_memory 700000 MB (current use 125 MB)
+tol 1e-07  toloose 0.000316228
+max_cycle 50  max_space 24  max_memory 2000  incore False
+davidson 0 2  |r|= 8.92  e= [14.95057373 14.95061139]  max|de|=   15  lindep=    1
+davidson 1 4  |r|= 1.15  e= [14.55308061 14.55415364]  max|de|= -0.397  lindep= 0.996
+davidson 2 6  |r|= 0.0685  e= [14.45491296 14.45623857]  max|de|= -0.0982  lindep= 0.918
+davidson 3 8  |r|= 4.49e-05  e= [14.4555878  14.45690396]  max|de|= 0.000675  lindep= 0.688
+root 0 converged  |r|= 6.24e-10  e= 14.455587825350788  max|de|= 2.34e-08
+root 1 converged  |r|= 1.27e-08  e= 14.456904031818796  max|de|= 6.82e-08
+converged 4 10  |r|= 1.27e-08  e= [14.45558783 14.45690403]  max|de|= 6.82e-08
+EOM-CCSD root 0 E = 14.45558782535079  qpwt = 0.134081
+EOM-CCSD root 1 E = 14.4569040318188  qpwt = 0.133777
+    CPU time for EOM-CCSD     79.12 sec, wall time     79.53 sec
