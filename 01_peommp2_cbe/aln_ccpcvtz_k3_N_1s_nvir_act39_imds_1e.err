@@ -6,6 +6,9 @@ The following have been reloaded with a version change:
 ==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 =======
 Traceback (most recent call last):
   File "/burg/ccce/users/eav2136/projects/core_level_spectroscopy/01_peommp2_cbe/imds_1e.py", line 10, in <module>
@@ -37,5 +40,8 @@ Traceback (most recent call last):
   File "h5py/h5f.pyx", line 360, in h5py.h5f.FileID._close_open_objects
 RuntimeError: Can't decrement id ref count (unable to close file, errno = 5, error message = 'Input/output error')
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df

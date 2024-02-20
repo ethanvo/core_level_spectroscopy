@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      6.40 sec, wall time      0.47 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     15.88 sec, wall time      0.57 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     26.11 sec, wall time      0.83 sec
@@ -157,6 +160,7 @@ Made 1e intermediates
     CPU time for get_k_kpts: make_kpt ki>=kj (61,*)    641.69 sec, wall time     21.40 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (62,*)    702.96 sec, wall time     24.23 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (63,*)    642.76 sec, wall time     21.69 sec
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
 Monkhorst pack size [4 4 4] ew_eta 1.0426769913124163 ew_cut 6.741483201914274
@@ -188,3 +192,22 @@ IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
 IMDS key to save: Fov , type: <class 'numpy.ndarray'>
 Made 1e intermediates
 >>>>>>> cluster
+=======
+Monkhorst pack size [4 4 4] ew_eta 1.0426769913124163 ew_cut 6.741483201914274
+Ewald components = 0, -0.588350115614293, 0.532713427173553
+    CPU time for get_j pass 1    171.16 sec, wall time      5.55 sec
+    CPU time for get_j pass 2     10.22 sec, wall time      3.75 sec
+    CPU time for vj and vk  21108.22 sec, wall time    700.33 sec
+    CPU time for vnuc pass1: analytic int   1073.86 sec, wall time     35.07 sec
+    CPU time for contracting Vnuc [0:729]    137.30 sec, wall time      4.91 sec
+    CPU time for contracting Vnuc    137.30 sec, wall time      4.91 sec
+    CPU time for get_nuc   1211.94 sec, wall time     40.00 sec
+Ewald components = 1.25967104982813e-135, -881.045459580493, 778.181077139905
+    CPU time for vnuc pass1: analytic int   1075.63 sec, wall time     34.85 sec
+    CPU time for contracting Vnuc [0:729]    139.52 sec, wall time      4.99 sec
+    CPU time for contracting Vnuc    139.52 sec, wall time      4.99 sec
+    CPU time for get_nuc   1215.79 sec, wall time     39.86 sec
+E1 = (-615.2152607832164-1.7609417976353715e-15j)  E_coul = (135.2804565501436-1.6891947482425174e-16j)
+using HDF5 ERI storage
+>>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
