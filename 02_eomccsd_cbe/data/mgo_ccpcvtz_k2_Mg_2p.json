@@ -1,0 +1,48 @@
+{
+    "formula": "mgo",
+    "basis": "ccpcvtz",
+    "kmesh": [
+        2,
+        2,
+        2
+    ],
+    "vb_scaled_center": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "vb_nroots": 3,
+    "exp_to_discard": 0.033,
+    "core": [
+        2,
+        3,
+        4
+    ],
+    "nmo": 99,
+    "nocc": 10,
+    "nvir": 89,
+    "nvir_act": null,
+    "frozen_core": [
+        0
+    ],
+    "frozen": null,
+    "chk": "mgo_ccpcvtz_k2_Mg_2p.chk",
+    "cderi": "mgo_ccpcvtz_k2_Mg_2p_cderi.h5",
+    "ekrhf": "mgo_ccpcvtz_k2_Mg_2p_ekrhf.json",
+    "ekrccsd": "mgo_ccpcvtz_k2_Mg_2p_ekrccsd.json",
+    "imds": "mgo_ccpcvtz_k2_Mg_2p_imds.h5",
+    "eomip_valence": "mgo_ccpcvtz_k2_Mg_2p_eomip_valence.json",
+    "eomip_core": "mgo_ccpcvtz_k2_Mg_2p_eomip_core.json",
+    "cbe": "mgo_ccpcvtz_k2_Mg_2p_cbe.json",
+    "vip": "mgo_ccpcvtz_k2_Mg_2p_vip.h5",
+    "made_no_coeff": false,
+    "made_eris": false,
+    "diis": "mgo_ccpcvtz_k2_Mg_2p_diis.h5",
+    "made_imds": false,
+    "made_imds_1e": false,
+    "made_Wovov": false,
+    "made_Wovvo": false,
+    "made_Wovoo": false,
+    "made_Woooo": false,
+    "made_Wooov": false
+}
