@@ -38,11 +38,8 @@ dump(mymf_data, "data/{}".format(material["ekrhf"]))
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 System: uname_result(system='Linux', node='g150', release='4.18.0-193.el8.x86_64', version='#1 SMP Fri Mar 27 14:35:58 UTC 2020', machine='x86_64')  Threads 32
 Python 3.10.12 (main, Jul 29 2023, 11:27:27) [GCC 13.2.0]
 numpy 1.25.1  scipy 1.10.1
@@ -63,8 +60,6 @@ Date: Fri Feb  2 13:19:39 2024
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 PySCF version 2.0.1
 PySCF path  /burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf
 GIT ORIG_HEAD 0bfbc692adf3ea63b8a509210433219cd1c472a2
@@ -205,7 +200,6 @@ bas 31, expnt(s) = [8.462]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 CPU time:         1.04
@@ -218,9 +212,6 @@ CPU time:         1.04
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-CPU time:         1.04
->>>>>>> cluster
 lattice vectors  a1 [0.000000000, 5.150448183, 5.150448183]
                  a2 [5.150448183, 0.000000000, 5.150448183]
                  a3 [5.150448183, 5.150448183, 0.000000000]
@@ -252,7 +243,6 @@ chkfile to save SCF result = data/alp_ccpcvtz_k2_Al_2p_nvir_act52.chk
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 max_memory 700000 MB (current use 89 MB)
 =======
 max_memory 700000 MB (current use 87 MB)
@@ -266,9 +256,6 @@ max_memory 700000 MB (current use 89 MB)
 max_memory 700000 MB (current use 87 MB)
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-max_memory 700000 MB (current use 89 MB)
->>>>>>> cluster
 
 
 ******** PBC SCF flags ********
@@ -289,7 +276,6 @@ Ewald components = 0, -1.14616786107368, 1.03489448450362
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 DF object = <pyscf.pbc.df.df.GDF object at 0x155553f4bfd0>
 =======
 DF object = <pyscf.pbc.df.df.GDF object at 0x155553f43fd0>
@@ -303,9 +289,6 @@ DF object = <pyscf.pbc.df.df.GDF object at 0x155553f4bfd0>
 DF object = <pyscf.pbc.df.df.GDF object at 0x155553f43fd0>
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-DF object = <pyscf.pbc.df.df.GDF object at 0x155553f4bfd0>
->>>>>>> cluster
 Set gradient conv threshold to 0.000316228
 Big error detected in the electron number of initial guess density matrix (Ne/cell = 27.9748)!
   This can cause huge error in Fock matrix and lead to instability in SCF for low-dimensional systems.
@@ -313,18 +296,14 @@ Big error detected in the electron number of initial guess density matrix (Ne/ce
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for vnuc pass1: analytic int    498.32 sec, wall time     15.82 sec
     CPU time for contracting Vnuc [0:729]     67.22 sec, wall time      2.13 sec
     CPU time for contracting Vnuc     67.23 sec, wall time      2.13 sec
     CPU time for get_nuc    565.65 sec, wall time     17.96 sec
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -340,8 +319,6 @@ Big error detected in the electron number of initial guess density matrix (Ne/ce
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 
 
 ******** <class 'pyscf.pbc.df.df.GDF'> ********
@@ -371,7 +348,6 @@ chgcell.rcut 11.482117703874595
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
     CPU time for 3c2e  41670.05 sec, wall time   1377.51 sec
@@ -384,9 +360,6 @@ chgcell.rcut 11.482117703874595
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-    CPU time for 3c2e  41670.05 sec, wall time   1377.51 sec
->>>>>>> cluster
 Num uniq kpts 14
 uniq_kpts [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
  [-3.04982454e-01 -3.04982454e-01  3.04982454e-01]
@@ -405,7 +378,6 @@ uniq_kpts [[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 max_memory 698664.142848 (MB)  blocksize 31134765
 =======
 max_memory 698670.741504 (MB)  blocksize 31135059
@@ -419,15 +391,11 @@ max_memory 698664.142848 (MB)  blocksize 31134765
 max_memory 698670.741504 (MB)  blocksize 31135059
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-max_memory 698664.142848 (MB)  blocksize 31134765
->>>>>>> cluster
 Cholesky decomposition for j2c at kpt 0
 Symmetry pattern (k - [0. 0. 0.])*a= 2n pi
     make_kpt for uniq_kptji_ids [0]
 kpt = [0. 0. 0.]
 adapted_ji_idx = [ 0  2  5  9 14 20 27 35]
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -443,9 +411,6 @@ memory = 1342.201856
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-memory = 1342.201856
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 7021
 Symmetry pattern (k + [0. 0. 0.])*a= 2n pi
     make_kpt for [0]
@@ -457,7 +422,6 @@ adapted_ji_idx = [ 1  8 19 34]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 memory = 1554.10432
 =======
 memory = 1551.52384
@@ -471,9 +435,6 @@ memory = 1554.10432
 memory = 1551.52384
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-memory = 1554.10432
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [-0.30498245 -0.30498245  0.30498245])*a= 2n pi
     make_kpt for [1]
@@ -485,7 +446,6 @@ adapted_ji_idx = [ 3  7 25 33]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 memory = 1643.257856
 =======
 memory = 1647.341568
@@ -499,9 +459,6 @@ memory = 1643.257856
 memory = 1647.341568
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-memory = 1643.257856
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [-0.30498245  0.30498245 -0.30498245])*a= 2n pi
     make_kpt for [2]
@@ -513,9 +470,6 @@ adapted_ji_idx = [ 4 26]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cluster
 memory = 1667.166208
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [-6.09964908e-01 -5.55111512e-17  0.00000000e+00]
@@ -548,8 +502,6 @@ adapted_ji_idx = [ 6 32]
 memory = 1685.54496
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 1.11022302e-16  6.09964908e-01 -6.09964908e-01])*a= 2n pi
     make_kpt for [3 4]
@@ -558,7 +510,6 @@ Symmetry pattern (k - [ 0.30498245 -0.30498245 -0.30498245])*a= 2n pi
     make_kpt for uniq_kptji_ids [5]
 kpt = [ 0.30498245 -0.30498245 -0.30498245]
 adapted_ji_idx = [10 16 23 31]
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -574,9 +525,6 @@ memory = 1694.081024
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-memory = 1694.081024
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 0.30498245 -0.30498245 -0.30498245])*a= 2n pi
     make_kpt for [5]
@@ -588,11 +536,8 @@ adapted_ji_idx = [11 24]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 memory = 1695.4368
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 0.         -0.60996491  0.        ]
@@ -616,8 +561,6 @@ memory = 1697.153024
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 6.09964908e-01  5.55111512e-17 -6.09964908e-01])*a= 2n pi
     make_kpt for [6 9]
@@ -629,11 +572,8 @@ adapted_ji_idx = [12 18]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 memory = 1698.332672
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 1.11022302e-16  0.00000000e+00 -6.09964908e-01]
@@ -657,8 +597,6 @@ memory = 1696.776192
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 int3c2e [1/1], AO [0:32], ncol = 13924
 Symmetry pattern (k + [ 0.60996491 -0.60996491  0.        ])*a= 2n pi
     make_kpt for [ 7 11]
@@ -670,9 +608,6 @@ adapted_ji_idx = [13]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cluster
 memory = 1697.452032
 int3c2e [1/1], AO [0:32], ncol = 13924
 kpt = [ 0.30498245 -0.91494736  0.30498245]
@@ -710,7 +645,6 @@ init E= -583.792443854774
 cond(S) = [ 146986.70275657 1174203.15271724 1174203.15269207  710205.32976435
  1174203.15264031  710205.32969575  710205.32971403 1174203.15273224]
     CPU time for initialize scf  44196.54 sec, wall time   1471.80 sec
-<<<<<<< HEAD
 =======
 memory = 1694.281728
 =======
@@ -801,8 +735,6 @@ cond(S) = [ 146986.70275657 1174203.15271724 1174203.15269207  710205.32976435
     CPU time for initialize scf  44330.73 sec, wall time   1489.28 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 HOMO = 0.278605577481  LUMO = 0.41198865502
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.41071592 -57.93656111  -7.05586763  -4.92583937  -4.92583672
@@ -968,13 +900,10 @@ HOMO = 0.278605577481  LUMO = 0.41198865502
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      6.06 sec, wall time      0.19 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.42 sec, wall time      0.47 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.46 sec, wall time      0.65 sec
@@ -1032,8 +961,6 @@ cycle= 1 E= -582.752451514062  delta_E= 1.04  |g|= 0.654  |ddm|= 6.88
     CPU time for cycle= 1    266.50 sec, wall time      8.75 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 diis-norm(errvec)=1.84871
 diis-c [-3.41771373+0.j  1.        +0.j]
 HOMO = 0.135352951879  LUMO = 0.455358112758
@@ -1204,13 +1131,10 @@ HOMO = 0.135352951879  LUMO = 0.455358112758
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.03 sec, wall time      0.13 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     12.99 sec, wall time      0.41 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.41 sec, wall time      0.61 sec
@@ -1278,8 +1202,6 @@ diis-c [-0.35948715+0.00000000e+00j -0.11033585+1.67700091e-31j
   1.11033585-1.67700091e-31j]
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 HOMO = 0.122637679435  LUMO = 0.458781295321
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.45153777 -58.02960979  -6.99941743  -4.89557748  -4.89557748
@@ -1448,13 +1370,10 @@ HOMO = 0.122637679435  LUMO = 0.458781295321
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.70 sec, wall time      0.15 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.18 sec, wall time      0.42 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.52 sec, wall time      0.62 sec
@@ -1522,8 +1441,6 @@ diis-c [-0.01839292-1.09476443e-47j -0.08548839+1.77886367e-32j
   0.04986107+8.42712146e-32j  1.03562732-1.02059851e-31j]
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 HOMO = 0.124149291891  LUMO = 0.459381963411
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.42946254 -58.05647226  -6.98405595  -4.8798705   -4.87987019
@@ -1692,13 +1609,10 @@ HOMO = 0.124149291891  LUMO = 0.459381963411
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.75 sec, wall time      0.15 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     15.02 sec, wall time      0.47 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.35 sec, wall time      0.64 sec
@@ -1769,8 +1683,6 @@ diis-c [-0.00202035+8.75811540e-47j  0.02595148-1.55960919e-31j
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 HOMO = 0.12434528669  LUMO = 0.45948218132
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43416105 -58.05216489  -6.98497898  -4.88080403  -4.88080385
@@ -1939,13 +1851,10 @@ HOMO = 0.12434528669  LUMO = 0.45948218132
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.20 sec, wall time      0.16 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.80 sec, wall time      0.44 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.36 sec, wall time      0.64 sec
@@ -2019,8 +1928,6 @@ HOMO = 0.124130330343  LUMO = 0.459547125772
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43360306 -58.05160431  -6.98558726  -4.88135493  -4.88135491
   -4.88135491  -4.46100887  -2.77702754  -2.77702745  -2.77702745
@@ -2137,7 +2044,6 @@ HOMO = 0.124130330343  LUMO = 0.459547125772
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   3.55725584  3.55725593  3.60795748  4.00652757  4.00652767  4.14055737
 =======
   3.55725584  3.55725593  3.60795748  4.00652757  4.00652767  4.14055736
@@ -2151,9 +2057,6 @@ HOMO = 0.124130330343  LUMO = 0.459547125772
   3.55725584  3.55725593  3.60795748  4.00652757  4.00652767  4.14055736
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
-  3.55725584  3.55725593  3.60795748  4.00652757  4.00652767  4.14055737
->>>>>>> cluster
   5.78719465  5.83093412  5.93122054  6.08532601  6.08532646  8.17994043
   8.20884809  8.20884844  8.21156204  8.40015334  9.11682192 10.4901502
  10.5982204  10.59822081 11.09163531 11.46146145 11.46146169 13.89221364
@@ -2207,13 +2110,10 @@ HOMO = 0.124130330343  LUMO = 0.459547125772
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.04 sec, wall time      0.16 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.91 sec, wall time      0.44 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     19.07 sec, wall time      0.60 sec
@@ -2237,7 +2137,6 @@ diis-c [-2.10575892e-06+3.50324616e-46j -3.05248496e-03+5.08890472e-31j
   3.30901116e-03-4.63500096e-31j  3.89276958e-02-5.73077332e-30j
   2.68122294e-02-3.75978252e-30j -4.86617446e-01+5.46002414e-29j
   1.42062099e+00-4.51550760e-29j]
-<<<<<<< HEAD
 =======
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.97 sec, wall time      0.16 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.15 sec, wall time      0.45 sec
@@ -2298,8 +2197,6 @@ diis-c [-2.10575892e-06-3.50324616e-46j -3.05248496e-03-6.23400516e-31j
   1.42062099e+00+6.32039828e-29j]
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 HOMO = 0.12415184316  LUMO = 0.45956049348
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43371655 -58.05139509  -6.98555595  -4.88133716  -4.88133716
@@ -2468,13 +2365,10 @@ HOMO = 0.12415184316  LUMO = 0.45956049348
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.72 sec, wall time      0.15 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     13.57 sec, wall time      0.43 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     21.33 sec, wall time      0.67 sec
@@ -2532,8 +2426,6 @@ cycle= 7 E= -582.774484695807  delta_E= -8.08e-08  |g|= 9.27e-05  |ddm|= 0.00595
     CPU time for cycle= 7    278.75 sec, wall time      9.23 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 HOMO = 0.124150376272  LUMO = 0.459562354484
      k-point                  mo_energy
    0 ( 0.000  0.000  0.000)   [-79.43370928 -58.05138379  -6.98556823  -4.88134739  -4.88134739
@@ -2702,13 +2594,10 @@ HOMO = 0.124150376272  LUMO = 0.459562354484
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.98 sec, wall time      0.16 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.87 sec, wall time      0.47 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     20.80 sec, wall time      0.66 sec
@@ -2728,7 +2617,6 @@ E1 = (-615.4127438523661+1.2374528439002908e-16j)  E_coul = (135.50264159639914+
 Extra cycle  E= -582.774484696555  delta_E= -7.48e-10  |g|= 3.1e-05  |ddm|= 0.00143
     CPU time for scf_cycle  46355.87 sec, wall time   1541.94 sec
     CPU time for SCF  46355.92 sec, wall time   1541.98 sec
-<<<<<<< HEAD
 =======
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.66 sec, wall time      0.15 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     12.55 sec, wall time      0.40 sec
@@ -2779,6 +2667,4 @@ Extra cycle  E= -582.774484696555  delta_E= -7.48e-10  |g|= 3.1e-05  |ddm|= 0.00
     CPU time for SCF  46531.45 sec, wall time   1562.13 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
 converged SCF energy = -582.774484696555

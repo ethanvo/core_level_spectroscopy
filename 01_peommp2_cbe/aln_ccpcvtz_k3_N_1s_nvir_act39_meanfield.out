@@ -320,13 +320,10 @@ chgcell.rcut 11.482117703874595
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for 3c2e 257653.45 sec, wall time   8361.81 sec
 Num uniq kpts 63
 uniq_kpts [[ 0.          0.          0.        ]
@@ -9946,7 +9943,6 @@ Extra cycle  E= -593.141599269518  delta_E= -1.09e-09  |g|= 9.86e-05  |ddm|= 0.0
 converged SCF energy = -593.141599269518
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 =======
@@ -9955,5 +9951,3 @@ converged SCF energy = -593.141599269518
 =======
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
