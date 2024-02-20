@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.74 sec, wall time      0.37 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.92 sec, wall time      0.70 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     26.44 sec, wall time      1.16 sec
@@ -76,6 +79,7 @@ using incore ERI storage
     CPU time for get_k_kpts: make_kpt ki>=kj (24,*)    234.53 sec, wall time      7.46 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (25,*)    276.62 sec, wall time      9.22 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (26,*)    312.36 sec, wall time     11.20 sec
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
 Monkhorst pack size [3 3 3] ew_eta 1.3749109234332217 ew_cut 5.114582727547651
@@ -102,6 +106,27 @@ using incore ERI storage
     CPU time for CCSD integral transformation 231223.82 sec, wall time   7716.97 sec
     CPU time for EOM-CCSD shared one-electron intermediates    750.15 sec, wall time     24.04 sec
 >>>>>>> cluster
+=======
+Monkhorst pack size [3 3 3] ew_eta 1.3749109234332217 ew_cut 5.114582727547651
+Ewald components = 0, -0.775823048153945, 0.701640797011738
+    CPU time for get_j pass 1     72.79 sec, wall time      2.42 sec
+    CPU time for get_j pass 2      7.97 sec, wall time      1.70 sec
+    CPU time for vj and vk   3965.79 sec, wall time    135.59 sec
+    CPU time for vnuc pass1: analytic int    651.16 sec, wall time     21.03 sec
+    CPU time for contracting Vnuc [0:729]     97.99 sec, wall time      3.23 sec
+    CPU time for contracting Vnuc     97.99 sec, wall time      3.23 sec
+    CPU time for get_nuc    749.44 sec, wall time     24.27 sec
+Ewald components = 1.25967104982813e-135, -881.045459580493, 778.181077139905
+    CPU time for vnuc pass1: analytic int    639.86 sec, wall time     20.47 sec
+    CPU time for contracting Vnuc [0:729]     95.11 sec, wall time      3.09 sec
+    CPU time for contracting Vnuc     95.11 sec, wall time      3.09 sec
+    CPU time for get_nuc    735.22 sec, wall time     23.56 sec
+E1 = (-615.2545278178702+1.7531832276537459e-15j)  E_coul = (135.3207240773189+1.3580656667289143e-15j)
+using incore ERI storage
+    CPU time for CCSD integral transformation 229474.55 sec, wall time   7615.16 sec
+    CPU time for EOM-CCSD shared one-electron intermediates    742.57 sec, wall time     23.65 sec
+>>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 IMDS key to save: Loo , type: <class 'numpy.ndarray'>
 IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
 IMDS key to save: Fov , type: <class 'numpy.ndarray'>

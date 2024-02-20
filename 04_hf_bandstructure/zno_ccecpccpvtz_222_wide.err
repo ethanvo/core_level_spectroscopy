@@ -15,10 +15,16 @@ WARNING!
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 slurmstepd: error: *** JOB 11482819 ON g145 CANCELLED AT 2024-02-05T14:27:39 DUE TO TIME LIMIT ***
 =======
 slurmstepd: error: *** JOB 11426081 ON g152 CANCELLED AT 2024-01-29T14:53:53 ***
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+<<<<<<< HEAD
 =======
 slurmstepd: error: *** JOB 11482819 ON g145 CANCELLED AT 2024-02-05T14:27:39 DUE TO TIME LIMIT ***
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df

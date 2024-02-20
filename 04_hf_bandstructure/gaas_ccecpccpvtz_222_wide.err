@@ -15,6 +15,9 @@ WARNING!
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 =======
 Traceback (most recent call last):
   File "/burg/ccce/users/eav2136/projects/core_level_spectroscopy/04_hf_bandstructure/hf_bandstructure.py", line 9, in <module>
@@ -37,5 +40,8 @@ Traceback (most recent call last):
     raise TypeError(f'Object of type {o.__class__.__name__} '
 TypeError: Object of type ndarray is not JSON serializable
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df

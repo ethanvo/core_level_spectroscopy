@@ -12,8 +12,11 @@ diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 max_memory 700000 MB (current use 79 MB)
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.66 sec, wall time      0.67 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     17.59 sec, wall time      1.92 sec
@@ -53,6 +56,7 @@ Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for contracting Vnuc     67.98 sec, wall time      2.16 sec
     CPU time for get_nuc    565.34 sec, wall time     17.95 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+<<<<<<< HEAD
 =======
 Monkhorst pack size [2 2 2] ew_eta 2.0312209471041576 ew_cut 3.463973550287249
 Ewald components = 0, -1.14616786107368, 1.03489448450362
@@ -64,6 +68,8 @@ Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for contracting Vnuc     68.91 sec, wall time      2.19 sec
     CPU time for get_nuc    566.29 sec, wall time     18.01 sec
 >>>>>>> cluster
+=======
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 
 ******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
 CC2 = 0
@@ -78,6 +84,7 @@ diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 max_memory 700000 MB (current use 924 MB)
     CPU time for transforming DF-MP2 integrals    197.30 sec, wall time      6.18 sec
 =======
@@ -88,5 +95,13 @@ max_memory 700000 MB (current use 931 MB)
 max_memory 700000 MB (current use 924 MB)
     CPU time for transforming DF-MP2 integrals    197.30 sec, wall time      6.18 sec
 >>>>>>> cluster
+=======
+max_memory 700000 MB (current use 924 MB)
+    CPU time for transforming DF-MP2 integrals    197.30 sec, wall time      6.18 sec
+=======
+max_memory 700000 MB (current use 931 MB)
+    CPU time for transforming DF-MP2 integrals    199.42 sec, wall time      6.25 sec
+>>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+>>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 t1 type: <class 'numpy.ndarray'>
 t2 type: <class 'numpy.ndarray'>
