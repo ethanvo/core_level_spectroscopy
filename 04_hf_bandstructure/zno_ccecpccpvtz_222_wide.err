@@ -13,4 +13,4 @@ WARNING!
   linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
   to remove the diffused Gaussians whose exponents are less than 0.1.
 
-slurmstepd: error: *** JOB 11426081 ON g152 CANCELLED AT 2024-01-29T14:53:53 ***
+slurmstepd: error: *** JOB 11482819 ON g145 CANCELLED AT 2024-02-05T14:27:39 DUE TO TIME LIMIT ***

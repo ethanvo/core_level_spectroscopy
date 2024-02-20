@@ -2,10 +2,6 @@
 The following have been reloaded with a version change:
   1) gcc/10.2.0 => gcc/13.0.1
 
-==> Error: No such environment: 'pyscf-gcc-openblas'
-==> Error: No such environment: 'pyscf-intel-mkl'
-==> Error: Spec 'gcc@13.2.0' matches no installed packages.
-==> Error: Spec 'intel-oneapi-compilers' matches no installed packages.
 /burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/pbc/tools/lattice.py:108: UserWarning: Use ase.build.bulk() instead
   ase_atom = bulk('GaN', 'zincblende', a=4.520*A2B)
 WARNING!
@@ -13,4 +9,4 @@ WARNING!
   linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
   to remove the diffused Gaussians whose exponents are less than 0.1.
 
-slurmstepd: error: *** JOB 11426090 ON g109 CANCELLED AT 2024-01-29T14:53:53 ***
+slurmstepd: error: *** JOB 11482828 ON g112 CANCELLED AT 2024-02-06T14:25:02 DUE TO TIME LIMIT ***

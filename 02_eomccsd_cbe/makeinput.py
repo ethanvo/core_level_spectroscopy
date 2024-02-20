@@ -130,7 +130,6 @@ def get_nmo(formula, basis):
     nvir = nmo - nocc
     return int(nocc), int(nvir), int(nmo)
 
-
 def peommp2_ip_storage(nkpts, nocc, nvir):
     total = 0
     nmo = nocc + nvir
