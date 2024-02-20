@@ -12,10 +12,13 @@ diis_start_energy_diff = 1e+09
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster
 max_memory 700000 MB (current use 81 MB)
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      7.81 sec, wall time      0.42 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     16.92 sec, wall time      0.56 sec
@@ -35,6 +38,7 @@ Ewald components = 0, -1.14616786107368, 1.03489448450362
     CPU time for contracting Vnuc [0:729]     67.98 sec, wall time      2.15 sec
     CPU time for contracting Vnuc     67.99 sec, wall time      2.15 sec
     CPU time for get_nuc    564.99 sec, wall time     18.32 sec
+<<<<<<< HEAD
 =======
 max_memory 700000 MB (current use 100 MB)
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      6.92 sec, wall time      0.40 sec
@@ -69,6 +73,8 @@ Ewald components = 0, -1.14616786107368, 1.03489448450362
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster
 
 ******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
 CC2 = 0
@@ -80,6 +86,7 @@ conv_tol_normt = 1e-05
 diis_space = 6
 diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,5 +108,9 @@ max_memory 700000 MB (current use 934 MB)
     CPU time for transforming DF-MP2 integrals    198.15 sec, wall time      6.21 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+max_memory 700000 MB (current use 930 MB)
+    CPU time for transforming DF-MP2 integrals    201.08 sec, wall time      6.31 sec
+>>>>>>> cluster
 t1 type: <class 'numpy.ndarray'>
 t2 type: <class 'numpy.ndarray'>

@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.74 sec, wall time      0.37 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     14.92 sec, wall time      0.70 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     26.44 sec, wall time      1.16 sec
@@ -51,6 +54,7 @@ E1 = (-615.2545278178712+1.7485912089600493e-15j)  E_coul = (135.3207240773189+1
 using incore ERI storage
     CPU time for CCSD integral transformation 231223.82 sec, wall time   7716.97 sec
     CPU time for EOM-CCSD shared one-electron intermediates    750.15 sec, wall time     24.04 sec
+<<<<<<< HEAD
 =======
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      5.21 sec, wall time      0.55 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     24.42 sec, wall time      1.13 sec
@@ -127,6 +131,8 @@ using incore ERI storage
     CPU time for EOM-CCSD shared one-electron intermediates    742.57 sec, wall time     23.65 sec
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster
 IMDS key to save: Loo , type: <class 'numpy.ndarray'>
 IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
 IMDS key to save: Fov , type: <class 'numpy.ndarray'>

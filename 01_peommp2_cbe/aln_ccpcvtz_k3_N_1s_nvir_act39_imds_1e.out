@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)     24.63 sec, wall time      1.03 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     76.07 sec, wall time      2.57 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)    110.50 sec, wall time      3.94 sec
@@ -58,6 +61,7 @@ IMDS key to save: Loo , type: <class 'numpy.ndarray'>
 IMDS key to save: Lvv , type: <class 'numpy.ndarray'>
 IMDS key to save: Fov , type: <class 'numpy.ndarray'>
 Made 1e intermediates
+<<<<<<< HEAD
 =======
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)     26.12 sec, wall time      1.24 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     78.56 sec, wall time      3.15 sec
@@ -137,3 +141,5 @@ E1 = (-567.7161474464701+3.3529981221296102e-12j)  E_coul = (113.09239929414666+
 using HDF5 ERI storage
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster

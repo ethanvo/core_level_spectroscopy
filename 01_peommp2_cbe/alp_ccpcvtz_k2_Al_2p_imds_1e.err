@@ -7,6 +7,7 @@ The following have been reloaded with a version change:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /cm/local/apps/slurm/var/spool/job11415883/slurm_script: line 21: 3123728 Segmentation fault      (core dumped) python imds_1e.py $1
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
@@ -17,3 +18,5 @@ The following have been reloaded with a version change:
 /cm/local/apps/slurm/var/spool/job11415883/slurm_script: line 21: 3123728 Segmentation fault      (core dumped) python imds_1e.py $1
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
+=======
+>>>>>>> cluster
