@@ -14,7 +14,11 @@ WARNING!
   to remove the diffused Gaussians whose exponents are less than 0.1.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 slurmstepd: error: *** JOB 11482819 ON g145 CANCELLED AT 2024-02-05T14:27:39 DUE TO TIME LIMIT ***
 =======
 slurmstepd: error: *** JOB 11426081 ON g152 CANCELLED AT 2024-01-29T14:53:53 ***
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
+=======
+slurmstepd: error: *** JOB 11482819 ON g145 CANCELLED AT 2024-02-05T14:27:39 DUE TO TIME LIMIT ***
+>>>>>>> cluster
