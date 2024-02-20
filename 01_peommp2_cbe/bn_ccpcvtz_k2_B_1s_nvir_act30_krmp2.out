@@ -10,24 +10,24 @@ conv_tol_normt = 1e-05
 diis_space = 6
 diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
-max_memory 700000 MB (current use 100 MB)
-    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      2.43 sec, wall time      0.30 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     11.91 sec, wall time      0.40 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     18.18 sec, wall time      0.58 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     21.81 sec, wall time      0.69 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.72 sec, wall time      1.13 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     26.80 sec, wall time      0.86 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     28.21 sec, wall time      0.90 sec
-    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     36.45 sec, wall time      1.16 sec
+max_memory 700000 MB (current use 82 MB)
+    CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      3.44 sec, wall time      0.28 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     11.43 sec, wall time      0.38 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     21.64 sec, wall time      0.71 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (3,*)     26.04 sec, wall time      0.84 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (4,*)     33.45 sec, wall time      1.08 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (5,*)     36.05 sec, wall time      1.18 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (6,*)     25.70 sec, wall time      0.85 sec
+    CPU time for get_k_kpts: make_kpt ki>=kj (7,*)     29.04 sec, wall time      0.94 sec
 Monkhorst pack size [2 2 2] ew_eta 3.017379283613466 ew_cut 2.333163107269861
 Ewald components = 0, -1.70264454950703, 1.53485722578667
-    CPU time for get_j pass 1      7.95 sec, wall time      0.29 sec
-    CPU time for get_j pass 2      4.64 sec, wall time      0.18 sec
-    CPU time for vj and vk    198.34 sec, wall time      6.70 sec
-    CPU time for vnuc pass1: analytic int   1053.74 sec, wall time     33.94 sec
-    CPU time for contracting Vnuc [0:216]     18.37 sec, wall time      0.59 sec
-    CPU time for contracting Vnuc     18.37 sec, wall time      0.59 sec
-    CPU time for get_nuc   1072.16 sec, wall time     34.53 sec
+    CPU time for get_j pass 1      9.89 sec, wall time      0.33 sec
+    CPU time for get_j pass 2      5.30 sec, wall time      0.17 sec
+    CPU time for vj and vk    208.57 sec, wall time      6.97 sec
+    CPU time for vnuc pass1: analytic int   1053.79 sec, wall time     33.94 sec
+    CPU time for contracting Vnuc [0:216]     18.80 sec, wall time      0.60 sec
+    CPU time for contracting Vnuc     18.81 sec, wall time      0.60 sec
+    CPU time for get_nuc   1072.64 sec, wall time     34.54 sec
 
 ******** <class 'pyscf.pbc.cc.kccsd_rhf.RCCSD'> ********
 CC2 = 0
@@ -40,7 +40,7 @@ conv_tol_normt = 1e-05
 diis_space = 6
 diis_start_cycle = 0
 diis_start_energy_diff = 1e+09
-max_memory 700000 MB (current use 689 MB)
-    CPU time for transforming DF-MP2 integrals     88.71 sec, wall time      2.78 sec
+max_memory 700000 MB (current use 699 MB)
+    CPU time for transforming DF-MP2 integrals     87.84 sec, wall time      2.75 sec
 t1 type: <class 'numpy.ndarray'>
 t2 type: <class 'numpy.ndarray'>
