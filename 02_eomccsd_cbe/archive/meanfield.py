@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import json
 from pyscf.pbc import gto, scf
 from pyscf.pbc.tools import lattice, pyscf_ase
 from fileutils import load, dump

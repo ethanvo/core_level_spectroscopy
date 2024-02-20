@@ -26,11 +26,12 @@ def load_mf(inputfile):
     mymf.converged = True
     return mymf
 
-def load_mp(inputfile):
+def load_cc(inputfile):
     material = load("data/{}".format(inputfile))
     h5file = h5py.File("data/{}".format(material["imds"]), "a")
+    no_coeff = load_h5(h5file, "no_coeff")
     mymf = load_mf(inputfile)
-    mycc = cc.KRCCSD(mymf, frozen=material["frozen"])
+    mycc = cc.KRCCSD(mymf, frozen=material["frozen"], mo_coeff=no_coeff)
     mycc.keep_exxdiv = True
     t_amps_dict = load_h5(h5file, "t_amps")
     mycc.__dict__.update(t_amps_dict)
@@ -38,7 +39,8 @@ def load_mp(inputfile):
     return mycc, h5file
 
 def load_eris(mycc, h5file):
-    eris = _ERIS(mycc)
+    no_coeff = load_h5(h5file, "no_coeff")
+    eris = _ERIS(mycc, no_coeff)
     eris_dict = load_h5(h5file, "eris")
     eris.__dict__.update(eris_dict)
     return eris
