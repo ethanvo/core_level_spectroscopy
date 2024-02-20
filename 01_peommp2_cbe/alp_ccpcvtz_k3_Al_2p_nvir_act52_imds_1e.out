@@ -1,13 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
     CPU time for get_k_kpts: make_kpt ki>=kj (0,*)      4.50 sec, wall time      5.64 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (1,*)     19.81 sec, wall time      0.66 sec
     CPU time for get_k_kpts: make_kpt ki>=kj (2,*)     26.78 sec, wall time      0.87 sec
@@ -141,5 +138,3 @@ E1 = (-615.2545278178715+1.752741840946324e-15j)  E_coul = (135.3207240773191+1.
 using HDF5 ERI storage
 >>>>>>> f0983ef5bf9ad467b05de206ad1aa900b1c074f6
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster

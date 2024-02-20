@@ -7,7 +7,6 @@ The following have been reloaded with a version change:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 =======
@@ -46,5 +45,3 @@ RuntimeError: Can't decrement id ref count (unable to close file, errno = 5, err
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster

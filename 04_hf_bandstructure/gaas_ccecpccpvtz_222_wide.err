@@ -16,7 +16,6 @@ WARNING!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
 =======
@@ -46,5 +45,3 @@ TypeError: Object of type ndarray is not JSON serializable
 >>>>>>> cluster
 =======
 >>>>>>> b0ebe15b9cb21f72d3133d30b88ad83ae944b1df
-=======
->>>>>>> cluster
