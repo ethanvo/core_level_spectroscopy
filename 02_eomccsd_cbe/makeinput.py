@@ -158,7 +158,7 @@ def peommp2_ip_storage(nkpts, nocc, nvir):
 
 
 def get_keydict(
-    formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout
+    formula, basis, kdensity, orbital, core, nmo, nocc, nvir, frozen, res, fout, mp2_frozen, mp2_act
 ):
     key = "{}_{}_k{}_{}".format(formula, basis, kdensity, orbital)
     if frozen is not None:
@@ -197,6 +197,8 @@ def get_keydict(
             ("made_Wovoo", False),
             ("made_Woooo", False),
             ("made_Wooov", False),
+            ("mp2_frozen", mp2_frozen),
+            ("mp2_act", mp2_act),
         ]
     )
     filename = "data/{}.json".format(key)
@@ -214,6 +216,12 @@ with open("sendall.sh", "w") as fout:
                     nkpts = kmax**3
                     # Check if storage is within limits 16 TB
                     frozen = None
+                    mp2_frozen = None
+                    mp2_act = (int((700000 * 1e6 / 16 / ((kmax**3) ** 3)) ** (1 / 2) / nocc) - 1)
+                    if mp2_act >= nvir:
+                        mp2_act = nvir
+                    else:
+                        mp2_frozen = list(range(nocc + mp2_act, nmo))
                     if (
                         peommp2_ip_storage(
                             nkpts, nocc - len(frozen_core[formula]), nvir
@@ -242,6 +250,8 @@ with open("sendall.sh", "w") as fout:
                                 frozen,
                                 res,
                                 fout,
+                                mp2_frozen,
+                                mp2_act,
                             )
                     else:
                         kdensity = kmax
@@ -257,4 +267,6 @@ with open("sendall.sh", "w") as fout:
                             frozen,
                             res,
                             fout,
+                            mp2_frozen,
+                            mp2_act,
                         )

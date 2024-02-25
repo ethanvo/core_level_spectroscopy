@@ -69,21 +69,21 @@ if not os.path.isfile(f"data/{material['cbe']}"):
     else:
         if not material['made_no_coeff']:
             nvir_act = material["nvir_act"]
+            mp2_frozen = material["mp2_frozen"]
+            mp2_act = material["mp2_act"]
             mo_coeff = mymf.mo_coeff
             mo_energy = mymf.mo_energy
-            mypt = mp.KMP2(mymf)
+            mypt = mp.KMP2(mymf, frozen=mp2_frozen)
             mypt.kernel()
             nocc = mypt.nocc
             nkpts = mypt.nkpts
             dm = mypt.make_rdm1()
-            if os.path.isfile(mypt._ft2):
-                del mypt._ft2
             no_coeff = []
             for k in range(nkpts):
                 n, v = np.linalg.eigh(dm[k][nocc:, nocc:])
                 idx = np.argsort(n)[::-1]
                 n, v = n[idx], v[:, idx]
-                fvv = np.diag(mo_energy[k][nocc:])
+                fvv = np.diag(mo_energy[k][nocc:(nocc + mp2_act)])
                 fvv_no = reduce(np.dot, (
                     v.T.conj(),
                     fvv,
@@ -91,15 +91,16 @@ if not os.path.isfile(f"data/{material['cbe']}"):
                 ))
                 _, v_canon = np.linalg.eigh(fvv_no[:nvir_act, :nvir_act])
                 no_coeff_1 = reduce(np.dot, (
-                    mo_coeff[k][:, nocc:],
+                    mo_coeff[k][:, nocc:(nocc + mp2_act)],
                     v[:, :nvir_act],
                     v_canon
                 ))
-                no_coeff_2 = np.dot(mo_coeff[k][:, nocc:], v[:, nvir_act:])
+                no_coeff_2 = np.dot(mo_coeff[k][:, nocc:(nocc + mp2_act)], v[:, nvir_act:])
                 no_coeff_k = np.concatenate((
                     mo_coeff[k][:, :nocc],
                     no_coeff_1,
-                    no_coeff_2
+                    no_coeff_2,
+                    mo_coeff[k][:, (nocc + mp2_act):]
                 ), axis=1)
                 no_coeff.append(no_coeff_k)
             no_coeff = np.asarray(no_coeff)
