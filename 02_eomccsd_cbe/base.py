@@ -76,6 +76,8 @@ if not os.path.isfile(f"data/{material['cbe']}"):
             nocc = mypt.nocc
             nkpts = mypt.nkpts
             dm = mypt.make_rdm1()
+            if os.path.isfile(mypt._ft2):
+                del mypt._ft2
             no_coeff = []
             for k in range(nkpts):
                 n, v = np.linalg.eigh(dm[k][nocc:, nocc:])

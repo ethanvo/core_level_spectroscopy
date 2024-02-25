@@ -1,14 +1,15 @@
 sbatch -J c_ccpcvtz_k4_C_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k4_C_1s_nvir_act30.json
-sbatch -J c_ccpcvtz_k3_C_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k3_C_1s_nvir_act30.json
-sbatch -J c_ccpcvtz_k2_C_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k2_C_1s_nvir_act30.json
-sbatch -J c_ccpcvtz_k3_C_1s /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k3_C_1s.json
-sbatch -J c_ccpcvtz_k2_C_1s /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k2_C_1s.json
-sbatch -J si_ccpcvtz_k4_Si_2p_nvir_act14 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k4_Si_2p_nvir_act14.json
-sbatch -J si_ccpcvtz_k3_Si_2p_nvir_act14 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k3_Si_2p_nvir_act14.json
-sbatch -J si_ccpcvtz_k2_Si_2p_nvir_act14 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k2_Si_2p_nvir_act14.json
-sbatch -J si_ccpcvtz_k3_Si_2p_nvir_act52 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k3_Si_2p_nvir_act52.json
-sbatch -J si_ccpcvtz_k2_Si_2p_nvir_act52 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k2_Si_2p_nvir_act52.json
-sbatch -J si_ccpcvtz_k2_Si_2p /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k2_Si_2p.json
+#sbatch -J c_ccpcvtz_k3_C_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k3_C_1s_nvir_act30.json
+#sbatch -J c_ccpcvtz_k2_C_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k2_C_1s_nvir_act30.json
+#sbatch -J c_ccpcvtz_k3_C_1s /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k3_C_1s.json
+#sbatch -J c_ccpcvtz_k2_C_1s /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py c_ccpcvtz_k2_C_1s.json
+#sbatch -J si_ccpcvtz_k4_Si_2p_nvir_act14 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k4_Si_2p_nvir_act14.json
+#sbatch -J si_ccpcvtz_k3_Si_2p_nvir_act14 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k3_Si_2p_nvir_act14.json
+#sbatch -J si_ccpcvtz_k2_Si_2p_nvir_act14 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k2_Si_2p_nvir_act14.json
+#sbatch -J si_ccpcvtz_k3_Si_2p_nvir_act52 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k3_Si_2p_nvir_act52.json
+#sbatch -J si_ccpcvtz_k2_Si_2p_nvir_act52 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k2_Si_2p_nvir_act52.json
+#sbatch -J si_ccpcvtz_k2_Si_2p /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py si_ccpcvtz_k2_Si_2p.json
+
 #sbatch -J bn_ccpcvtz_k4_N_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py bn_ccpcvtz_k4_N_1s_nvir_act30.json
 #sbatch -J bn_ccpcvtz_k3_N_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py bn_ccpcvtz_k3_N_1s_nvir_act30.json
 #sbatch -J bn_ccpcvtz_k2_N_1s_nvir_act30 /burg/berkelbach/users/eav2136/builds/work_tools/slurm/pyscf/pyscf-job.sh base.py bn_ccpcvtz_k2_N_1s_nvir_act30.json

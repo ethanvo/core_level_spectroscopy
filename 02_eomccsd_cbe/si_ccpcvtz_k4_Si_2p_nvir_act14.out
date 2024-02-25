@@ -1,0 +1,10 @@
+
+******** <class 'pyscf.pbc.mp.kmp2.KMP2'> ********
+nkpts = 64
+nocc = 14
+nmo = 118
+with_df_ints = True
+max_memory 700000 MB (current use 175 MB)
+    CPU time for transforming DF-MP2 integrals  15302.82 sec, wall time    689.38 sec
+    CPU time for KMP2 345462.80 sec, wall time  32549.70 sec
+KMP2 energy = -0.882804741784144
