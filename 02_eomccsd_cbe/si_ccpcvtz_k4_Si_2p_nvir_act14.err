@@ -2,36 +2,16 @@
 The following have been reloaded with a version change:
   1) gcc/10.2.0 => gcc/13.0.1
 
-[1;31m==>[0m Error: No such environment: 'pyscf-intel-mkl'
 [1;31m==>[0m Error: No such environment: 'pyscf-gcc-openblas'
+[1;31m==>[0m Error: No such environment: 'pyscf-intel-mkl'
 [1;31m==>[0m Error: Spec 'gcc@13.2.0' matches no installed packages.
 [1;31m==>[0m Error: Spec 'intel-oneapi-compilers' matches no installed packages.
 [1;93m==>[0m Warning: Skipping reversal of unreversable operation <class 'spack.util.environment.RemovePath'> FI_PROVIDER_PATH
 [1;31m==>[0m Error: Spec 'gcc@13.2.0' matches no installed packages.
 [1;31m==>[0m Error: Spec 'intel-oneapi-compilers' matches no installed packages.
 [1;93m==>[0m Warning: Skipping reversal of unreversable operation <class 'spack.util.environment.RemovePath'> FI_PROVIDER_PATH
-Traceback (most recent call last):
-  File "/burg/ccce/users/eav2136/projects/core_level_spectroscopy/02_eomccsd_cbe/base.py", line 78, in <module>
-    dm = mypt.make_rdm1()
-  File "/burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/pbc/mp/kmp2.py", line 588, in make_rdm1
-    d_imds = _gamma1_intermediates(mp, t2=t2)
-  File "/burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/pbc/mp/kmp2.py", line 684, in _gamma1_intermediates
-    dm1vir[kb] += einsum('ijax,ijay->yx', t2[ki, kj, ka].conj(), t2[ki, kj, ka]) * 2 -\
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
-  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/view/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 766, in __getitem__
-    if self._fast_read_ok and (new_dtype is None):
-  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/view/lib/python3.10/site-packages/h5py/_hl/base.py", line 534, in __get__
-    value = obj.__dict__[self.func.__name__] = self.func(obj)
-  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/view/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 745, in _fast_read_ok
-    self._extent_type == h5s.SIMPLE
-  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/view/lib/python3.10/site-packages/h5py/_hl/base.py", line 534, in __get__
-    value = obj.__dict__[self.func.__name__] = self.func(obj)
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
-  File "/burg/berkelbach/users/eav2136/builds/spack/develop/spack/var/spack/environments/pyscf/.spack-env/view/lib/python3.10/site-packages/h5py/_hl/dataset.py", line 634, in _extent_type
-    return self.id.get_space().get_simple_extent_type()
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
-  File "h5py/h5d.pyx", line 347, in h5py.h5d.DatasetID.get_space
-RuntimeError: Unable to synchronously get dataspace (invalid dataset identifier)
+WARNING!
+  Very diffused basis functions are found in the basis set. They may lead to severe
+  linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
+  to remove the diffused Gaussians whose exponents are less than 0.1.
+

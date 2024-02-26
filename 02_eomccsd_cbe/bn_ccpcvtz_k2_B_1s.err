@@ -2,11 +2,19 @@
 The following have been reloaded with a version change:
   1) gcc/10.2.0 => gcc/13.0.1
 
-[1;31m==>[0m Error: No such environment: 'pyscf-gcc-openblas'
 [1;31m==>[0m Error: No such environment: 'pyscf-intel-mkl'
 [1;31m==>[0m Error: Spec 'gcc@13.2.0' matches no installed packages.
 [1;31m==>[0m Error: Spec 'intel-oneapi-compilers' matches no installed packages.
 [1;93m==>[0m Warning: Skipping reversal of unreversable operation <class 'spack.util.environment.RemovePath'> FI_PROVIDER_PATH
+[1;31m==>[0m Error: No such environment: 'pyscf-gcc-openblas'
 [1;31m==>[0m Error: Spec 'gcc@13.2.0' matches no installed packages.
 [1;31m==>[0m Error: Spec 'intel-oneapi-compilers' matches no installed packages.
 [1;93m==>[0m Warning: Skipping reversal of unreversable operation <class 'spack.util.environment.RemovePath'> FI_PROVIDER_PATH
+/burg/berkelbach/users/eav2136/builds/pyscf/projected-cvs/pyscf/pyscf/pbc/tools/lattice.py:116: UserWarning: Use ase.build.bulk() instead
+  ase_atom = bulk('BN', 'zincblende', a=3.615*A2B)
+WARNING!
+  Very diffused basis functions are found in the basis set. They may lead to severe
+  linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
+  to remove the diffused Gaussians whose exponents are less than 0.1.
+
+<class 'pyscf.pbc.cc.eom_kccsd_rhf.CVSEOMIP'> does not have attributes  mandatory

@@ -33,7 +33,7 @@
     "cbe": "c_ccpcvtz_k3_C_1s_cbe.json",
     "vip": "c_ccpcvtz_k3_C_1s_vip.h5",
     "made_no_coeff": false,
-    "made_eris": true,
+    "made_eris": false,
     "diis": "c_ccpcvtz_k3_C_1s_diis.h5",
     "made_imds": false,
     "made_imds_1e": false,

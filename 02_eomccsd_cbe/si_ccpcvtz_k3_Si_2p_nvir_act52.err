@@ -15,5 +15,3 @@ WARNING!
   linear dependence and numerical instability.  You can set  cell.exp_to_discard=0.1
   to remove the diffused Gaussians whose exponents are less than 0.1.
 
-/cm/local/apps/slurm/var/spool/job11735927/slurm_script: line 22: 3078000 Killed                  python $1 $2
-slurmstepd: error: Detected 1 oom-kill event(s) in step 11735927.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
